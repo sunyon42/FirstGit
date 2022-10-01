@@ -1,0 +1,120 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+    
+    /* border: 1px solid red; */
+}
+
+header h1 a{
+    font-size: 32px;
+    color: #292929;
+    margin-left: 80px;
+}
+
+header ul{
+    display: flex;
+    justify-content: end;
+    margin-right: 80px;
+}
+
+header ul li{
+    margin: 0 10px;
+    font-size: 17px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    height: 70px;       /*  박스안 text 가운데 정렬*/
+}
+
+.main li{
+    margin: 0 15px;
+    font-size: 17px; 
+}
+
+/* 
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    z-index: 1; */
+
+section .new >p{
+    color: #292929;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+section .set{
+    margin: auto;
+    align-items: center;
+}
+
+section .text .name{
+    /* display: block;
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px; */
+    margin-top: 0;
+    display: block;
+    font-size: 17px;
+    color: #292929;
+    letter-spacing: -0.5px;
+    FONT-WEIGHT: 600;
+    line-height: 1.5;
+}
+
+section .text .sbname{
+    /* font-size: 12px;
+    color: #323232;
+    margin-top: 5px;
+    margin-bottom: 5px; */
+    padding: 7px 0;
+    box-sizing: border-box;
+    margin: 15px 0;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    color: #838383;
+}
+
+section .text .sbprice{
+    /* display: inline-block;
+    font-size: 8px;
+    text-decoration: line-through;
+    margin-top: 5px;
+    margin-bottom: 5px; */
+    display: inline-block;
+    font-size: 14px;
+    color: #adadad;
+    text-decoration: line-through;
+    margin-right: 10px;
+    padding-right: 3px;
+    font-weight: 200;
+}
+
+section .text .mainprice{
+    /* display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 5px; */
+    display: inline-block;
+    font-size: 17px;
+    color: #aa6868;
+    font-weight: 400;
+}
