@@ -1,7 +1,8 @@
 section{
     border: 1px solid red;
-    width: 1136px;
+    width: 1136px; 
     display: flex;
+
     
 }
 
@@ -24,18 +25,22 @@ section{
     margin: 0;
     color: #767676;
 }
+.button{
+
+    height: 270px;
+}
 .arrow{
     display: flex;
     width: 36px;
     height: 36px;
-    border-radius: 50%;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 3%;
 
 }
 .arrow button{
-    display: block;
-    top: 50%;
     background-color: white;
     border: 1px solid black;
     border-radius: 100%;
-
 }
