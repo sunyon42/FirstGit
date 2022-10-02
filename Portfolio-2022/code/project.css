@@ -1,0 +1,52 @@
+*{
+    
+}
+header{
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: gold;
+}
+header h1{
+    position: relative;
+    z-index: 12;
+    margin-top: 300px;
+    margin-left: 10%;
+    font-weight: 800;
+    font-size: 85px;
+}
+header h1>span{
+    font-weight: 200;
+}
+section{
+    width: 60%;
+    overflow: hidden;
+    margin-top: 20%;
+    margin-left: 30%;
+
+}
+section{
+    width: 60%;
+    overflow: hidden;
+    padding: 100 0;
+    margin-top: 200px;
+    margin-left: 30%;
+}
+.contents{
+    width: 33.3%;
+    float: left;
+    overflow: hidden;
+}
+.contents{
+
+}
+
+.contents a{
+    width: 90%;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
