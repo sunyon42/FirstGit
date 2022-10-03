@@ -1,39 +1,77 @@
-
 header{
-    height: 100%;
-    width: 35%;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-}
-header h1{
-    position: relative;
-    z-index: 12;
-    margin-top: 300px;
-    margin-left: 10%;
-    font-weight: 800;
+    float: right;
     font-size: 85px;
+    font-weight: 800;
 }
-header h1>span{
-    font-weight: 200;
-}
-
-section{
-    width: 60%;
-    overflow: hidden;
-    padding: 100 0;
-    margin-top: 300px;
-    margin-left: 30%;
+body{
+    background-color: rgb(212, 128, 128);
 }
 .container{
     display: grid;
+    width: 80%;
+    margin: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px;
+    grid-auto-flow: 150px;
     grid-gap: 1rem;
+    grid-template-areas: 
+    'a a e'
+    'b i e'
+    'b g g'
+    'd d c';
+}
+.photo{
+    position: relative;
 }
 .image{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.2s;
+}
+.text{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 25px;
+    pointer-events: none;
+    z-index: 4;
+    transition: 0.3s;
+}
+.image:hover{
+    transform: scale(1.1);
+    filter: grayscale(100%);
+
+}
+.photo:hover .text{
+    opacity: 1;
+}
+.image1{
+    grid-area: a;
+}
+.image2{
+    grid-area: b;
+}
+.imag3{
+    grid-area: c;
+}
+.image4{
+    grid-area: d;
+}
+.image5{
+    grid-area: e;
+}
+.image6{
+    grid-area: f;
+}
+.image7{
+    grid-area: g;
+}
+.image8{
+    grid-area: h;
+}
+.image9{
+    grid-area: i;
 }
