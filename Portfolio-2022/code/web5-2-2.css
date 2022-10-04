@@ -5,11 +5,10 @@
 }
 body{
     width: 1136px;
-    border: 2px solid red;
+    margin: auto;
 }
 .banner{
     background-image: url(../jpg/seo202108269999_87.JPG);
-    border: 2px solid black;
     height: 300px;
 }
 header ul{
@@ -60,72 +59,55 @@ header ul{
     border: none;
     transition: 0.3s;
 } */
-
+main{
+    height: 500px;
+    background-color: rgb(232, 245, 250);
+    border-radius: 50px;
+    text-align: center;
+}
 main h1{
     color: aqua;
+    text-align: center;
     font-size: 24px;
+    margin-bottom: 50px;
 }
 
-.aboutme{
-    width: 1136px;
-    height: 300px;
-    border: 2px solid blue;
-    display: flex;
-    float: left;
-    align-items: center;
+.aboutme{   
+    margin: auto;
+    width: 50%;
+
 }
 .aboutme img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
-    margin-left: 100px;
-    margin-right: 30px;
 }
-
+.intro{
+    margin-top: 50px;
+    text-align: left;
+}
 .keyword-box{
     display: flex;
     align-items: center;
 }
-.keyword{
-    width: 40px;
-    height: 40px;
-    background-color: sandybrown;
-    border-radius: 100%;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-.keyword :not(:last-child){
-    margin-right: 15px;
-}
-
-.keyword {
-    font-weight: bold;
-}
-.br{
-    font-size: 12px;
-    color: #767676;
-    margin: 0;
-}
-.intro{
-    font-size: 14px;
-    margin: 0;
-    margin-top: 5px;
+nav{
+    margin: auto;
+    text-align: center;
+    background-color: rgb(232, 245, 250);
+    border-radius: 50px;
 }
 nav h1{
     color: aqua;
+    margin-bottom: 50px;
 }
 .tool-box{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 1136px;
-    height: 300px;
-    border: 2px solid blue;
+    flex-wrap: wrap;
 }
 .tool{
+    margin: auto;
     margin-right: 15px;
-}
-.tool:not(:last-child){
-    margin-right: 15px;    /*이거 안먹음*/
 }
