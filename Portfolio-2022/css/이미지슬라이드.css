@@ -10,8 +10,8 @@ img{
     width: 100%;
 }
 .slider{
-    width: 700px;
-    height: 450px;
+    width: 1000px;
+    height: 600px;
     position: relative;
     margin: 50px auto;
     overflow: hidden;
@@ -22,4 +22,28 @@ img{
     left: 0;
     height: 1444px;
     transition: left 0.5s ease-out;
+}
+.slide li{
+    float: left;
+}
+.controller span{
+    position: absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    cursor: pointer;
+}
+.controller span:hover{
+    background-color: #323232;
+}
+.perev{
+    left: 10px;
+}
+.next{
+    right: 10px;
 }
