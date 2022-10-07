@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.slider{
+    width: 700px;
+    height: 450px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1444px;
+    transition: left 0.5s ease-out;
+}
