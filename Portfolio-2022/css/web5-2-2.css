@@ -1,0 +1,113 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    color: black
+}
+body{
+    width: 1136px;
+    margin: auto;
+}
+.banner{
+    background-image: url(../jpg/seo202108269999_87.JPG);
+    height: 300px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.header,
+.header_1,
+.header i{
+    margin-right: 15px; 
+}
+.header button,
+.header_1 button{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    transition: 0.3s;
+}
+.header button:hover,
+.header_1 button:hover{
+    background-color:  #323232;
+    color: white;
+    cursor: pointer;
+}
+.header button:hover > i{
+    color: white;
+}
+/* .header_1 button:hover{
+    background-color: rgb(235, 235, 235);
+    color: black;
+    cursor: pointer;
+}
+.header_1 button{
+    background-color: #323232;
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    transition: 0.3s;
+} */
+main{
+    height: 500px;
+    background-color: rgb(232, 245, 250);
+    border-radius: 50px;
+    text-align: center;
+}
+main h1{
+    color: aqua;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.aboutme{   
+    margin: auto;
+    width: 50%;
+
+}
+.aboutme img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.intro{
+    margin-top: 50px;
+    text-align: left;
+}
+.keyword-box{
+    display: flex;
+    align-items: center;
+}
+nav{
+    margin: auto;
+    text-align: center;
+    background-color: rgb(232, 245, 250);
+    border-radius: 50px;
+}
+nav h1{
+    color: aqua;
+    margin-bottom: 50px;
+}
+.tool-box{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tool{
+    margin: auto;
+    margin-right: 15px;
+}
