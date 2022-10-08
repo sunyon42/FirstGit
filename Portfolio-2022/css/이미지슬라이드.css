@@ -28,18 +28,15 @@ img{
 }
 .controller span{
     position: absolute;
-    background-color: transparent;
-    /* color: black; */
-    /* text-align: center; */
-    /* border-radius: 50%; */
     padding: 10px 20px;
     top: 50%;
     transform: translate(0, -50%);
     font-size: 50px;
     cursor: pointer;
+    color: rgba(0,0,0,0.3);
 }
 .controller span:hover{
-    background-color: #323232;
+    color:rgba(0,0,0,1);
 }
 .perev{
     left: 10px;
