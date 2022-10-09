@@ -1,11 +1,17 @@
-const modal = document.getElementById('modal')
+const btns = document.querySelectorAll('[data-target]')
+const close_btns = document.querySelectorAll('.modal-btn')
+const overlay = document.querySelector('#overlay')
 
-//Show modal
-open.addEventListener('click', () => {
-  modal.classList.add('show-modal')
-})
+btns.forEach(btn =>{
+  btn.addEventListener('click', () => {
+    document.querySelector(btn.dataset.target).classList.add("active");
+    overlay.classList.add('active');
+  });
+});
 
-//Hide modal
-close.addEventListener('click', (e) => {
-  modal.classList.remove('show-modal')
-})
+close_btns.forEach(btn =>{
+  btn.addEventListener('click', () => {
+    document.querySelector(btn.dataset.target).classList.remove("active");
+    overlay.classList.remove('active');
+  });
+});

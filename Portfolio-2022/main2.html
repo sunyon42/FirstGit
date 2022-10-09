@@ -17,51 +17,63 @@
             </div>
             <nav>
                 <ul>
-                    <li class="aboume"><a href="#">about me</a></li>
-                    <li><a href="#">design</a></li>
-                    <li><a href="#">...</a></li>
+                    <li><button class="btn" data-target="#modal1">ABOUT ME</button></li>
+                    <li><button class="btn" data-target="#modal2">SKILL</button></li>
+                    <li><button class="btn" data-target="#modal3">CONTENT</button></li>
                 </ul>
             </nav>
         </header>
 
-            <div class="modal-container" id="modal">
-                <div class="modal">
-                    <div class="high">
-                        <h2 class="main_text">ABOUT ME</h2>
-                        <button class="close-btn" id="close">
-                            <i class="fa-solid fa-xmark fa-2x"></i></button>
-                    </div>
-                    <div class="aboutme">
-                        <div class="image"><img src="#" alt=""/></div>
-                        <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. 
-                        Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis,
-                        porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia.
-                        Nam maximus erat id euismod egestas. By the way, check out my.</p>
-                    </div>
 
-                </div>
+        <div class="modal" id="modal1">
+            <div class="modal_header">
+                <h2 class="main_text">ABOUT ME</h2>
+                <button class="btn modal-btn" data-target="#modal1">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </button>
             </div>
-
-            <!--이거없어도 될듯??-->
-            <article class="design">
-                <a href="#">Going to see</a>
-            </article> <!--이거없어도 될듯??-->
-
-
-            <div class="modal-container2" id="modal">
-                <div class="modal2">
-                    <div class="SKILL">
-                        <h2 class="main_text2">SKILL</h2>
-                        <div class="image2"><img src="#" alt=""/></div>
-                        <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu.
-                            Proin aliquam facilisis ante interdum congue. Integer mollis,
-                            nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
-                            Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my.</p>
-                    </div>
-                </div>
+            <div class="aboutme">
+                <div class="image"><img src="#" alt=""/></div>
+                <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. 
+                Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis,
+                porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia.
+                Nam maximus erat id euismod egestas. By the way, check out my.
+                </p>
             </div>
+        </div>
 
+        <div class="modal" id="modal2">
+            <div class="modal_header">
+                <h2 class="main_text2">SKILL</h2>
+                <button class="btn modal-btn" data-target="#modal2">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </button>
+            </div>
+            <div class="skill">
+                <div class="image2"><img src="#" alt=""/></div>
+                <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu.
+                    Proin aliquam facilisis ante interdum congue. Integer mollis,
+                    nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
+                    Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my.
+                </p>
+            </div>
+        </div>
 
+        <div class="modal" id="modal3">
+            <div class="modal_header">
+                <h2 class="main_text2">CONTENT</h2>
+                <button class="btn modal-btn" data-target="#modal3">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </button>
+            </div>
+            <div class="CONTENT">
+                <div class="design">
+                    <a href="http://127.0.0.1:5500/Portfolio-2022/CONTENT.html">Going to see</a>
+                </div> 
+            </div>
+        </div>
             
+        <div id="overlay"></div>
+        <script src="js/main2.js"></script>
 </body>
 </html>
