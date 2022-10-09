@@ -3,47 +3,58 @@
     text-decoration: none;
     color: black;
 }
-.header_text{
-    background-color: #5665;
-    width: 600px;
-    height: 400px;
-    margin: auto;
+.header{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    background-color: #5665;
+    overflow: hidden;
 }
-.header_text .text{
-    height: 200px;
-    background-color: gold;
-    padding: 50px;
-}
-.header_text h1{
-    background-color: rgb(134, 104, 104);
-    font-size: 36px;
-    color: white;
-    margin-bottom: 16px;
-    height: auto;
-}
-.header_text p{
-    background-color: rgb(204, 156, 156);
-    font-size: 12px;
-    color: white;
-    margin: 0;
-    height: auto;
-}
+.header .text{
+    margin-top: 150px;
 
+}
+.header h1{
+    /* color: white; */
+    margin: 0;
+}
+.header p{  
+    /* background-color: rgb(204, 156, 156); */
+    font-size: 14px;
+    /* color: white; */
+    margin-top: 10px;
+}   
+nav{
+    /* background-color: #323232; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
 nav ul{
     display: flex;
     justify-content: center;
-    text-align: center;
+    margin: 0;
+    padding: 15px;
 }
 nav ul li{
-    font-size: 12px;
-    border: 3px solid red;
-    padding: 0 20px;
+    font-size: 14px;
+    border: 1px;
+    padding: 0 10px;
+
 }
 .btn{
     cursor: pointer;
     border: none;
     background-color: transparent;
+    padding: 15px;
+}
+.btn:hover{
+    background-color: #eee;
+    border-radius: 5%;
 }
 .btn:active{
     transform: scale(0.9);
@@ -103,6 +114,27 @@ nav ul li{
 }
 
 /* skill 과 content 내용 css코드로 작성하기 */
+.skill{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+.panel-heading{
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.panel-body{
+    background-color: rgb(0, 0, 0, 0.05);
+    padding: 10px;
+    display: none;
+}
+.active .panel-body{
+    display: block;
+}
+
+
 
 #overlay{
     display: none;

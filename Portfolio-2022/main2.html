@@ -9,10 +9,9 @@
     <script src="https://kit.fontawesome.com/1f890f0014.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-        <header class="header_text">
+        <header class="header">
             <div class="text">
-                <h1>이선영</h1>
+                <h1>Design Portfolio by 이선영</h1>
                 <p>이선영의 웹 사이트 포트폴리오<br>3D부터2D까지의 다양한 툴을 이용한 디자인</p>
             </div>
             <nav>
@@ -28,7 +27,7 @@
         <div class="modal" id="modal1">
             <div class="modal_header">
                 <h2 class="main_text">ABOUT ME</h2>
-                <button class="btn modal-btn" data-target="#modal1">
+                <button class="modal-btn" data-target="#modal1">
                     <i class="fa-solid fa-xmark fa-2x"></i>
                 </button>
             </div>
@@ -45,24 +44,46 @@
         <div class="modal" id="modal2">
             <div class="modal_header">
                 <h2 class="main_text2">SKILL</h2>
-                <button class="btn modal-btn" data-target="#modal2">
+                <button class="modal-btn" data-target="#modal2">
                     <i class="fa-solid fa-xmark fa-2x"></i>
                 </button>
             </div>
             <div class="skill">
-                <div class="image2"><img src="#" alt=""/></div>
-                <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu.
-                    Proin aliquam facilisis ante interdum congue. Integer mollis,
-                    nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
-                    Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my.
-                </p>
+                <section id="faq">
+                    <div class="panel-question active">
+                        <div class="panel-heading">
+                            +3D tool
+                        </div>
+                        <div class="panel-body" id="thisone">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea dolorum perferendis voluptas enim recusandae optio quibusdam tempora, dolore error officia quia eos? Ratione accusamus doloremque porro explicabo dolores corrupti.</p>
+                        </div>
+                    </div>
+
+                    <div class="panel-question active">
+                        <div class="panel-heading">
+                            +3D tool
+                        </div>
+                        <div class="panel-body" id="thisone">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea dolorum perferendis voluptas enim recusandae optio quibusdam tempora, dolore error officia quia eos? Ratione accusamus doloremque porro explicabo dolores corrupti.</p>
+                        </div>
+                    </div>
+
+                    <div class="panel-question active">
+                        <div class="panel-heading">
+                            +3D tool
+                        </div>
+                        <div class="panel-body" id="thisone">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea dolorum perferendis voluptas enim recusandae optio quibusdam tempora, dolore error officia quia eos? Ratione accusamus doloremque porro explicabo dolores corrupti.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
         <div class="modal" id="modal3">
             <div class="modal_header">
                 <h2 class="main_text2">CONTENT</h2>
-                <button class="btn modal-btn" data-target="#modal3">
+                <button class="modal-btn" data-target="#modal3">
                     <i class="fa-solid fa-xmark fa-2x"></i>
                 </button>
             </div>
@@ -74,6 +95,7 @@
         </div>
             
         <div id="overlay"></div>
-        <script src="js/main2.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/skill.js"></script>
 </body>
 </html>
