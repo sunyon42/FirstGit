@@ -67,12 +67,12 @@ nav ul li{
     transform: translate(-50%, -50%);
     transition: center 0.3s ease-in-out;
     background: white;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     overflow: hidden;
     max-width: 100%;
     width: 400px;
-    height: 500PX;
+    height: auto;
 
     z-index: 2;
 }
@@ -114,27 +114,33 @@ nav ul li{
 }
 
 /* skill 과 content 내용 css코드로 작성하기 */
-.skill{
+.skill_box{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    grid-gap: 1em;
+    padding: 1em;
+}
+img{
     width: 90%;
-    margin: 0 auto;
-    border: 1px solid blue;
+    object-fit: cover;
 }
-.panel-heading{
-    background-color: black;
-    padding: 10px;
-    color: white;
-}
-
-.panel-body{
-    background-color: rgb(0, 0, 0, 0.05);
-    padding: 10px;
-    display: none;
-}
-.active .panel-body{
+.content{
+    text-align: center;
+    font-size: 32px;
+    /* background-color: #5665; */
     display: block;
+    padding: 10px;
 }
-
-
+.design a{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.design a:hover{
+    background-color: #eee;
+}
 
 #overlay{
     display: none;
