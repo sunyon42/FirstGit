@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    var slider = document.querySelector('.slider'),
-        slides = document.querySelector('.slides'),
-        slide = document.querySelectorAll('.slide'),
-        prev = document.getElementById('prev'),
-        slideHeigth = 0,
-        next = document.getElementById('next');
+    var $slider = document.querySelector('.slider'),
+        $slides = document.querySelector('.slides'),
+        $slide = document.querySelectorAll('.slide'),
+        $navprev = document.getElementById('prev'),
+        $slideHeigth = 0,
+        $slidecount = $slide.length,
+        $navnext = document.getElementById('next');
 
-        slideHeigth = slide[0].offsetHeigth;
-        console.log(slideHeigh);
+        for(var i = 0; i < $slidecount ; i++){
+            if($slideHeigth < $slide[i].offsetHeigth){
+                $slideHeigth = $slide[i].offsetHeigth;
+            }
+        }
+        console.log($slideHeigth);
 });
