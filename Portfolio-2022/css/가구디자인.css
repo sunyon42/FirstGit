@@ -16,31 +16,31 @@ img{
     margin: auto;
     overflow: hidden;
 }
-.slide{
+.slides{
     position: absolute;
     top: 0;
     left: 0;
     height: 1444px;
     transition: left 0.5s ease-out;
 }
-.slide li{
+.slide{
     float: left;
 }
-.controller span{
+span{
     position: absolute;
-    padding: 10px 20px;
     top: 50%;
-    transform: translate(0, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 50px;
     cursor: pointer;
     color: rgba(0,0,0,0.3);
 }
-.controller span:hover{
+span:hover{
     color:rgba(0,0,0,1);
 }
-.perev{
-    left: 10px;
+#prev{
+    margin-left: -450px;
 }
-.next{
-    right: 10px;
+#next{
+    margin-left: 450px;
 }
