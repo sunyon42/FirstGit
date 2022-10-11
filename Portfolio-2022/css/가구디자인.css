@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 li{
     list-style: none;
 }
@@ -23,7 +24,7 @@ img{
     top: 0;
     left: 0;
     width: 9000px;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease-in-out;
 }
 .slides li:not(:last-child){
     float: left;
@@ -45,8 +46,8 @@ span:hover{
     color:rgba(0,0,0,1);
 }
 .prev{
-    margin-left: -450px;
+    margin-left: -470px;
 }
 .next{
-    margin-left: 450px;
+    margin-left: 470px;
 }
