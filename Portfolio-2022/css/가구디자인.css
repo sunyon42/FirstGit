@@ -7,33 +7,31 @@ li{
     list-style: none;
 }
 img{
-    width: 100%;
+    width: 1000px;
+    height: 600PX;
 }
 .slider{
-    width: 100%;
+    
     position: relative;
-    margin: auto;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
     overflow: hidden;
 }
 .slides{
     position: absolute;
-    width: 100%;
-    transition: left 0.5s ease-out;
+    top: 0;
+    left: 0;
+    width: 9000px;
+    transition: 0.5s ease-in;
 }
-.slide{
-    position: absolute;
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-    top: 50%;
-    transform: translateY(-50%);
+.slides li:not(:last-child){
+    float: left;
+}
+.controls{
     text-align: center;
-    overflow: hidden;
 }
-.slider .animated{
-    transition: left 0.3s ease-in;
-}
-span{
+.controls span{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,13 +39,14 @@ span{
     font-size: 50px;
     cursor: pointer;
     color: rgba(0,0,0,0.3);
+    z-index: 2;
 }
 span:hover{
     color:rgba(0,0,0,1);
 }
-#prev{
+.prev{
     margin-left: -450px;
 }
-#next{
+.next{
     margin-left: 450px;
 }

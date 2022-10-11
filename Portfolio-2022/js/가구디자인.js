@@ -1,42 +1,39 @@
-document.addEventListener('DOMContentLoaded', function(){
 
-    var $slider = document.querySelector('.slider'),
-        $slides = document.querySelector('.slides'),
-        $slide = document.querySelectorAll('.slide'),
-        $navprev = document.getElementById('prev'),
-        $slideHeigth = 0,
-        $currentidex = 0;
-        $slidecount = $slide.length,
-        $navnext = document.getElementById('next');
 
-        for(var i = 0; i < $slidecount ; i++){
-            if($slideHeigth < $slide[i].offsetHeigth){
-                $slideHeigth = $slide[i].offsetHeigth;
-            }
+var slider = document.querySelector('.slider'),
+    slides = document.querySelector('.slides'),
+    slide = document.querySelectorAll('.slide'),
+    slideswidth = 1000,
+    slidesmargin = 30,
+    currentIdex = 0,
+    slideCount = slide.length,
+    Prev = document.querySelector('.prev'),
+    Next = document.querySelector('.next');
+
+    slides.style.width = (slideswidth + slidesmargin) * slideCount - slidesmargin
+
+    function moveslides(num){
+        slides.style.left = -num * 1000 +'px';
+        currentIdex = num;
+    }
+    Next.addEventListener('click', function(){
+        if(currentIdex < slideCount - 1){
+            moveslides(currentIdex + 1);
+            console.log(currentIdex);
+        }else{
+            moveslides(0);
         }
-        console.log($slideHeigth);
+    });
 
-        $slider.stlye.height = $slideHeigth + 'px';
-        $slides.stlye.heigth = $slideHeigth + 'px';
-
-        for(var a = 0; a < $slidecount; a++){
-            $slide[a].stlye.left = a * 100 + '%'
+    Prev.addEventListener('click', function(){
+        if(currentIdex > 0){
+            moveslides(currentIdex - 1);
+            console.log(currentIdex);
+        }else{
+            moveslides(currentIdex - 1);
         }
+    });
 
-        function goToSlide(idx){
-            $slider.stlye.left = -100 * (idx) +'%';
-            $currentidex = idx;
-        }
-
-        $navprev.addEventListener('click' , function(){
-            goToSlide($currentidex - 1);
-        });
-        $navnext.addEventListener('click' , function(){
-
-            goToSlide($currentidex + 1);
-
-        });
-});
 
 
 
