@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
         $slide = document.querySelectorAll('.slide'),
         $navprev = document.getElementById('prev'),
         $slideHeigth = 0,
+        $currentidex = 0;
         $slidecount = $slide.length,
         $navnext = document.getElementById('next');
 
@@ -21,4 +22,21 @@ document.addEventListener('DOMContentLoaded', function(){
         for(var a = 0; a < $slidecount; a++){
             $slide[a].stlye.left = a * 100 + '%'
         }
+
+        function goToSlide(idx){
+            $slider.stlye.left = -100 * (idx) +'%';
+            $currentidex = idx;
+        }
+
+        $navprev.addEventListener('click' , function(){
+            goToSlide($currentidex - 1);
+        });
+        $navnext.addEventListener('click' , function(){
+
+            goToSlide($currentidex + 1);
+
+        });
 });
+
+
+

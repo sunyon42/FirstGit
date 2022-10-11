@@ -10,21 +10,28 @@ img{
     width: 100%;
 }
 .slider{
-    width: 1000px;
-    height: 600px;
+    width: 100%;
     position: relative;
     margin: auto;
     overflow: hidden;
 }
 .slides{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 1444px;
+    width: 100%;
     transition: left 0.5s ease-out;
 }
 .slide{
-    float: left;
+    position: absolute;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    overflow: hidden;
+}
+.slider .animated{
+    transition: left 0.3s ease-in;
 }
 span{
     position: absolute;
