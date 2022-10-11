@@ -14,4 +14,11 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
         console.log($slideHeigth);
+
+        $slider.stlye.height = $slideHeigth + 'px';
+        $slides.stlye.heigth = $slideHeigth + 'px';
+
+        for(var a = 0; a < $slidecount; a++){
+            $slide[a].stlye.left = a * 100 + '%'
+        }
 });
