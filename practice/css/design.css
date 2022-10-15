@@ -1,0 +1,116 @@
+/* body{
+    background-color: gold;
+} */
+nav, ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+nav{
+    margin-top: -450px;
+    margin-left: 500px;
+}
+nav > ul{
+    text-align: center;
+    display: inline-block;
+}
+nav > ul > li {   
+    display: inline-block; 
+    padding: 10px;
+}
+nav  ul li{
+    position: relative;
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 100;
+    left: 0;
+    background-color: pink;
+}
+nav ul li:hover > ul{
+    display: block;
+    background-color: black;
+    color: white;
+}
+nav  ul li ul a{
+    white-space: nowrap;
+    padding: 10px;
+    display: block;
+}
+/* 풀다운바 까지였습니당 */
+button{
+    width: 120px;
+    margin: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+    border-radius: 20px;
+    background-color: blue;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color:rgba(0, 79, 255, 0.9);
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
+}
+
+/* 여기까지 버튼 이였습니당 */
+
+.card_box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    height: 360px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.26);
+    transition: 0.3s;
+}
+.card_box:hover{
+    transform: scale(0.95);
+}
+.img-gradient{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0,0,0,0),rgb(0,0,0,1));
+    z-index: 3;
+}
+.text-wrap{
+    position: absolute;  
+    bottom: 0;
+    padding: 24px;
+}
+.text-wrap h1{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    z-index: 1;
+}
+.text-wrap p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.play-btn{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: blanchedalmond;
+    z-index: 2;
+    border-radius: 100%;
+}
