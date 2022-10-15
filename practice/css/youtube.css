@@ -1,0 +1,51 @@
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    background-color: #323232;
+}
+.header_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+.head_start{
+    display: flex;
+    align-items: center;
+}
+#ham{
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    
+}
+#logo{
+    padding: 18px 14px 18px 16px;
+    border: none;
+    background-color: transparent;
+    
+}
+.head_center{
+    width: 50%;
+    margin: 0 0 0 40px;
+    padding: 0 4px;
+}
+#search{
+    display: flex;
+    max-width: 100%;
+}
+#search>input{
+    width: calc(100%-64px);
+    height: 40px;
+}
+#search>button{
+    width: 64px;
+}
