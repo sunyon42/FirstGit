@@ -6,6 +6,7 @@
     width: 100%;
     background-color: transparent;
     background-color: #323232;
+    z-index: 3;
 }
 .header_box{
     display: flex;
@@ -18,7 +19,7 @@
     display: flex;
     align-items: center;
 }
-#ham{
+.ham{
     padding: 8px;
     width: 40px;
     height: 40px;
@@ -27,7 +28,7 @@
     font-size: 20px;
     
 }
-#logo{
+.logo{
     padding: 18px 14px 18px 16px;
     border: none;
     background-color: transparent;
@@ -39,11 +40,11 @@
     margin: 0 0 0 40px;
     padding: 0 4px;
 }
-#search{
+.search{
     display: flex;
     max-width: 100%;
 }
-#search>input{
+.search input{
     width: calc(100%-64px);
     height: 40px; 
     background: none;
@@ -51,7 +52,7 @@
     border-radius: 2px 0 0 2px;
     border-right: none;
 }
-#search button{
+.search button{
     width: 64px;
     border: 1px solid white;
     border-radius: 0 2px 2px 0;
@@ -60,12 +61,16 @@
 .head_end{
     display: flex;
 }
-.serch{
+.serch_i{
     display: none;
     width: 40px;
     height: 40px;
     border: none;
     background: none;
+}
+.button{
+    border: none;
+    background-color: transparent;
 }
 .profile{
     width: 32px;
@@ -81,4 +86,16 @@
     .serch{
         display: block;
     }
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.nav_box{
+    max-width: 240px;
+    max-height: 100vh;
+    background-color: #323232;
+    padding: 56px 0 0 0;
 }
