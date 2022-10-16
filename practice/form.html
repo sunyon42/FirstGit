@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 관련 요소</title>
+</head>
+<body>
+    <h1>Form 관련 요소</h1>
+    
+    <label for="id"> 아이디:</label><input type="text" placeholder="영문으로만 써주세요" id="id"><br>
+    <!--label은 form 요소의 이름과 form 요소를 명시적으로 (id 태그 사용)연결시켜주기 위해 사용-->
+    비밀번호: <input type="password"><br>
+
+    성별: 남자<input type="radio" name="gender"> 여자 <input type="radio" name="gender"> <br>
+
+    취미: 영화감상 <input type="checkbox" name="hobby"> 음악감상 <input type="checkbox" name="hobby"> <br>
+
+    프로필 사진 업로드: <input type="file"><br>
+
+    거주지: <select value="거주지">
+        <option value="제주"></option>
+        <option value="경기"></option>
+        <option value="강원도"></option>
+    </select><br>
+
+    자기소개: <textarea name="" id="" cols="30" rows="5" placeholder="자기소개를 적어주세요"></textarea>
+
+    <input type="submit" value="전송"><br>
+    <input type="reset" value="취소"><br>
+    <input type="button" value="등록"><br>
+    <!-- <form 요소>
+        <form action="" method="">
+            ...
+        </form>
+    action: 폼 데이터를 처리하기 위한 서버의 주소
+    method: 데이터를 전송하는 방식을 지정(get, post)
+    -->
+</body>
+</html>
