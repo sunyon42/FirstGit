@@ -41,7 +41,7 @@
     max-width: 100%;
 }
 .search_t{
-    width: calc(100%-64px);
+    width: calc(100% - 64px);
     height: 40px;
     padding: 0 6px;
     border: 1px solid #a8a8a8;
