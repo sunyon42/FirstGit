@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu1</title>
+</head>
+    <style>
+        body, ul, ol, div, a{
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol{
+            list-style: none;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .wrap{
+            max-width: 700px;
+            min-width: 300px;
+            margin: 5px;
+        }
+        .menu{
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+        .menu_iteam{
+            display: table-cell;
+        }
+        .menu_link{
+            display: block;
+            height: 36px;
+            border: 1px solid#ddd;
+            font-size: 12px;
+            line-height: 36px;
+            color: #333;
+            text-align: center;
+        }
+        .menu_iteam + .menu_iteam .menu_link{
+            margin-left: -1px;
+        }
+        .menu_iteam:hover .menu_link{
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div class="wrap">
+        <ul class="menu">
+            <li class="menu_iteam"><a href="#" class="menu_link">iteam</a></li>
+            <li class="menu_iteam"><a href="#" class="menu_link">iteam</a></li>
+            <li class="menu_iteam"><a href="#" class="menu_link">iteam</a></li>
+            <li class="menu_iteam"><a href="#" class="menu_link">iteam</a></li>
+            <li class="menu_iteam"><a href="#" class="menu_link">iteam</a></li>
+        </ul>
+    </div>
+</body>
+</html>
