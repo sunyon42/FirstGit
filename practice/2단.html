@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃</title>
+</head>
+    <style>
+        html, body, .wrap{
+            height: 100%;
+        }
+        .header{
+            height: 10vh;
+            background-color: aqua;
+        }
+        .contanier{
+            position: relative;
+            width: 800px;
+            min-height: 100%;
+            margin: 0 auto;
+            margin: -100px auto;
+            padding: 100px 0;
+            box-sizing: border-box;
+        }
+        .contanier::after{
+            display: block;
+            clear: both;
+            content: ' ';
+        }
+        .content{
+            float: left;
+            width: 500px;
+            height: 30vh;
+            background-color: beige;
+        }
+        .aside{
+            float: left;
+            width: 300px;
+            height: 30vh;
+            background-color: blanchedalmond;
+        }
+        .aside::after{
+            position: absolute;
+            top: 100px;
+            right: 300px;
+            bottom: 100px;
+            content: '';
+            width: 5px;
+            background-color: #000;
+        }
+        .footer{
+            height: 10vh;
+            background-color: aquamarine;
+        }
+    </style>
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="contanier">
+            <div class="content">content</div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
