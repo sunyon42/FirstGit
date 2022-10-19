@@ -40,10 +40,14 @@
             color: #444;
         }
         .menu_link:hover,
-        .menu_link.ative{
+        .menu_link.active {
             color: green;
         }
-        .sub_menu{
+        .menu_item.active .sub_menu {
+            display: block;
+        }
+        .sub_menu {
+            /*display: none;*/
             position: absolute;
             left: 0;
             width: 100%;
@@ -51,10 +55,10 @@
             border-top: 1px solid #eee;
             border-bottom: 1px solid #eee;
         }
-        .sub_item{
+        .sub_item {
             display: inline-block;
         }
-        .sub_link{
+        .sub_link {
             display: block;
             padding: 16px 30px;
             font-size: 16px;
@@ -62,15 +66,15 @@
             line-height: 20px;
         }
         .sub_item:hover .sub_link,
-        .sub_item.active .sub_link{
+        .sub_item.active .sub_link {
             font-weight: bold;
             color: green;
         }
-        .sub_link span{
+        .sub_link span {
             position: relative;
         }
         .sub_item:hover span:after,
-        .sub_item.active .sub_link{
+        .sub_item.active span::after {
             position: absolute;
             content: '';
             left: 0;
@@ -83,10 +87,10 @@
     <div class="wrap">
         <ul class="menu">
             <li class="menu_item">
-                <a href="#" class="menu_link ative">item</a>
+                <a href="#" class="menu_link active">item</a>
                 <ul class="sub_menu">
                     <li class="sub_item">
-                        <a href="#" class="sub_link ative"><span>sub-item</span></a>
+                        <a href="#" class="sub_link active"><span>sub-item</span></a>
                     </li>
                     <li class="sub_item">
                         <a href="#" class="sub_link"><span>sub-item</span></a>
