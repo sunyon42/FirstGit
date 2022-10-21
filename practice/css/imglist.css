@@ -88,3 +88,30 @@ h1{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.sub_wrap{
+    margin-top: 30px;
+}
+.sub_list{
+    width: 1000px;
+    margin: 0 auto;
+}
+.sub_list .item_link img{
+    width: 188px;
+    height: 141px;
+}
+.sub_list li{
+    float: left;
+    width: 188px;
+    margin-bottom: 40px;
+}
+.sub_list::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.sub_list li + li{
+    margin-left: 15px;
+}
+.sub_list li:nth-child(5n+1) {
+    margin-left: 0;
+}
