@@ -4,7 +4,7 @@
 }
 body{
     background-size: cover;
-    background-image: url(bg.jpg);
+    background-image: url(../jpg/bg1.jpg);
     color: white;
 }
 a{
