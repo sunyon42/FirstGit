@@ -2,42 +2,101 @@
     background-color: rgb(213, 243, 233);
     color: rgb(51, 40, 40);
     font-family: 'Cute Font', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body {
-    width: 100%;
+li {
+    list-style: none;
 }
-header{
-    border: 3px solid gold;
-    width: 100%;
+a {
+    text-decoration: none;
+
 }
-header h3{
-    border: 3px solid gold;
+/* header 영역 */
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header .content {
+    text-align: center;
+}
+.content h3 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+.content h1 {
+    font-size: 60px;
+    margin-top: 40px;
+}
+/* header 영역 */
+
+/* main 영역 */
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.main_select {
     width: 30%;
     display: flex;
-    justify-content: center;
-    margin: auto;
-    font-size: 70px;
-    margin-top: 2%;
+    justify-content: space-between;
 }
-header h1 {
-    margin: 0 auto;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    font-size: 80px;
-    margin-top: 2%;
-}
-main {
-    border: solid red;
-    display: flex;
-    justify-content: space-around;
+.main_select li {
     width: 100%;
-    height: 40vh;
-}
-.section{
-    border: solid red;
-    color: #333;
-    font-size: 36px;
+    height: 30vh;
     padding: 5px;
-    height: 70%;
+    text-align: center;
+}
+.main_select li + li {
+    margin-left: 15%;
+}
+.item01 {
+    border: 5px solid red;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.item02 {
+    border: 5px solid blue;
+    border-radius: 10px;
+    font-size: 30px;
+}
+a .info {
+    background: transparent;
+}
+.item01:hover{
+    border: none;
+    background-color: red;
+}
+.item01:hover span{
+    background-color: transparent;
+    color: white;
+}
+/* a태그 hover시 background color 투명하게 하는 법좀.. */
+/* more... */
+
+/* aside 영역 */
+aside {
+    margin-top: 80px;
+}
+.aside_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+/*aside 영역*/
+
+/*footer 영역*/
+footer{
+    width: 0 auto;
+    margin-top: 40px;
+    padding:50px 0;  
+    background-color: #8f4c40; /*스타일 변경*/
+}
+footer p {
+    background-color: #8f4c40; /*스타일 변경*/
+    text-align: center;
+    color: #000;
 }
