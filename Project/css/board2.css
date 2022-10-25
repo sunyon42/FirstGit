@@ -22,8 +22,11 @@ body {
     text-align: center;
 }
 .list {
-    margin: auto;
     width: 50%;
+    margin: 0 auto;
+}
+.list {
+    border-top: 3px solid green; /*스타일*/
 }
 .list tr{
     border-bottom: 1px solid #eee;
@@ -36,5 +39,14 @@ body {
     text-align: left;
 }
 .page {
+    width: 50%;
+    margin: 0 auto;
     margin-top: 30px;
+}
+.page a {
+    background-color: #eee;
+    border-radius: 50%;
+    align-items: center;
+    padding: 5px;
+    font-size: 50%;
 }
