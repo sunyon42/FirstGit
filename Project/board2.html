@@ -12,7 +12,19 @@
     <link rel="stylesheet" href="css/board2.css">
 </head>
 <body>
+    <header class="header">
+        <div class="writer">글 목록 페이지</div>
+    </header>
     <div class="board_list">
+        <div class="serch_box">
+            <div class="serch">
+                <select name="select" id="select">
+                    <option value="title">제목</option>
+                    <option value="writer">글쓴이</option>
+                </select>
+                <input type="text" placholder="검색어를 입력하세요"><button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
         <table class="list">
             <caption>게시판 보기 목록</caption>
             <thead>
@@ -135,17 +147,24 @@
                 </tr>
             </tbody>
         </table>
-        <div class="page">
-            <a href="#"><i class="fa-solid fa-angles-left"></i></a>
-            <a href="#"><i class="fa-solid fa-angle-left"></i></a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-            <a href="#"><i class="fa-solid fa-angles-right"></i></a>
-        </div>
     </div>
+    <div class="page">
+        <a href="#" class="frist"><i class="fa-solid fa-angles-left"></i></a>
+        <a href="#" class="prev"><i class="fa-solid fa-angle-left"></i></a>
+        <a href="#" class="num">1</a>
+        <a href="#" class="num">2</a>
+        <a href="#" class="num">3</a>
+        <a href="#" class="num">4</a>
+        <a href="#" class="next"><i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" class="last"><i class="fa-solid fa-angles-right"></i></a>
+    </div>
+    <footer>
+        <p>
+            FRONTEND-SunYoung LEE  TEL.010-2417-4254 //
+            BACKEND-JooDong HO TEL.0107761-8482<br>
+            COPYRIGHT © 2022 GURI CITY. All Rights Reserved.
+        </p>
+    </footer>
 
 </body>
 </html>
