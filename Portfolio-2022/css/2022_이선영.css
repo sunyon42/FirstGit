@@ -44,8 +44,8 @@ img {
 }
 .about_photo {
     margin: 15vh 0;
-    width: 250px;
-    height: 250px; 
+    width: 300px;
+    height: 300px; 
     border-radius: 70%;
     overflow: hidden;
 }
@@ -63,9 +63,12 @@ img {
     align-items: center;
     height: 50vh;
 }
+.skill_box {
+    border: 3px solid red;
+}
 .skill_photo{
-    width: 100px;
-    height: 100px; 
+    width: 150px;
+    height: 150px; 
     border-radius: 70%;
     background-color: #fff;
     overflow: hidden;
