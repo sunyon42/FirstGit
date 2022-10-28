@@ -37,54 +37,10 @@ body {
     font-size: 300%;
 }
 /*header 영역*/
-/*board_look 영역*/
-.board_look {
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 7.5vh;
-    padding: 10px;
-    border: 1px solid #eee;
-}
-.box_info{
-    margin: 10px 10px;
-}
-.box_info .info {
-    
-}
-.info strong {
-    font-size: 26px;
-}
-.detail {
-    
-}
-.detail #name {
-    font-size: 13px;
-}
-.detail #date {
-    font-size: 12px;
-    display: flex;
-    justify-content: start;
-}
-.detail #date p {
-    margin-left: 5px;
-    color: #797979;
-}
-.detail #date p:nth-child(1){
-    margin-left: 0;
-}
-.board_see {
-    border-top: 1px solid green; /*스타일 변경*/
-}
-.content {
-    max-height: 10000000000px;
-    margin-top: 10px;
-    padding: 10px;
-    overflow: hidden;
-}
+
+
 /*footer 영역*/
 footer{
-    position: fixed;
-    bottom: 0;         /*글 목록 맨 아래로 고정 백엔드?*/
     width: 100%;
     margin-top: 7.5vh;
     height: 15vh;
