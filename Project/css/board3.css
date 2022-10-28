@@ -1,0 +1,48 @@
+*{
+    color: rgb(51, 40, 40);
+    font-family: 'Cute Font', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+table {
+    border-collapse: collapse;
+}
+caption {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+/*header 영역*/
+.header {
+    width: 100%;
+    height: 30vh;
+}
+.header {
+    background: no-repeat center/100% url("../jpg/bg1.jpg");
+    position: relative;
+}
+.header .writer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 300%;
+}
+/*header 영역*/
+/*board_look 영역*/
+.board_look {
+    margin-top: 7.5vh;
+}
+.box_info{
+    width: 37%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}

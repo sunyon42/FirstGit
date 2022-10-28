@@ -92,30 +92,35 @@ body {
 .list .title_list {
     text-align: left;
 }
+.list .title_list a:hover{
+    color: green;
+}
 /*board_list 영역*/
 /*page*/
 .page {
-    margin-top: 30px;
-    text-align: center;
+    margin: 4vh auto;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
 }
 .page a {
-    display: inline-block;
+    align-items: center;
+    margin: 0 5px;
+}
+.page i {
     vertical-align: middle;
+    padding: 0 5px;
 }
-/*여기서부터
-.page a .frist, 
-.page a .prev,
-.page a .next, 
-.page a .last {
-    width: 32px;
-    height: 32px;
-    background-color: #767676;
+.page .num {
+    padding: 0 5px;
 }
-.page a .num {
-    margin: 10px;
-    background-color: gold;
+.page i:hover{
+    color: green;
 }
-여기까지 안됨 why??// dongho teacher halp me!!*/
+.page .num:hover{
+    color: green;
+}
+
 /*page*/
 
 /*footer 영역*/
