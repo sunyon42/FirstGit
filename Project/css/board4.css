@@ -72,6 +72,8 @@ button{
 }
 .title input{
     width: 100%;
+    border: 1px solid #ccc;
+    height: 5vh;
 }
 .board_write .content {
     padding-top: 10px;
