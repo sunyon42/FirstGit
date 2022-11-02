@@ -22,6 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 30vh;
+    margin-top: 7.5vh;
 }
 .header .content {
     text-align: center;
@@ -48,33 +49,33 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.main_select li {
-    width: 100%;
-    height: 30vh;
-    padding: 5px;
-    text-align: center;
-}
-.main_select li + li {
+.main_select a + a {
     margin-left: 15%;
 }
-li a,
-.info span{
+a span{
     background: transparent;
 }
 .item01 {
-    align-items: center;
-    border: 5px solid red;
+    width: 100%;
+    padding: 5px;
+    height: 30vh;
+    text-align: center;
+    border: 5px solid red; /*스타일 변경*/
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 150%;
 }
 .item02 {
-    border: 5px solid blue;
+    width: 100%;
+    padding: 5px;
+    height: 30vh;
+    text-align: center;
+    border: 5px solid blue; /*스타일 변경*/
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 150%;
 }
 .item01:hover{
     border: none;
-    background-color: red;
+    background-color: red; /*스타일 변경*/
     transform: scale(0.95);
 }
 .item01:hover span{
@@ -83,7 +84,7 @@ li a,
 }
 .item02:hover{
     border: none;
-    background-color: blue;
+    background-color: blue; /*스타일 변경*/
     transform: scale(0.95);
 }
 .item02:hover span{
