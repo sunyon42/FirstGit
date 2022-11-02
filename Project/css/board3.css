@@ -83,8 +83,8 @@ body {
 }
 /*footer 영역*/
 footer{
-    position: fixed;
-    bottom: 0;         /*글 목록 맨 아래로 고정 백엔드?*/
+    /*position: fixed;
+    bottom: 0;         글 목록 맨 아래로 고정 백엔드?*/
     width: 100%;
     margin-top: 7.5vh;
     height: 15vh;
