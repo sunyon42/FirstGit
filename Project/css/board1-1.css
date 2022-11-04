@@ -111,6 +111,7 @@ aside {
 
 /*footer 영역*/
 footer{
+    margin-top: 7.5vh;
     height: 15vh;
 }
 footer p {
