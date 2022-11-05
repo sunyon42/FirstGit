@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     background-color: #EAE7E5;
+    color: #20291C;
 }
 ul, li {
     list-style: none;
@@ -18,20 +19,20 @@ body {
 .logo {
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    align-items: center;
+    height: 15vh;
 }
 .header {
-    border: 2px solid red;
     width: 100%;
-    margin: 0 auto;
+    margin: 2vh auto 0;
 }
 .header .info1 {
     float: left;
-    margin-left: 110px;
+    margin-left: 8%;
 }
 .header .info2 {
     float: right;
-    margin-right: 110px;
+    margin-right: 8%;
 }
 .header::after{
     display: block;
@@ -40,5 +41,21 @@ body {
 }
 .header ul li {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 50px;
+}
+.header ul li:nth-child(1){
+    margin-left: 0;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    position: relative;
+}
+.main .title {
+    position: absolute;
+}
+.title {
+    background: transparent;
 }
