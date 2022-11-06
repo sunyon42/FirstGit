@@ -35,14 +35,19 @@ input{
     border-bottom: 1px solid black;
     margin-top: 10px;
 }
-button {
-    margin-top: 5vh;
-}
 .login_btn{
-    text-decoration: none;
+    text-decoration: none;  
+    border: 2px solid red;
+    width: 250px;
+    height: 40px;
+}
+button {
+    margin-top: 1vh;
+    width: 250px;
+    height: 40px;
 }
 a{
     color: #767676;
     font-size: 12px;
     margin-top: 40px;
-}
+}   
