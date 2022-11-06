@@ -4,6 +4,7 @@
     padding: 0;
     background-color: #EAE7E5;
     color: #20291C;
+    font-family: 'Playfair Display', serif;
 }
 ul, li {
     list-style: none;
@@ -29,10 +30,12 @@ body {
 .header .info1 {
     float: left;
     margin-left: 8%;
+    font-size: 12px;
 }
 .header .info2 {
     float: right;
     margin-right: 8%;
+    font-size: 24px;
 }
 .header::after{
     display: block;
@@ -53,9 +56,14 @@ body {
     align-items: center;
     position: relative;
 }
-.main .title {
-    position: absolute;
-}
 .title {
+    position: absolute;
+    font-size: 210px;
     background: transparent;
+}
+.aside {
+    border: 2px solid black;
+}
+.show {
+    left: 85%;
 }
