@@ -1,12 +1,50 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>회원가입 페이지</title>
+    <link href="css/board6.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="login_form">
+        <h1>회원가입</h1>
+        <div class="login">
+            <form method="#" action="" >
+                <div class="int_area">
+                    <p>이름</p>
+                    <input type="text" name="name" id="name" autocomplete="off" required placeholder="이름 입력">
+                </div>
+                <div class="int_area">
+                    <p>연락처</p>
+                    <input type="tel" name="call" id="call" autocomplete="off" required placeholder="연락처 입력">
+                </div>
+                <div class="int_area">
+                    <p>이메일</p>
+                    <input type="email" name="email" id="email" autocomplete="off" required placeholder="이메일 입력">@
+                    <section>
+                        <option>gmail.com</option>
+                        <option>naver.com</option>
+                        <option>kakao.com</option>
+                    </section>
+                </div>
+                <div class="int_area">
+                    <p>아이디</p>
+                    <input type="text" name="id" id="id" autocomplete="off" required placeholder="아이디 입력">
+                </div>
+                <div class="int_area">
+                    <p>비밀번호</p>
+                    <input type="password" name="password" id="password" autocomplete="off" required placeholder="비밀번호 입력">
+                </div>
+                <div class="int_area">
+                    <p>비밀번호 확인</p>
+                    <input type="password" name="password" id="password" autocomplete="off" required placeholder="비밀번호 확인">
+                </div>
+                <div class="int_sub">
+                    <input type="submit" value="회원가입">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

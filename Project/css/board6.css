@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #323232;
+    color: #fff;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.int_area {
+    width: 400px;
+    height: 40px;
+    padding: 3px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 2vh;
+}
+.int_area:nth-child(1) {
+    margin-top: 0;
+}
+.int_area input {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
