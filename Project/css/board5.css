@@ -1,0 +1,48 @@
+.head{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 5px;
+    background: transparent;
+}
+
+.head .login{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid red;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.head .login form{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+button {
+    margin-top: 5vh;
+}
+.login_btn{
+    text-decoration: none;
+}
+a{
+    color: #767676;
+    font-size: 12px;
+    margin-top: 40px;
+}
