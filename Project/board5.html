@@ -7,13 +7,22 @@
     <link href="css/board5.css" rel="stylesheet">
 </head>
 <body>
-    <div class="head">
+    <div class="login_form">
+        <h1>login form</h1>
         <div class="login">
-            <form method="#" >
-                <input type="text" placeholder="아이디">
-                <input type="password" placeholder="비밀번호">
-                <a href="#" class="login_btn"><button type="submit" id="sign">로그인</button></a>
-                <a href="#" class="forgot">비밀번호를 잊어버리셨나요?</a>
+            <form method="#" action="" >
+                <div class="int_area">
+                    <input type="text" name="id" id="id" autocomplete="off" required placeholder="아이디">
+                </div>
+                <div class="int_area">
+                    <input type="password" name="password" id="password" autocomplete="off" required placeholder="비밀번호">
+                </div>
+                <div class="int_btn">
+                    <button type="button">로그인</button>
+                </div>
+                <div class="caption">
+                    <a href="#">비밀번호를 잊어버리셨나요?</a>
+                </div>
             </form>
         </div>
     </div>
