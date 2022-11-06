@@ -2,9 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #EAE7E5;
     color: #20291C;
-    font-family: 'Playfair Display', serif;
 }
 ul, li {
     list-style: none;
@@ -16,6 +14,7 @@ a {
 body {
     width: 100%;
     height: 100vh;
+    background-color: #EAE7E5;
 }
 .logo {
     display: flex;
@@ -26,22 +25,20 @@ body {
 .header {
     width: 100%;
     margin: 2vh auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header .info1 {
-    float: left;
     margin-left: 8%;
     font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .header .info2 {
-    float: right;
     margin-right: 8%;
     font-size: 24px;
 }
-.header::after{
-    display: block;
-    content: '';
-    clear: both;
-}
+
 .header ul li {
     display: inline-block;
     margin-left: 50px;
@@ -49,21 +46,42 @@ body {
 .header ul li:nth-child(1){
     margin-left: 0;
 }
+.header ul .bar,
+.header ul .man {
+    display: none;
+}
+
 .main {
     display: flex;
     justify-content: center;
-    height: 70vh;
     align-items: center;
     position: relative;
+    margin-top: 5vh;
+}
+.picture img {
+    width: 517px;
+    height: 638px;
+    align-items: center;
 }
 .title {
     position: absolute;
-    font-size: 210px;
-    background: transparent;
+    font-size: 1400%;
+    font-family: 'Playfair Display', serif;
 }
 .aside {
-    border: 2px solid black;
+    border: 2px solid #20291C;
+    border-radius: 50%;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 75%;
 }
 .show {
-    left: 85%;
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
+
