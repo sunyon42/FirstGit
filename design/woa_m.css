@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #20291C;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    width: 360px;
+    height: 640px;
+    background-color: #EAE7E5;
+    border: 2px solid gold;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+}
+.logo img{
+    width: 40px;
+}
+.bar,
+.man {
+    font-size: 24px;
+}
+.main{
+    border: 2px solid red;
+    width: 60%;
+}
+aside {
+    display: flex;
+    justify-content: space-between;
+}
+aside .title1 {
+
+}
+aside .title2 {
+    text-align: right;
+    position: relative;
+    bottom: 50%;
+}
