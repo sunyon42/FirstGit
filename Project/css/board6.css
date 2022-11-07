@@ -15,7 +15,7 @@ body {
     height: 40px;
     padding: 3px;
     border-bottom: 1px solid #ddd;
-    margin-top: 2vh;
+    margin: 2vh 2vh;
 }
 .int_area:nth-child(1) {
     margin-top: 0;
@@ -27,4 +27,11 @@ body {
     border: none;
     font-size: 16px;
     outline: none;
+}
+.int_area #email {
+    width: 200px;
+}
+select {
+    width: 200px;
+    height: 40px;
 }
