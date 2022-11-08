@@ -78,13 +78,56 @@ h1{
     background-color: rgba(0, 0, 0, 0.2);
     border: rgba(0, 0, 0, 0.3);
 }
-.main_list .info{
+.main_list .info_wrap {
     position: absolute;
     right: 15px;
     bottom: 15px;
     left: 15px;
     color: #fff;
     overflow: hidden;
+}
+.main_list .info{
+    margin-left: 40px;
+}
+.main_list .rank {
+    position: absolute;
+    top: -5px;
+    text-align: center;
+}
+.main_list .rank .num {
+    display: block;
+    font-size: 40px;
+    line-height: 42px;
+}
+.main_list .rank .change {
+    display: block;
+    margin-top: 11px;
+}
+.main_list .rank .change::before {
+    display: inline-block;
+    content: '';
+    margin-top: 3px;
+}
+.rank .up::before {
+    width: 7px;
+    height: 10px;
+    background: url(../imge/rank_up.png);
+}
+.rank .down::before {
+    width: 7px;
+    height: 10px;
+    background: url(../imge/rank_down.png);
+}
+.rank .keep::before {
+    width: 8px;
+    height: 2px;
+    background: url(../imge/rank_keep.png);
+}
+.rank .up {
+    color: #f82850;
+}
+.rank .down {
+    color: #1996ff;
 }
 .info .category{
     font-size: 14px;
@@ -96,6 +139,15 @@ h1{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.main_list .like {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 20px;
+
 }
 .sub_wrap {
     margin-top: 30px;
