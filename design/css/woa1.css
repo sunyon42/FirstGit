@@ -50,3 +50,12 @@ body {
 .header ul .man {
     display: none;
 }
+.event_box {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+.event_wrap {
+    display: flex;
+    justify-content: center;
+}
