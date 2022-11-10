@@ -54,8 +54,19 @@ body {
     width: 1000px;
     margin: 0 auto;
     margin-top: 30vh;
+    border: 2px solid white;
 }
 .event_wrap {
     display: flex;
     justify-content: center;
+}
+.event_wrap strong {
+    font-size: 800%;
+}
+.event {
+    padding: 5%;
+}
+.event_title {
+    width: 50%;
+    margin: 0 auto;
 }
