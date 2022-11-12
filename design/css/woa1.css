@@ -67,6 +67,29 @@ body {
     padding: 5%;
 }
 .event_title {
-    width: 50%;
-    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.event_title .big {
+    font-size: 40px;
+}
+.event_info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid #20291C;
+}
+.event_info:nth-child(1){
+    border-top: 2px solid #20291C;
+}
+.event_info .num {
+    font-size: 20px;
+    margin-right: 2%;
+}
+.event_info .item {
+    font-size: 50px;
+}
+.event_info .item_sub {
+    font-size: 20px;
 }
