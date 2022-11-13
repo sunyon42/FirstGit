@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: #20291C;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 ul, li {
     list-style: none;
@@ -40,18 +41,6 @@ body {
     display: inline-block;
     margin-left: 50px;
 }
-/* .info1_link span{
-    position: relative;
-}
-.info1_link:hover span::after,
-.info1_link:active span::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: -18px;
-    border-bottom: #EAE7E5;
-} 가상 선택자 만들어서 페이지 이동 현황 살피기 *안됨* */
 .header ul li:nth-child(1){
     margin-left: 0;
 }
@@ -71,6 +60,7 @@ body {
     text-align: center;
     font-size: 50px;
     margin-bottom: 5vh;
+    font-weight: bold;
 }
 .login_item {
     display: flex;
@@ -80,11 +70,12 @@ body {
 }
 .login_item input {
     height: 6vh;
-    margin-bottom: 1vh;
-    background-color: #CCC7C4;
-    border: none;
-    font-size: 18px;
+    font-size: 20px;
     padding-left: 5%;
+    margin-bottom: 1vh;
+    border: none;
+    outline: none;
+    background-color: #CCC7C4;
 }
 .login_sub {
     display: flex;
@@ -96,6 +87,7 @@ body {
 .sub1 {
     display: flex;
     justify-content: flex-start;
+    vertical-align: text-top;
 }
 .sub1 input {
     height: 13px;
@@ -120,5 +112,5 @@ body {
     background: none;
     color: #EAE7E5;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
 }
