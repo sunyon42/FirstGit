@@ -25,13 +25,11 @@ body {
     width: 100%;
     margin: 2vh auto 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
 }
 .header .info1 {
-    margin-left: 8%;
-    font-size: 12px;
-    font-family: 'Noto Sans KR', sans-serif;
+    display: none;
 }
 .header .info2 {
     margin-right: 8%;
@@ -62,13 +60,17 @@ body {
     display: none;
 }
 .login_wrap {
-    width: 50%;
-    margin: 0 auto;
-    border: 2px solid red;
-    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
 }
 .login p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
     font-size: 50px;
+    margin-bottom: 5vh;
 }
 .login_item {
     display: flex;
@@ -77,21 +79,46 @@ body {
     margin: 0 auto;
 }
 .login_item input {
-    height: 3vh;
+    height: 6vh;
     margin-bottom: 1vh;
+    background-color: #CCC7C4;
+    border: none;
+    font-size: 18px;
+    padding-left: 5%;
 }
 .login_sub {
     display: flex;
     justify-content: space-between;
-    font-size: 8px;
-    align-items: center;
+    font-size: 12px;
+    height: 13px;
+    margin-top: 1vh;
 }
 .sub1 {
     display: flex;
     justify-content: flex-start;
+}
+.sub1 input {
     height: 13px;
-    vertical-align: text-top;
 }
 .sub1 label {
-    vertical-align: -1px;
+    height: 13px;
+    margin-left: 5%;
+}
+.sub2 {
+    text-decoration: underline;
+}
+.login_btn {
+    width: 100%;
+    height: 6vh;
+    margin-top: 5vh;
+    background-color: #20291C;
+}
+.login_btn button{
+    width: 100%;
+    height: 6vh;
+    border: none;
+    background: none;
+    color: #EAE7E5;
+    text-align: center;
+    font-size: 16px;
 }
