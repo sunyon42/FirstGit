@@ -51,11 +51,68 @@ body {
     display: none;
 }
 .store_wrap {
-    width: 1000px;
-    margin: 0 auto;
-
+    margin-top: 20vh;
 }
-.item>img {
-    width: 300px;
-    height: 300px;
+.store_item {
+    width: 810px;
+    margin: 0 auto;
+}
+.store_item img {
+    width: 250px;
+    height: 250px;
+}
+.store_item li {
+    float: left;
+    width: 250px;
+    margin-bottom: 1vh;
+}
+.store_item::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.store_item li + li {
+    margin-left: 30px;
+}
+.store_item li:nth-child(3n+1) {
+    margin-left: 0;
+}
+.store_item .item_link {
+    display: block;
+    position: relative;
+}
+.store_item .item_link::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    border: rgba(0, 0, 0, 0.3);
+}
+.store_item .info {
+    height: 80px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.store_item .title {
+    display: -webkit-box;
+    max-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 15px;
+    line-height: 18px;
+    color: #20291C;
+}
+.store_item .info .pay {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 3px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #20291C;
 }
