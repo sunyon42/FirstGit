@@ -21,24 +21,28 @@
     <header class="header">
         <ul class="info1">
             <li class="info">
-                <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active"><span>이벤트</span></a>
+                <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active"><span class="on">이벤트</span></a>
             </li>
             <li class="info">
-                <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link"><span>스토어</span></a>
+                <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link"><span class="on">스토어</span></a>
             </li>
             <li class="info">
-                <a href="#" class="info1_link"><span>수강생 모집</span></a>
+                <a href="#" class="info1_link"><span class="on">수강생 모집</span ></a>
             </li>
             <li class="info">
-                <a href="#" class="info1_link"><span>주문제작</span></a>
+                <a href="#" class="info1_link"><span class="on">주문제작</span></a>
             </li>
-                <li class="bar"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li class="bar"><a href="#"><i class="fa-solid fa-bars on"></i></a></li>
             </ul>
         <ul class="info2">
-            <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user"></i></a></li>
-            <li class="iteam"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-            <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            <li class="man"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            <li class="iteam"><input type="button" value="night" onclick="
+                document.querySelector('body').style.backgroundColor = '#20291c';
+                document.querySelector('body').style.color = '#EAE7E5';
+                document.querySelectorAll('.on').style.color = '#EAE7E5';
+                "></input></li>
+            <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on"></i></a></li>
+            <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on"></i></a></li>
+            <li class="man"><a href="#"><i class="fa-solid fa-user on"></i></a></li>
         </ul>
     </header>
     <main class="main">
