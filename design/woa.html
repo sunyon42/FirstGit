@@ -35,18 +35,17 @@
                 <li class="bar"><a href="#"><i class="fa-solid fa-bars on"></i></a></li>
             </ul>
         <ul class="info2">
-            <li class="iteam"><input type="button" value="night" onclick="
-                document.querySelector('body').style.backgroundColor = '#20291c';
-                document.querySelector('body').style.color = '#EAE7E5';
-                "></input></li>
-            <li class="iteam"><input id="night_day"type="button" value="night" onclik="
-            if(night){
-                document.querySelector('body').style.backgroundColor = '#20291c';
-                document.querySelector('body').style.color = '#EAE7E5';
-            } else{
-                document.querySelector('body').style.backgroundColor = '#EAE7E5';
-                document.querySelector('body').style.color = '#20291c';
-            }
+            <li class="iteam"><input type="button" value="night" onclik="
+                var target = document.querySelector('body');
+                if(this.value === 'night'){
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'white';
+                    this.value = 'day';
+                } else {
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'white';
+                    this.value = 'night';
+                }
             "></input></li>
             <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on"></i></a></li>
             <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on"></i></a></li>
