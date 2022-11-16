@@ -28,16 +28,35 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
-.header .info1 {
+.info1 {
     margin-left: 8%;
     font-size: 12px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-.header .info2 {
+.info2 {
+    height: 32px;
     margin-right: 8%;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
+.info2 .iteam:nth-child(3) {
+    width: 38px;
+    background-color:  #20291C;
+    border-radius: 10%;
+}
+#night_day {
+    border: none;
+    background-color: transparent;
+    color:  #EAE7E5;
+    font-size: 16px;
+    margin: 10px auto;
+    display: flex;
+}
+
 .on {
     color: #20291C;
 }
