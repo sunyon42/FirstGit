@@ -13,8 +13,8 @@ a {
 body {
     width: 100%;
     height: 100vh;
-    color: green;
-    background-color: gold;
+    color: #20291C;
+    background-color: #EAE7E5;
 }
 .logo {
     display: flex;
