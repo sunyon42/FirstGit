@@ -157,5 +157,17 @@
             <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
         </p>
     </div>
+    <script>
+        var slides = document.querySelector ('.stor_wrap'),
+            slide = document.querySelectorAll('.store_wrap li'),
+            currentIdx = 0,
+            slidCount = slide.length,
+            slidWidth = 310,
+            slidMargin = 30,
+            prevBtn = document.querySelector('.prev'),
+            nextBtn = document.querySelector('.next');
+
+            slide.style.width =  (slidWidth + slidMargin) * slidCount - slidMargin + 'px';
+    </script>
 </body>
 </html>
