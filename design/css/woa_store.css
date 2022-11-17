@@ -51,8 +51,8 @@ body {
     display: none;
 }
 .store_wrap {
-    width: 1030px;
-    height: 688px;
+    width: 960px;
+    height: 788px;
     position: relative;
     margin: 10vh auto;
     overflow: hidden;
@@ -61,41 +61,25 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 2060px;
-    height: 688px;
+    width: 1980px;
+    height: 788px;
     transition: left 0.5s ease-in-out;
-}
-.store_item:not(:last-child) {
-    float: left;
-    margin-right: 100px;
-}
-.store_item img {
-    width: 250px;
-    height: 250px;
 }
 .store_item li {
     float: left;
-    margin-bottom: 1vh;
+    margin-right: 30px;
+}
+.store_item:not(:last-child) {
+    float: left;
+    margin-right: 30px;
+}
+.store_item img {
+    width: 300px;
+    height: 300px;
 }
 .store_item li {
     margin-right: 30px;
 }
-.store_item li:first-child,
-.store_item li:nth-child(4),
-.store_item li:nth-child(7),
-.store_item li:nth-child(10) {
-    margin-left: 100px;
-}
-
-/* 슬라이드들 옆으로 정렬 */
-.slides li:not(:last-child){
-    float: left;
-    margin-right: 100px;
-}
-/* .store_item li:nth-child(4),
-.store_item li:nth-child(10) {
-    margin-left: 100px;
-} */
 .store_item .item_link {
     display: block;
     position: relative;
@@ -128,12 +112,10 @@ body {
 }
 .controlls span{
     position:absolute;
+    top: 65%;
     background-color: transparent;
     color: #20291C;
-    text-align: center;
-    border-radius: 50%;
     padding: 10px 20px;
-    top: 43%;
     font-size: 1.3em;
     cursor: pointer;
 }
@@ -141,8 +123,8 @@ body {
     transform: scale(1.2);
 }
 .prev{
-    left: 10px;
+    right: 85%;
 }
 .next{
-right: 10px;
+    left: 85%;
 }

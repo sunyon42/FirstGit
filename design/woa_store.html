@@ -152,22 +152,31 @@
                 </div>
             </li>
         </ul>
-        <p class="controlls">
-            <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-            <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-        </p>
     </div>
+    <p class="controlls">
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+    </p>
     <script>
         var slides = document.querySelector ('.stor_wrap'),
             slide = document.querySelectorAll('.store_wrap li'),
             currentIdx = 0,
-            slidCount = slide.length,
-            slidWidth = 310,
+            slidCount = 6,
+            slidWidth = 300,
             slidMargin = 30,
             prevBtn = document.querySelector('.prev'),
             nextBtn = document.querySelector('.next');
 
-            slide.style.width =  (slidWidth + slidMargin) * slidCount - slidMargin + 'px';
+            slides.style.width =  (slidWidth + slidMargin) * slidCount - slideMargin + 'px';
+
+            function moveSlid(num){
+
+                slide.style.left = -num *1060 +'px'
+                currentIdx = num;
+            }
+            nextBtn.addEventListener('click' , function(){
+                moveSlid(currentIdx + 1);
+            });
     </script>
 </body>
 </html>
