@@ -53,21 +53,12 @@ body {
 .attendee_wrap {
     width: 900px;
     margin: 10vh auto;
-    background-color: #EAE7E5;
+    border: 1px solid #20291C;
 }
 .attendee {
     padding: 5%;
 }
-.main,
-.address,
-.class {
-    padding: 1%;
-}
-.place {
-    margin-top: 5vh;
-}
-.program .title,
-.place .title {
+.title {
     width: 150px;
     height: 50px;
     background-color: #20291C;
@@ -76,8 +67,7 @@ body {
     text-align: center;
     align-items: center;
 }
-
-.title p {
+.title p{
     margin: auto;
     color: #EAE7E5; 
     font-size: 22px;
@@ -89,20 +79,10 @@ body {
     justify-content: start;
     font-size: 24px;
 }
-.name p {
+.name {
     font-size: 24px;
     font-weight: bold;
     margin-left: 10px;
-}
-.info {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-}
-.info p {
-    font-size: 22px;
-    padding: 0.5vh 0 0 0.5vh;
 }
 .btn {
     width: 100px;
@@ -127,41 +107,4 @@ button {
     font-weight: bold;
     color: #EAE7E5;
     margin: auto;
-}
-.modal_1{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: center 0.3s ease-in-out;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    overflow: hidden;
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-
-    z-index: 2;
-}
-.modal.active{
-    top: 50%;
-}
-.modal_header{
-    background-color: rgb(46, 32, 73);
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    padding: 10px;
-    align-items: center;
-}
-.modal_header h2{
-    color: white;
-}
-.modal_header button{
-    padding: 15px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: white; /*color: white; 가 적용이 안됨*/
 }

@@ -58,12 +58,18 @@
                             <div class="btn">
                                 <button>자세히</button>
                             </div>
+                            <div class="btn_app">
+                                <button>신청</button>
+                            </div>
                         </div>
                         <div class="info">
                             <p>11월 20일 ~ 12월 13일</p>
                             <p>컵 받침 & 냄비 받침 제작하기</p>
                             <div class="btn">
                                 <button>자세히</button>
+                            </div>
+                            <div class="btn_app">
+                                <button>신청</button>
                             </div>
                         </div>
                     </div>
@@ -77,6 +83,9 @@
                             <div class="btn">
                                 <button>자세히</button>
                             </div>
+                            <div class="btn_app">
+                                <button>신청</button>
+                            </div>
                         </div>
                     </div>
                     <div class="class">
@@ -88,6 +97,9 @@
                             <p>미니 가구 프로젝트</p>
                             <div class="btn">
                                 <button>자세히</button>
+                            </div>
+                            <div class="btn_app">
+                                <button>신청</button>
                             </div>
                         </div>
                     </div>
@@ -108,5 +120,32 @@
             </ul>
         </div>
     </div>
+    <div class="modal_wrap">
+        <div class="modal_1">
+            홍길동 선생님 / 나만의 도마 & 트레이 제작하기 <!--제목-->
+            11월 09일 ~ 11월 13일 (4일)<!--부제목-->
+            내가 디자인한 세상에 하나밖에 없는 도마와 트레이를 제작해보세요!
+
+        </div>
+    </div>
+    <script>
+        const btns = document.querySelectorAll('[data-target]')
+        const close_btns = document.querySelectorAll('.modal-btn')
+        const overlay = document.querySelector('#overlay')
+
+        btns.forEach(btn =>{
+        btn.addEventListener('click', () => {
+            document.querySelector(btn.dataset.target).classList.add("active");
+            overlay.classList.add('active');
+        });
+        });
+
+        close_btns.forEach(btn =>{
+        btn.addEventListener('click', () => {
+            document.querySelector(btn.dataset.target).classList.remove("active");
+            overlay.classList.remove('active');
+        });
+        });
+    </script>
 </body>
 </html>
