@@ -51,12 +51,26 @@ body {
     display: none;
 }
 .attendee_wrap {
-    width: 900px;
+    width: 1000px;
     margin: 10vh auto;
     border: 1px solid #20291C;
 }
 .attendee {
     padding: 5%;
+}
+table {
+    width: 900px;
+    display: flex;
+}
+td{
+    width: 900px;
+    justify-content: center;
+    text-align: start;
+    font-size: 18px;
+}
+
+table .place {
+    width: 500px;
 }
 .title {
     width: 150px;
@@ -91,6 +105,7 @@ body {
     border-radius: 15px;
     display: flex;
     align-items: center;
+    margin-left: 70%;
 }
 .btn_app{
     width: 50px;
@@ -99,6 +114,7 @@ body {
     border-radius: 15px;
     display: flex;
     align-items: center;
+    margin-left: 70%;
 }
 button {
     border: none;

@@ -51,7 +51,7 @@ body {
     display: none;
 }
 .attendee_wrap {
-    width: 900px;
+    width: 1000px;
     margin: 10vh auto;
     background-color: #EAE7E5;
 }
@@ -61,7 +61,7 @@ body {
 .main,
 .address,
 .class {
-    padding: 1%;
+    padding-top: 1%;
 }
 .place {
     margin-top: 5vh;
@@ -76,7 +76,6 @@ body {
     text-align: center;
     align-items: center;
 }
-
 .title p {
     margin: auto;
     color: #EAE7E5; 
@@ -94,13 +93,16 @@ body {
     font-weight: bold;
     margin-left: 10px;
 }
-.info {
+.program .main .info {
+    width: 882px;
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
 }
-.info p {
+
+.program .info, 
+.place .info {
     font-size: 22px;
     padding: 0.5vh 0 0 0.5vh;
 }
@@ -128,40 +130,42 @@ button {
     color: #EAE7E5;
     margin: auto;
 }
-.modal_1{
+/* .modal{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: center 0.3s ease-in-out;
-    background: white;
+    background: #EAE7E5;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     overflow: hidden;
     max-width: 100%;
-    width: 400px;
+    width: auto;
     height: auto;
-
     z-index: 2;
 }
 .modal.active{
     top: 50%;
 }
 .modal_header{
-    background-color: rgb(46, 32, 73);
+    background-color: #20291C;
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    text-align: center;
     padding: 10px;
     align-items: center;
 }
 .modal_header h2{
-    color: white;
+    color: #EAE7E5;
 }
-.modal_header button{
-    padding: 15px;
+.modal_header button i {
+    color: #EAE7E5;
+}
+.modal_header button {
+    padding: 0 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: white; /*color: white; 가 적용이 안됨*/
-}
+    color: #EAE7E5; /*color: white; 가 적용이 안됨*/
+} */
