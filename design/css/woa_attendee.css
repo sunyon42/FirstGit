@@ -130,7 +130,7 @@ button {
     color: #EAE7E5;
     margin: auto;
 }
-/* .modal{
+.modal{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -144,9 +144,11 @@ button {
     width: auto;
     height: auto;
     z-index: 2;
+    display: none;
 }
 .modal.active{
     top: 50%;
+    display: block;
 }
 .modal_header{
     background-color: #20291C;
@@ -168,4 +170,15 @@ button {
     border: none;
     cursor: pointer;
     color: #EAE7E5; /*color: white; 가 적용이 안됨*/
-} */
+}
+.modal_info {
+    padding: 5%;
+}
+.modal_info .date{
+    font-size: 12px;
+    font-weight: bold;
+}
+.modal_info .info {
+    font-size: 18px;
+    font-weight: 100;
+}
