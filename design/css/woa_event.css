@@ -58,7 +58,8 @@ body {
     margin-left: 0;
 }
 .header ul .bar,
-.header ul .man {
+.header ul .man,
+.header ul .night{
     display: none;
 }
 .event_box {

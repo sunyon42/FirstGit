@@ -68,7 +68,7 @@ body {
     margin-left: 0;
 }
 .header ul .bar,
-.header ul .man {
+.header ul .man{
     display: none;
 }
 .store_wrap {
