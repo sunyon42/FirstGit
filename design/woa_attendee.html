@@ -68,7 +68,7 @@
                             <div class="btn" data-target="#modal2">
                                 <button>자세히</button>
                             </div>
-                            <div class="btn_app">
+                            <div class="btn_app" onclick="alert('신청이 되었습니다.')">
                                 <button>신청</button>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                             <div class="btn" data-target="#modal3">
                                 <button>자세히</button>
                             </div>
-                            <div class="btn_app">
+                            <div class="btn_app" onclick="alert('신청이 되었습니다.')">
                                 <button>신청</button>
                             </div>
                         </div>
@@ -95,10 +95,10 @@
                         <div class="info">
                             <div>12월 20일 ~ 01월 22일</div>
                             <div>미니 가구 프로젝트</div>
-                            <div class="btn" data-target="#modal4">
+                            <div class="btn" data-target="#modal4" >
                                 <button>자세히</button>
                             </div>
-                            <div class="btn_app">
+                            <div class="btn_app" onclick="alert('신청이 되었습니다.')">
                                 <button>신청</button>
                             </div>
                         </div>
@@ -168,6 +168,7 @@
             <p class="info">발판부터 책꽂이까지 다양한 미니 가구를 제작해보세요!</p>
         </div>
     </div>
+    <div id="overlay"></div>
     <script>
         const btns = document.querySelectorAll('[data-target]')
         const close_btns = document.querySelectorAll('.modal-btn')
@@ -176,14 +177,14 @@
         btns.forEach(btn =>{
         btn.addEventListener('click', () => {
             document.querySelector(btn.dataset.target).classList.add("active");
-            // overlay.classList.add('active');
+            overlay.classList.add('active');
         });
         });
 
         close_btns.forEach(btn =>{
         btn.addEventListener('click', () => {
             document.querySelector(btn.dataset.target).classList.remove("active");
-            // overlay.classList.remove('active');
+            overlay.classList.remove('active');
         });
         });
     </script>
