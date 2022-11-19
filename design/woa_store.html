@@ -158,7 +158,7 @@
     </div>
     <div class="controlls">
         <div class="prev"><i class="fa-solid fa-chevron-left on"></i></div>
-        <div class="num active" onclick="underLine()">1</div>
+        <div class="num">1</div>
         <div class="num">2</div>
         <div class="next"><i class="fa-solid fa-chevron-right on"></i></div>
     </div>
@@ -186,8 +186,11 @@
             document.querySelector('#night_day').value = 'night'
         }
         }
-        function UnderLine(){
-            document.getElementsByClassName('num').classList.add('active');
+            const num = document.querySelector('.num')
+            for(var i=0; i<2; i++){
+                num.addEventListener('click', function(){
+                    num.classList.add('active')
+            })
         }
         // var slides = document.querySelector ('.stor_wrap'),
         //     slide = document.querySelectorAll('.store_wrap li'),
