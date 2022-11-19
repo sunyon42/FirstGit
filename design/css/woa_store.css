@@ -56,7 +56,6 @@ body {
     margin: 10px auto;
     display: flex;
 }
-
 .on {
     color: #20291C;
 }
@@ -68,7 +67,7 @@ body {
     margin-left: 0;
 }
 .header ul .bar,
-.header ul .man{
+.header ul .man {
     display: none;
 }
 .store_wrap {

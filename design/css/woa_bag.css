@@ -86,7 +86,6 @@ body {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    position: relative;
     margin-top: 10vh;
 }
 .bag .margin {
@@ -121,9 +120,15 @@ body {
     margin-right: 2%;
     font-size: 24px;
 }
+.category {
+    margin-top: 15px;
+    height: 2px;
+    background-color: #20291C;
+    border: none;
+}
 .total_wrap {
     position: absolute;
-    bottom: -60%;
+    bottom: -50%;
     right: 0;
     width: 30%;
 }
@@ -136,27 +141,15 @@ body {
 .total_item .item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4vh;
-}
-.total_item .item:nth-child(1) {
     margin-bottom: 2vh;
 }
 .total {
     display: flex;
     justify-content: space-between;
-    position: relative;
     margin-bottom: 5vh;
+    margin-top: 2vh;
     font-size: 30px;
     font-weight: bold;
-}
-.total::after {
-    position: absolute;
-    content: '';
-    top: -50%;
-    right: 0;
-    border: 1px solid #20291C;
-    width: 100%;
-
 }
 .total_btn {
     width: 100%;

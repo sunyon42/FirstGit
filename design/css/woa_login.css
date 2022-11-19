@@ -2,18 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #20291C;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 ul, li {
     list-style: none;
 }
 a {
     text-decoration: none;
+    color: black;
 }
 body {
     width: 100%;
     height: 100vh;
+    color: #20291C;
     background-color: #EAE7E5;
 }
 .logo {
@@ -26,17 +26,40 @@ body {
     width: 100%;
     margin: 2vh auto 0;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
-.header .info1 {
-    display: none;
+.info1 {
+    margin-left: 8%;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
-.header .info2 {
+.info2 {
+    height: 32px;
     margin-right: 8%;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.info2 .iteam:nth-child(3) {
+    width: 38px;
+    background-color:  #20291C;
+    border-radius: 10%;
+}
+#night_day {
+    border: none;
+    background-color: transparent;
+    color:  #EAE7E5;
+    font-size: 16px;
+    margin: 10px auto;
+    display: flex;
 }
 
+.on {
+    color: #20291C;
+}
 .header ul li {
     display: inline-block;
     margin-left: 50px;
@@ -95,14 +118,19 @@ body {
 .sub1 label {
     height: 13px;
     margin-left: 5%;
+    color: #20291C;
 }
 .sub2 {
     text-decoration: underline;
+}
+.sub2 a {
+    color: #20291C;
 }
 .login_btn {
     width: 100%;
     height: 6vh;
     margin-top: 5vh;
+    border-radius: 15px;
     background-color: #20291C;
 }
 .login_btn button{

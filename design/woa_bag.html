@@ -14,8 +14,8 @@
 </head>
 <body>
     <div class="logo">
-        <img src="./imge/woa logo.png" alt="워우어 로고">
-        <img src="imge/Asset 6.png" style="position: fixed; display: none;" class="img">
+        <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
+        <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/Asset 6.png" ></a>
     </div>
     <header class="header">
         <ul class="info1">
@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-xmark"></i>
                 </div>
             </div>
-            <hr class="category" style="margin-top: 15px; height: 3px; background-color: black; border: none;">
+            <hr class="category">
             <div class="bag_item">
                 <div class="item_paint">
                     <img src="./imge/목공 소품, 나무가 있는 캔들 받침.jpg" alt="">
@@ -83,10 +83,10 @@
                 </div>
             </div>
         </div>
-        <hr class="category"style="margin-top: 15px; height: 3px; background-color: black; border: none;">
+        <hr class="category">
         <div class="total_wrap">
             <div class="total_item">
-                <div class="item">
+                <div class="item">  
                     <p>Shopping</p>
                     <p>$60.00</p>
                 </div>
@@ -94,6 +94,7 @@
                     <p>Charge</p>
                     <p>$0</p>
                 </div>
+                <hr class="category">
                 <div class="total">
                     <p>total</p>
                     <p>$60.00</p>
@@ -109,9 +110,11 @@
             if(document.querySelector('#night_day').value === 'night'){
                 document.querySelector(`body`).style.background=`#20291C`;
                 document.querySelector(`body`).style.color=`#EAE7E5`;
+                document.querySelector(`.total_btn`).style.background=`#EAE7E5`;
+                document.querySelector(`.total_btn button`).style.color=`#20291C`;
                 let hrLine=document.getElementsByClassName('category');
-                for(var i=0; i<2; i++){
-                    hrLine[i].style.background="white";
+                for(var i=0; i<3; i++){
+                    hrLine[i].style.background='#EAE7E5';
                 }
                 let onClass=document.getElementsByClassName(`on`);
                 for(var i=0; i<8; i++){
@@ -123,6 +126,12 @@
             } else {
                 document.querySelector(`body`).style.background=`#EAE7E5`;
                 document.querySelector(`body`).style.color=`#20291C`;
+                let hrLine=document.getElementsByClassName('category');
+                document.querySelector(`.total_btn`).style.background=`#20291C`;
+                document.querySelector(`.total_btn button`).style.color=`#EAE7E5`;
+                for(var i=0; i<3; i++){
+                    hrLine[i].style.background='#20291C';
+                }
 
                 let onClass=document.getElementsByClassName(`on`);
                 for(var i=0; i<8; i++){
