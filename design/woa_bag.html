@@ -63,6 +63,7 @@
                     <i class="fa-solid fa-xmark"></i>
                 </div>
             </div>
+            <hr class="category" style="margin-top: 15px; height: 3px; background-color: black; border: none;">
             <div class="bag_item">
                 <div class="item_paint">
                     <img src="./imge/목공 소품, 나무가 있는 캔들 받침.jpg" alt="">
@@ -82,6 +83,7 @@
                 </div>
             </div>
         </div>
+        <hr class="category"style="margin-top: 15px; height: 3px; background-color: black; border: none;">
         <div class="total_wrap">
             <div class="total_item">
                 <div class="item">
@@ -107,13 +109,17 @@
             if(document.querySelector('#night_day').value === 'night'){
                 document.querySelector(`body`).style.background=`#20291C`;
                 document.querySelector(`body`).style.color=`#EAE7E5`;
-
+                let hrLine=document.getElementsByClassName('category');
+                for(var i=0; i<2; i++){
+                    hrLine[i].style.background="white";
+                }
                 let onClass=document.getElementsByClassName(`on`);
                 for(var i=0; i<8; i++){
                     onClass[i].style.color=`#EAE7E5`;
                 }
                 document.querySelector(`.img`).style.display=`block`;
                 document.querySelector('#night_day').value = 'day'
+
             } else {
                 document.querySelector(`body`).style.background=`#EAE7E5`;
                 document.querySelector(`body`).style.color=`#20291C`;
