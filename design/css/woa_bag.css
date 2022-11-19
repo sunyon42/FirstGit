@@ -92,14 +92,7 @@ body {
 .bag .margin {
     margin-top: 5vh;
 }
-.bag_item::after {
-    position: absolute;
-    content: '';
-    right: 0;
-    left: 0;
-    bottom: -10%;
-    border-bottom: 1px solid #20291C;
-}
+
 .item_paint {
     display: flex;
     justify-content: start;
