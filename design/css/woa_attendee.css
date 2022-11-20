@@ -214,3 +214,13 @@ button {
 #overlay.active{
     display: block;
 }
+footer{
+    margin-top: 10vh;
+    width: auto;
+    padding:50px 0;  
+    overflow: hidden;
+    background-color: #20291C;
+    text-align: center;
+    color: #EAE7E5;
+    font-size: 14px;
+}
