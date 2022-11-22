@@ -9,12 +9,26 @@
     <script src="https://kit.fontawesome.com/1f890f0014.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <div class="header">
-            <div class="text">
-                <h1>PORTFOLIO</h1>
-                <p>웹디자인 포트폴리오 by이선영</p>
-            </div>
-        <a href="#"><button>GO</button></a>
+    <div class="header">
+        <p></p>
+        <div class="title">
+            <a href="http://127.0.0.1:5500/0.design/main3.html"><h1>PORTFOLIO</h1></a>
         </div>
+    </div>
+    <script>
+        const content = "웹디자인 BY이선영";
+        const text = document.querySelector('p');
+        let index = 0;
+
+        function typing(){
+            text.textContent += content[index++];
+            if(index > content.length){
+                text.textContent=""
+                index=0
+            }
+        }
+
+        setInterval(typing, 300)
+    </script>
 </body>
 </html>
