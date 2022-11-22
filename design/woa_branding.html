@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOA 로그인페이지</title>
-    <link rel="stylesheet" href="./css/woa_login.css">
+    <title>WOA 홈페이지</title>
+    <link rel="stylesheet" href="./css/woa_branding.css">
     <script src="https://kit.fontawesome.com/1f890f0014.js" crossorigin="anonymous"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
@@ -42,26 +44,8 @@
             <li class="man"><a href="#"><i class="fa-solid fa-user on"></i></a></li>
         </ul>
     </header>
-    <div class="login_wrap">
-        <div class="login">
-            <p>LOGIN</p>
-            <div class="login_item">
-                <input type="text" placeholder="Username" maxlength="30">
-                <input type="password" placeholder="password" maxlength="30">
-                <div class="login_sub">
-                    <div class="sub1">
-                        <input type="checkbox" name="remember" id="remember">
-                        <label for="remember">Remember</label>
-                    </div>
-                    <div class="sub2">
-                        <a href="#">Forgot?</a>
-                    </div>
-                </div>
-                <div class="login_btn">
-                    <button onclick="alert('환영합니다')">Login</button>
-                </div>
-            </div>
-        </div>
+    <div class="branding">
+        <img src="./imge/워우어-01.jpg" alt="">
     </div>
     <footer>
         <p>
@@ -73,10 +57,7 @@
             if(document.querySelector('#night_day').value === 'night'){
                 document.querySelector(`body`).style.background=`#20291C`;
                 document.querySelector(`body`).style.color=`#EAE7E5`;
-                document.querySelector(`.sub1 label`).style.color=`#EAE7E5`;
-                document.querySelector(`.sub2 a`).style.color=`#EAE7E5`;
-                document.querySelector(`.login_btn`).style.background=`#EAE7E5`;
-                document.querySelector(`.login_btn button`).style.color=`#20291C`;
+                document.querySelector('.aside').style.border='2px solid #EAE7E5';
                 let onClass=document.getElementsByClassName(`on`);
                 for(var i=0; i<8; i++){
                     onClass[i].style.color=`#EAE7E5`;
@@ -86,11 +67,8 @@
             } else {
                 document.querySelector(`body`).style.background=`#EAE7E5`;
                 document.querySelector(`body`).style.color=`#20291C`;
-                document.querySelector(`.sub1 label`).style.color=`#20291C`;
-                document.querySelector(`.sub2 a`).style.color=`#20291C`;
-                document.querySelector(`.login_btn`).style.background=`#20291C`;
-                document.querySelector(`.login_btn button`).style.color=`#EAE7E5`;
-                let onClass=document.getElementsByClassName(`on`);  
+                document.querySelector('.aside').style.border='2px solid #20291C';
+                let onClass=document.getElementsByClassName(`on`);
                 for(var i=0; i<8; i++){
                     onClass[i].style.color=`#20291C`;
                 }
