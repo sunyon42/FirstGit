@@ -10,21 +10,20 @@
 </head>
 <body>
     <div class="header">
-        <p></p>
+        <p>웹디자인 BY이선영</p>
         <div class="title">
-            <a href="http://127.0.0.1:5500/0.design/main3.html"><h1>PORTFOLIO</h1></a>
+            <a href="http://127.0.0.1:5500/0.design/main3.html"><h1></h1></a>
         </div>
     </div>
     <script>
-        const content = "웹디자인 BY이선영";
-        const text = document.querySelector('p');
+        const content = "PORTFOLIO";
+        const text = document.querySelector('h1');
         let index = 0;
 
         function typing(){
             text.textContent += content[index++];
             if(index > content.length){
-                text.textContent=""
-                index=0
+                text.textContent="PORTFOLIO"
             }
         }
 

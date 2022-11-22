@@ -72,7 +72,7 @@ body {
     display: none;
 }
 .store_wrap {
-    margin: 10vh auto 0;
+    margin: 25vh auto 0;
 }
 .slider{
     position: relative;
@@ -149,7 +149,7 @@ body {
     text-decoration: underline;
 }
 footer{
-    margin-top: 10vh;
+    margin-top: 25vh;
     width: auto;
     padding:50px 0;  
     overflow: hidden;

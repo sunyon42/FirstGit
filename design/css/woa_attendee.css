@@ -73,7 +73,7 @@ body {
 }
 .attendee_wrap {
     width: 1000px;
-    margin: 10vh auto;
+    margin: 25vh auto;
 }
 .attendee {
     padding: 5%;
@@ -215,7 +215,7 @@ button {
     display: block;
 }
 footer{
-    margin-top: 10vh;
+    margin-top: 25vh;
     width: auto;
     padding:50px 0;  
     overflow: hidden;

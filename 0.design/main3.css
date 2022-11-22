@@ -63,6 +63,7 @@ article button{
     color: white;
     border-radius: 50px;
     width: 50%;
+    cursor: pointer;
 }
 article:hover{
     background-color: rgba(0, 0, 0, 0.4);
