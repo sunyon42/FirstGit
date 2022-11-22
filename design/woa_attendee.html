@@ -48,7 +48,7 @@
         <div class="attendee">
             <ul class="program">
                 <div class="title">
-                    <p class="on2">프로그램</p>
+                    <p class="on3">프로그램</p>
                 </div>
                 <li class="main">
                     <div class="class">
@@ -110,7 +110,7 @@
             </ul>
             <ul class="place">
                 <div class="title">
-                    <p class="on2">장소</p>
+                    <p class="on3">장소</p>
                 </div>
                 <li class="address">
                     <div class="name">
@@ -204,11 +204,25 @@
                 document.querySelector('.program .title').style.background='#EAE7E5'; 
                 document.querySelector('.place .title').style.background='#EAE7E5'; 
                 document.querySelector('.title p').style.color='#20291C'; 
-                document.querySelector('.btn').style.background='#EAE7E5'; 
-                document.querySelector('.btn_app').style.background='#EAE7E5'; 
                 let on1Class=document.getElementsByClassName(`on1`);
                 for(var i=0; i<8; i++){
                     on1Class[i].style.color=`#EAE7E5`;
+                }
+                let on2Class=document.getElementsByClassName(`on2`)            
+                for(var i=0; i<8; i++){
+                    on2Class[i].style.color=`#20291C`;
+                }
+                let on3Class=document.getElementsByClassName(`on3`)
+                for(var i=0; i<2; i++){
+                    on3Class[i].style.color=`#20291C`;
+                }
+                let btnClass=document.getElementsByClassName(`btn`)
+                for(var i=0; i<4; i++){
+                    btnClass[i].style.background=`#EAE7E5`;
+                }
+                let btn_appClass=document.getElementsByClassName(`btn_app`)
+                for(var i=0; i<4; i++){
+                    btn_appClass[i].style.background=`#EAE7E5`;
                 }
                 document.querySelector(`.img`).style.display=`block`;
                 document.querySelector('#night_day').value = 'day'
@@ -218,11 +232,25 @@
                 document.querySelector('.program .title').style.background='#20291C'; 
                 document.querySelector('.place .title').style.background='#20291C'; 
                 document.querySelector('.title p').style.color='#EAE7E5'; 
-                document.querySelector('.btn').style.background='#20291C'; 
-                document.querySelector('.btn_app').style.background='#20291C'; 
                 let on1Class=document.getElementsByClassName(`on1`);
                 for(var i=0; i<8; i++){
                     on1Class[i].style.color=`#20291C`;
+                }
+                let on2Class=document.getElementsByClassName(`on2`)            
+                for(var i=0; i<8; i++){
+                    on2Class[i].style.color=`#EAE7E5`;
+                }
+                let on3Class=document.getElementsByClassName(`on3`)
+                for(var i=0; i<2; i++){
+                    on3Class[i].style.color=`#EAE7E5`;
+                }
+                let btnClass=document.getElementsByClassName(`btn`)
+                for(var i=0; i<4; i++){
+                    btnClass[i].style.background=`#20291C`;
+                }
+                let btn_appClass=document.getElementsByClassName(`btn_app`)
+                for(var i=0; i<4; i++){
+                    btn_appClass[i].style.background=`#20291C`;
                 }
                 document.querySelector(`.img`).style.display=`none`;
                 document.querySelector('#night_day').value = 'night'

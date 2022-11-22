@@ -42,18 +42,6 @@ body {
     display: inline-block;
     margin-left: 50px;
 }
-/* .info1_link span{
-    position: relative;
-}
-.info1_link:hover span::after,
-.info1_link:active span::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: -18px;
-    border-bottom: #EAE7E5;
-} 가상 선택자 만들어서 페이지 이동 현황 살피기 *안됨* */
 .header ul li:nth-child(1){
     margin-left: 0;
 }
