@@ -20,6 +20,7 @@ header{
 }
 header>a{
     position: absolute;
+    top: 10%;
     left: 3%;
     font-weight: 900;
     font-size: 30px;
@@ -75,7 +76,7 @@ article:hover{
     }
     article{
         display: table;
-        height: 33.3%;
+        height: 50%;
     }
     article:nth-child(2){
         border-bottom: 1px solid white;

@@ -77,7 +77,7 @@ body {
 .slider{
     position: relative;
     width: 960px;
-    height: 400px;
+    height: 788px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -85,8 +85,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 3960px;
-    height: 400px;
+    width: 1940px;
+    height: 788px;
     transition: left 0.5s;
 }
 .slides li {
