@@ -35,6 +35,7 @@ header{
 .left-nav {
     display: flex;
     margin-left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .left-nav li {
     margin-left: 50px;
@@ -70,6 +71,7 @@ header{
     color: #20291C;
 }
 .login_wrap {
+    margin: 15vh auto 0;
     position: relative;
     top: 20%;
     left: 20%;
@@ -141,12 +143,12 @@ header{
     font-size: 18px;
 }
 footer{
-    margin-top: 25vh;
-    width: auto;
-    padding:50px 0;  
-    overflow: hidden;
     background-color: #1e241d;
-    text-align: center;
-    color: #EAE7E5;
+    color: #EAE7E5   ;
+    margin-top: 25vh;
+    display:flex;
+    justify-content: center;
+    height: 10vh;
+    line-height: 10vh;
     font-size: 14px;
 }

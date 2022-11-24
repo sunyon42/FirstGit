@@ -74,16 +74,16 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 5vh;
+    margin: 5vh auto;
 }
 .picture img {
-    width: 517px;
-    height: 638px;
+    width: 617px;
+    height: 738px;
     align-items: center;
 }
 .title {
     position: absolute;
-    font-size: 1400%;
+    font-size: 1800%;
     font-family: 'Playfair Display', serif;
 }
 .aside {
@@ -105,12 +105,12 @@ header{
 }
 
 footer{
-    margin-top: 10vh;
-    width: auto;
-    padding:50px 0;  
-    overflow: hidden;
     background-color: #1e241d;
-    text-align: center;
-    color: #EAE7E5;
+    color: #EAE7E5   ;
+    margin-top: 25vh;
+    display:flex;
+    justify-content: center;
+    height: 10vh;
+    line-height: 10vh;
     font-size: 14px;
 }

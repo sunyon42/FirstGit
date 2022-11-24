@@ -35,6 +35,7 @@ header{
 .left-nav {
     display: flex;
     margin-left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .left-nav li {
     margin-left: 50px;
@@ -72,7 +73,7 @@ header{
 main {
     width: 960px;
     height: 342px;
-    margin:  25vh auto 0;
+    margin:  15vh auto 0;
     overflow: hidden;
 }
 main .move{

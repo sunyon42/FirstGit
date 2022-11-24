@@ -52,8 +52,7 @@ body {
 }
 .event_box {
     width: 1000px;
-    margin: 0 auto;
-    margin-top: 30vh;
+    margin: 15vh auto 0;
 }
 .event_wrap {
     display: flex;
