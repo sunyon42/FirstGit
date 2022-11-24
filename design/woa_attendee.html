@@ -15,34 +15,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="logo">
-        <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
-        <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
-    </div>
-    <header class="header">
-        <ul class="info1">
-            <li class="info">
-                <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active">
-                    <span class="on1">이벤트</span></a>
-            </li>
-            <li class="info">
-                <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link">
-                    <span class="on1">스토어</span></a>
-            </li>
-            <li class="info">
-                <a href="http://127.0.0.1:5500/design/woa_attendee.html" class="info1_link"><span class="on1">수강신청</span ></a>
-            </li>
-            <li class="info">
-                <a href="#" class="info1_link"><span class="on1">갤러리</span></a>
-            </li>
-                <li class="bar"><a href="#"><i class="fa-solid fa-bars on1"></i></a></li>
+    <header>
+        <div class="logo">
+            <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
+            <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
+        </div>
+        <div class="nav">
+            <ul class="left-nav">
+                <li class="info">
+                    <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active">
+                        <span class="on1">이벤트</span></a>
+                </li>
+                <li class="info">
+                    <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link">
+                        <span class="on1">스토어</span></a>
+                </li>
+                <li class="info">
+                    <a href="http://127.0.0.1:5500/design/woa_attendee.html" class="info1_link"><span class="on1">수강신청</span ></a>
+                </li>
+                <li class="info">
+                    <a href="http://127.0.0.1:5500/design/woa_branding.html" class="info1_link"><span class="on1">브랜딩</span></a>
+                </li>
             </ul>
-        <ul class="info2">
-            <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on1"></i></a></li>
-            <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on1"></i></a></li>
-            <li class="iteam" onclick="night()"><input id="night_day" type="button" value="night" ></input></li>
-            <li class="man"><a href="#"><i class="fa-solid fa-user on1"></i></a></li>
-        </ul>
+            <ul class="right-nav">
+                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on1"></i></a></li>
+                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on1"></i></a></li>
+                <li class="iteam" onclick="night()"><input id="night_day" type="button" value="night" ></input></li>
+            </ul>
+        </div>
     </header>
     <div class="attendee_wrap">
         <div class="attendee">
@@ -205,7 +205,7 @@
                 document.querySelector('.place .title').style.background='#EAE7E5'; 
                 document.querySelector('.title p').style.color='#20291C'; 
                 let on1Class=document.getElementsByClassName(`on1`);
-                for(var i=0; i<8; i++){
+                for(var i=0; i<6; i++){
                     on1Class[i].style.color=`#EAE7E5`;
                 }
                 let on2Class=document.getElementsByClassName(`on2`)            
@@ -233,7 +233,7 @@
                 document.querySelector('.place .title').style.background='#20291C'; 
                 document.querySelector('.title p').style.color='#EAE7E5'; 
                 let on1Class=document.getElementsByClassName(`on1`);
-                for(var i=0; i<8; i++){
+                for(var i=0; i<6; i++){
                     on1Class[i].style.color=`#20291C`;
                 }
                 let on2Class=document.getElementsByClassName(`on2`)            
