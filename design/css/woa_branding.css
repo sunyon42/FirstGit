@@ -70,17 +70,41 @@ header{
 .on {
     color: #20291C;
 }
-.branding {
-    width: 90%;
-    margin: auto;
-    margin-top: 25vh;
+.gallery {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 470px;
+    height: 495px;
 }
-img {
-    width: 100%;
+.gallery button {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: none;
 }
-
-
-
+.gallery div {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: 25px;
+    color: #fff;
+}
+.gallery strong {
+    display: block;
+}
+.hide {
+    display: none;
+}
 footer{
     background-color: #1e241d;
     color: #EAE7E5   ;
