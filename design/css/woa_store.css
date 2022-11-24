@@ -16,10 +16,18 @@ body {
     background-color: #EAE7E5;
 }
 header{
+    height: 20vh;
+    vertical-align: middle;
+    align-items: center;
+}
+.logo {
+    text-align: center;
+    margin-top: 3vh;
+}
+.nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 20vh;
+    margin-top: 3vh;
 }
 .left-nav {
     display: flex;
@@ -36,22 +44,26 @@ header{
     margin-right: 50px;
 }
 main {
-    display: flex;
-    width: 1020px;
+    width: 960px;
     height: 342px;
-    margin:  auto;
+    margin:  25vh auto 0;
+    overflow: hidden;
 }
-main section {
+main .move{
+    position: relative;
+    display: flex;
+    width: 3600px;
+    height: 342px;
+}
+main .move li  {
+    width: 300px;
+    height: 342px;
     margin-left: 30px;
 }
-.Pagetop{
-    margin-top: 25vh;
-    overflow: hidden ;
+main .move li:nth-child(3n+1){
+    margin-left: 0;
 }
-.Pagebottom{
-    margin-top: 30px;
-    overflow: hidden ;
-}
+
 aside{
     margin-top: 5vh;
     display:flex;
@@ -63,10 +75,15 @@ button{
     border: none;
     background-color: transparent;
 }
+button:hover {
+    transform: scale(1.2);
+}
 footer{
     background-color: #20291C;
     color: #EAE7E5   ;
-    margin-top: 2%;
+    margin-top: 25vh;
     display:flex;
     justify-content: center;
+    height: 10vh;
+    line-height: 10vh;
 }
