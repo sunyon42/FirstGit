@@ -17,65 +17,30 @@
 <body>
     <header>
         <div class="logo">
-            <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
-            <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
+            <a href="http://127.0.0.1:5500/design/woa.html" class="img"><img src="imge/woa logo2.png" ></a>
         </div>
-        <div class="nav">
-            <ul class="left-nav">
-                <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active">
-                        <span class="on">이벤트</span></a>
-                </li>
-                <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link">
-                        <span class="on">스토어</span></a>
-                </li>
-                <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_attendee.html" class="info1_link"><span class="on">수강신청</span ></a>
-                </li>
-                <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_branding.html" class="info1_link"><span class="on">갤러리</span></a>
-                </li>
-            </ul>
-            <ul class="right-nav">
-                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on"></i></a></li>
-                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on"></i></a></li>
-                <li class="iteam" onclick="night()"><input id="night_day" type="button" value="night" ></input></li>
-            </ul>
-        </div>
+
     </header>
     <section id="index-gallery" class="wrapper-gallery">
         <p></p>
-        <h2></h2>
-        <div class="gallery-img img1">
-            <div><a href="#">This is a title</a></div>
-        </div>
+        <h2>gallery</h2>
         <div class="gallery-img img2">
-            <div><a href="#">This is a title</a></div>
         </div>
         <div class="gallery-img img3">
-            <div><a href="#">This is a title</a></div>
         </div>
         <div class="gallery-img img4">
-            <div><a href="#">This is a title</a></div>
         </div>
         <div class="gallery-img img5">
-            <div><a href="#">This is a title</a></div>
         </div>
         <div class="gallery-img img6">
-            <div><a href="#">This is a title</a></div>
-        </div>
-        <div class="gallery-img img7">
-            <div><a href="#">This is a title</a></div>
-        </div>
-        <div class="gallery-img img8">
-            <div><a href="#">This is a title</a></div>
         </div>
         <div class="gallery-img img9">
-            <div><a href="#">This is a title</a></div>
         </div>
         <div class="gallery-img img10">
-            <div><a href="#">This is a title</a></div>
+        </div>
+        <div class="gallery-img img11">
+        </div>
+        <div class="gallery-img img12">
         </div>
     </section>
     <footer>
@@ -83,30 +48,5 @@
             COPYRIGHT © 2022 sun young All Rights Reserved.
         </p>
     </footer>
-    <script>
-        function night(){
-            if(document.querySelector('#night_day').value === 'night'){
-                document.querySelector(`body`).style.background=`#20291C`;
-                document.querySelector(`body`).style.color=`#EAE7E5`;
-                document.querySelector('.aside').style.border='2px solid #EAE7E5';
-                let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<6; i++){
-                    onClass[i].style.color=`#EAE7E5`;
-                }
-                document.querySelector(`.img`).style.display=`block`;
-                document.querySelector('#night_day').value = 'day'
-            } else {
-                document.querySelector(`body`).style.background=`#EAE7E5`;
-                document.querySelector(`body`).style.color=`#20291C`;
-                document.querySelector('.aside').style.border='2px solid #20291C';
-                let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<6; i++){
-                    onClass[i].style.color=`#20291C`;
-                }
-                document.querySelector(`.img`).style.display=`none`;
-                document.querySelector('#night_day').value = 'night'
-            }
-        }
-    </script>
 </body>
 </html>
