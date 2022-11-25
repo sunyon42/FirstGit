@@ -70,44 +70,73 @@ header{
 .on {
     color: #20291C;
 }
-.gallery {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 470px;
-    height: 495px;
+.wrapper-gallery {
+    margin: 0 20vw;
 }
-.gallery button {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    width: 55px;
-    height: 55px;
-    background-color: #fff;
-    border-radius: 100%;
-    border: none;
+#index-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "img1 img2 img3 img4"
+    "img5 img6 img3 img7"
+    "img8 img9 img10 img7";
+
 }
-.gallery div {
-    opacity: 0;
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    font-size: 25px;
-    color: #fff;
+#index-gallery .gallery-img{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 }
-.gallery strong {
-    display: block;
+#index-gallery .img1{
+    grid-area: img1;
+    background-image: url("../imge/mini\ table.jpg");
 }
-.hide {
-    display: none;
+#index-gallery .img2{
+    grid-area: img2;
+    background-image: url("../imge/mini\ table.jpg");
+}
+#index-gallery .img3{
+    grid-area: img3;
+    background-image: url("../imge/mini\ table.jpg");
+    height: 610px;
+}
+#index-gallery .img4{
+    grid-area: img4;
+    background-image: url("../imge/mini\ table.jpg");
+}
+#index-gallery .img5{
+    grid-area: img5;
+    background-image: url("../imge/mini\ table.jpg");
+}
+#index-gallery .img6{
+    grid-area: img6;
+    background-image: url("../imge/mini\ table.jpg");
+}
+#index-gallery .img7{
+    grid-area: img7;
+    background-image: url("../imge/mini\ table.jpg");
+    height: 610px;
+}
+#index-gallery .img8{
+    grid-area: img8;
+    background-image: url("../imge/mini\ table.jpg");
+}
+#index-gallery .img9{
+    grid-area: img9;
+    background-image: url("../imge/mini\ table.jpg");
+}
+#index-gallery .img10{
+    grid-area: img10;
+    background-image: url("../imge/mini\ table.jpg");
 }
 footer{
     background-color: #1e241d;
-    color: #EAE7E5   ;
+    color: #EAE7E5;
     margin-top: 25vh;
     display:flex;
     justify-content: center;

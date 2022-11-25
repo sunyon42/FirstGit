@@ -1,175 +1,159 @@
-<html lang="en">
+    <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WOA 스토어</title>
-        <link rel="stylesheet" href="./css/woa_store.css">
-        <script src="https://kit.fontawesome.com/1f890f0014.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOA 스토어</title>
+    <link rel="stylesheet" href="./css/woa_store.css">
+    <script src="https://kit.fontawesome.com/1f890f0014.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     </head>
-<body>
+    <body>
     <header>
-        <div class="logo">
-            <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
-            <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
-        </div>
-        <div class="nav">
-            <ul class="left-nav">
-                <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active">
-                        <span class="on">이벤트</span></a>
-                </li>
-                <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link">
-                        <span class="on">스토어</span></a>
-                </li>
-                <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_attendee.html" class="info1_link"><span class="on">수강신청</span ></a>
-                </li>
-                <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_branding.html" class="info1_link"><span class="on">갤러리</span></a>
-                </li>
-            </ul>
-            <ul class="right-nav">
-                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on"></i></a></li>
-                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on"></i></a></li>
-                <li class="iteam" onclick="night()"><input id="night_day" type="button" value="night" ></input></li>
-            </ul>
-        </div>
+    <div class="logo">
+        <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
+        <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
+    </div>
+    <div class="nav">
+        <ul class="left-nav">
+        <li class="info">
+            <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active">
+            <span class="on">이벤트</span></a>
+        </li>
+        <li class="info">
+            <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link">
+            <span class="on">스토어</span></a>
+        </li>
+        <li class="info">
+            <a href="http://127.0.0.1:5500/design/woa_attendee.html" class="info1_link"><span class="on">수강신청</span ></a>
+        </li>
+        <li class="info">
+            <a href="http://127.0.0.1:5500/design/woa_branding.html" class="info1_link"><span class="on">갤러리</span></a>
+        </li>
+        </ul>
+        <ul class="right-nav">
+        <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on"></i></a></li>
+        <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on"></i></a></li>
+        <li class="iteam" onclick="night()"><input id="night_day" type="button" value="night" ></input></li>
+        </ul>
+    </div>
     </header>
     <main>
-        <ul class="move">
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 ㅗ너어ㅏ니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공dp나무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-            </li>
-        
-        
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 kjk나무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 jdif무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-            </li>
-            <li>
-                <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-                <p>안녕하세여 목공 소품 나무입니다.</p>
-            </li>
-        </ul>
-        
+    <ul class="move">
+        <li>
+            <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+            <p>안녕하세여 목공 소품 나무입니다.</p>
+            <p>안녕하세여 목공 소품 나무입니다.</p>
+        </li>
+        <li>
+            <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+            <p>안녕하세여 목공 소품 나무입니다.</p>
+            <p>안녕하세여 ㅗ너어ㅏ니다.</p>
+        </li>
+        <li>
+            <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+            <p>안녕하세여 목공 소품 나무입니다.</p>
+            <p>안녕하세여 목공 소품 나무입니다.</p>
+        </li>
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공dp나무입니다.</p>
+        </li>
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        </li>
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        </li>
+
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공 kjk나무입니다.</p>
+        </li>
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        </li>
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        </li>
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공 jdif무입니다.</p>
+        </li>
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        </li>
+        <li>
+        <img src="imge/목공 소품, 나무가 있는 캔들 받침.jpg" width="300px" height="300px">
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        <p>안녕하세여 목공 소품 나무입니다.</p>
+        </li>
+    </ul>
+
     </main>
     <aside>
-        <button class="prev"><i class="fa-solid fa-chevron-left on"></i></button>
-        <button class="next"><i class="fa-solid fa-chevron-right on"></i></button>
+    <button class="prev" onclick="prev()"><i class="fa-solid fa-chevron-left on"></i></button>
+    <button class="next" onclick="next()"><i class="fa-solid fa-chevron-right on"></i></button>
     </aside>
     <footer>
-        <p> COPYRIGHT © 2022 sun young All Rights Reserved.</p>
+    <p> COPYRIGHT © 2022 sun young All Rights Reserved.</p>
     </footer>
     <script>
-        function night(){
-            if(document.querySelector('#night_day').value === 'night'){
-                document.querySelector(`body`).style.background=`#20291C`;
-                document.querySelector(`body`).style.color=`#EAE7E5`;
-                let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<8; i++){
-                    onClass[i].style.color=`#EAE7E5`;
-                }
-                document.querySelector(`.img`).style.display=`block`;
-                document.querySelector('#night_day').value = 'day'
-            } else {
-                document.querySelector(`body`).style.background=`#EAE7E5`;
-                document.querySelector(`body`).style.color=`#20291C`;
-                let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<8; i++){
-                    onClass[i].style.color=`#20291C`;
-                }
-                document.querySelector(`.img`).style.display=`none`;
-                document.querySelector('#night_day').value = 'night'
-            }
+    function night(){
+        if(document.querySelector('#night_day').value === 'night'){
+        document.querySelector(`body`).style.background=`#20291C`;
+        document.querySelector(`body`).style.color=`#EAE7E5`;
+        let onClass=document.getElementsByClassName(`on`);
+        for(var i=0; i<8; i++){
+            onClass[i].style.color=`#EAE7E5`;
         }
-
-
-
-
-        let curPos=0;
-        let posisonValue=0;
-        const IMAGE_WIDTH=300;
-
-        const nBt = document.querySelector(".next");
-        const pBt = document.querySelector(".prev");
-        const move = document.querySelector(".move");
-
-        function next(){
-            if (curPos < 4 ){
-                pBt.removeAttribute('disabled') 
-                posisonValue -= IMAGE_WIDTH;
-                move.style.transform = `translateX(${posisonValue})px`;
-                curPos += 1;
-            }
-            if(curPos === 4){
-                nBt.setAttribute('disabled','true');
-            }
-        }   
-
-        function init(){
-            pBt.setAttribute('disabled','true');
-            nBt.addEventListener("click", next);
+        document.querySelector(`.img`).style.display=`block`;
+        document.querySelector('#night_day').value = 'day'
+        } else {
+        document.querySelector(`body`).style.background=`#EAE7E5`;
+        document.querySelector(`body`).style.color=`#20291C`;
+        let onClass=document.getElementsByClassName(`on`);
+        for(var i=0; i<8; i++){
+            onClass[i].style.color=`#20291C`;
         }
-        init();
-        
-    
+        document.querySelector(`.img`).style.display=`none`;
+        document.querySelector('#night_day').value = 'night'
+        }
+    }
+
+
+    let posisonValue=0;
+    const IMAGE_WIDTH=990;
+
+    const move = document.querySelector("main .move");
+
+    function next(){
+        posisonValue -= IMAGE_WIDTH;
+        move.style.transform = `translateX(${posisonValue}px)`;
+    }
+    function prev(){
+        posisonValue += IMAGE_WIDTH;
+        move.style.transform = `translateX(${posisonValue}px)`;
+    }
+
     </script>
-</body>
-</html>
+    </body>
+    </html>
