@@ -182,25 +182,44 @@
     const move = document.querySelector("main .move");
 
     function next(){
-        posisonValue -= IMAGE_WIDTH;
-        move.style.transform = `translateX(${posisonValue}px)`;
+            
+            if(curPos>=3){
+                alert("다음페이지로 넘길수 없습니다");
+
+            }
+            else{
+                posisonValue -= IMAGE_WIDTH;
+                move.style.transform = `translateX(${posisonValue}px)`;
+                curPos+=1;
+            }
     }
     function prev(){
-        posisonValue += IMAGE_WIDTH;
-        move.style.transform = `translateX(${posisonValue}px)`;
+            if(curPos<=0){
+                alert("이전페이지로 넘길수 없습니다");
+
+            }
+            else{
+            posisonValue += IMAGE_WIDTH;
+            move.style.transform = `translateX(${posisonValue}px)`;
+            curPos-=1;
+            }
     }
 
     document.querySelector('.one').addEventListener('click', function(){
-        document.querySelector('.move').style.transform='translateX(-0px)';
+        document.querySelector('.move').style.transform=`translateX(-0px)`;
+        curPos=0;
     })
     document.querySelector('.two').addEventListener('click', function(){
         document.querySelector('.move').style.transform='translateX(-990px)';
+        curPos-=1;
     })
     document.querySelector('.three').addEventListener('click', function(){
         document.querySelector('.move').style.transform='translateX(-1980px)';
+        curPos-=2;
     })
     document.querySelector('.four').addEventListener('click', function(){
         document.querySelector('.move').style.transform='translateX(-2970px)';
+        curPos-=3;
     })
     </script>
     </body>
