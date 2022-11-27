@@ -150,7 +150,7 @@
         document.querySelector(`body`).style.background=`#20291C`;
         document.querySelector(`body`).style.color=`#EAE7E5`;
         let numClass=document.getElementsByClassName(`num`);
-        for(var i=0; i<2; i++){
+        for(var i=0; i<4; i++){
             numClass[i].style.color=`#EAE7E5`;
         }
         let onClass=document.getElementsByClassName(`on`);
@@ -163,7 +163,7 @@
         document.querySelector(`body`).style.background=`#EAE7E5`;
         document.querySelector(`body`).style.color=`#20291C`;
         let numClass=document.getElementsByClassName(`num`);
-        for(var i=0; i<2; i++){
+        for(var i=0; i<4; i++){
             numClass[i].style.color=`#20291C`;
         }
         let onClass=document.getElementsByClassName(`on`);
@@ -183,7 +183,7 @@
 
     function next(){
             
-            if(curPos>=3){
+            if(curPos===3){
                 alert("다음페이지로 넘길수 없습니다");
 
             }
@@ -194,7 +194,7 @@
             }
     }
     function prev(){
-            if(curPos<=0){
+            if(curPos===0){
                 alert("이전페이지로 넘길수 없습니다");
 
             }
@@ -207,19 +207,23 @@
 
     document.querySelector('.one').addEventListener('click', function(){
         document.querySelector('.move').style.transform=`translateX(-0px)`;
-        curPos=0;
+        curPos===0;
+        posisonValue=0
     })
     document.querySelector('.two').addEventListener('click', function(){
         document.querySelector('.move').style.transform='translateX(-990px)';
-        curPos-=1;
+        curPos===1;
+        posisonValue=0
     })
     document.querySelector('.three').addEventListener('click', function(){
         document.querySelector('.move').style.transform='translateX(-1980px)';
-        curPos-=2;
+        curPos===2;
+        posisonValue=0
     })
     document.querySelector('.four').addEventListener('click', function(){
         document.querySelector('.move').style.transform='translateX(-2970px)';
-        curPos-=3;
+        curPos===3;
+        posisonValue=0
     })
     </script>
     </body>
