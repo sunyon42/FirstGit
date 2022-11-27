@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    width: 100%;
+    color: #20291C;
+    background-color: #EAE7E5;
+}
+header{
+    height: 20vh;
+    vertical-align: middle;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3vh;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+}
+.left-nav {
+    display: flex;
+    margin-left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.left-nav li {
+    margin-left: 50px;
+    font-size: 12px;
+}
+.right-nav {
+    display: flex;
+    margin-right: 5%;
+}
+.right-nav li {
+    margin-right: 50px;
+    height: 32px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.right-nav li:nth-child(3) {
+    width: 38px;
+    background-color:  #20291C;
+    border-radius: 10%;
+}
+#night_day {
+    border: none;
+    background-color: #20291C;
+    color:  #EAE7E5;
+    font-size: 16px;
+    margin: 10px auto;
+    display: flex;
+    border-radius: 10%;
+}
+.on {
+    color: #20291C;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5vh auto;
+}
+.picture img {
+    width: 617px;
+    height: 738px;
+    align-items: center;
+}
+.title {
+    position: absolute;
+    font-size: 1800%;
+    font-family: 'Playfair Display', serif;
+}
+.aside {
+    border: 2px solid #20291C;
+    border-radius: 50%;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 75%;
+    
+}
+.show {
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+footer{
+    background-color: #1e241d;
+    color: #EAE7E5   ;
+    margin-top: 25vh;
+    display:flex;
+    justify-content: center;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 14px;
+}
