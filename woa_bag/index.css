@@ -102,7 +102,7 @@ header{
     background-color: #20291C;
     border: #20291C;
 }
-.item_paint p {
+.item_paint h3 {
     margin-left: 2%;
     width: 200px;
 }
@@ -147,8 +147,6 @@ header{
     justify-content: space-between;
     margin-bottom: 5vh;
     margin-top: 2vh;
-    font-size: 30px;
-    font-weight: bold;
 }
 .total_btn {
     width: 100%;

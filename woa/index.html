@@ -54,7 +54,7 @@
     </main>
     <aside class="aside">
         <div class="show">
-            <a href="http://127.0.0.1:5500/design/woa_gallery.html"><div>SHOW GALLEY</div></a>
+            <a href="http://127.0.0.1:5500/design/woa_gallery.html"><div class="on">SHOW GALLEY</div></a>
         </div>
     </aside>
     <footer>
@@ -69,7 +69,7 @@
                 document.querySelector(`body`).style.color=`#EAE7E5`;
                 document.querySelector('.aside').style.border='2px solid #EAE7E5';
                 let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<6; i++){
+                for(var i=0; i<7; i++){
                     onClass[i].style.color=`#EAE7E5`;
                 }
                 document.querySelector(`.img`).style.display=`block`;
@@ -79,7 +79,7 @@
                 document.querySelector(`body`).style.color=`#20291C`;
                 document.querySelector('.aside').style.border='2px solid #20291C';
                 let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<6; i++){
+                for(var i=0; i<7; i++){
                     onClass[i].style.color=`#20291C`;
                 }
                 document.querySelector(`.img`).style.display=`none`;
