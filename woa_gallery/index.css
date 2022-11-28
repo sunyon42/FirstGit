@@ -51,8 +51,8 @@ section h2 span{
     grid-gap: 10px;
     grid-template-areas: 
     "img9 img2 img5 img3"
-    "img9 img11 img17 img17"
-    "img10 img11 img17 img17"
+    "img9 img11 img22 img22"
+    "img10 img11 img22 img22"
     "img4 img14 img15 img16";
     
 }
@@ -134,7 +134,7 @@ section h2 span{
 }
 .wrapper-gallery .img17{
     grid-area: img17;
-    background-image: url("../imge/img17.jpg");
+    background-image: url("../imge/img22.jpg");
     height: 610px;
 }
 footer{
