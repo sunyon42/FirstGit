@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    width: 100%;
+    color: #20291C;
+    background-color: #EAE7E5;
+}
+header{
+    height: 20vh;
+    vertical-align: middle;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3vh;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+}
+.left-nav {
+    display: flex;
+    margin-left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.left-nav li {
+    margin-left: 50px;
+    font-size: 12px;
+}
+.right-nav {
+    display: flex;
+    margin-right: 5%;
+}
+.right-nav li {
+    margin-right: 50px;
+    height: 32px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.right-nav li:nth-child(3) {
+    width: 38px;
+    background-color:  #20291C;
+    border-radius: 10%;
+}
+#night_day {
+    border: none;
+    background-color: #20291C;
+    color:  #EAE7E5;
+    font-size: 16px;
+    margin: 10px auto;
+    display: flex;
+    border-radius: 10%;
+}
+.on {
+    color: #20291C;
+}
+.login_wrap {
+    margin: 15vh auto 0;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+}
+.login p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 5vh;
+    font-weight: bold;
+}
+.login_item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+.login_item input {
+    height: 6vh;
+    font-size: 20px;
+    padding-left: 5%;
+    margin-bottom: 1vh;
+    border: none;
+    outline: none;
+    background-color: #CCC7C4;
+}
+.login_sub {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    height: 13px;
+    margin-top: 1vh;
+}
+.sub1 {
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: text-top;
+}
+.sub1 input {
+    height: 13px;
+}
+.sub1 label {
+    height: 13px;
+    margin-left: 5%;
+    color: #20291C;
+}
+.sub2 {
+    text-decoration: underline;
+}
+.sub2 a {
+    color: #20291C;
+}
+.login_btn {
+    width: 100%;
+    height: 6vh;
+    margin-top: 5vh;
+    border-radius: 15px;
+    background-color: #20291C;
+}
+.login_btn button{
+    width: 100%;
+    height: 6vh;
+    border: none;
+    background: none;
+    color: #EAE7E5;
+    text-align: center;
+    font-size: 18px;
+}
+footer{
+    background-color: #1e241d;
+    color: #EAE7E5   ;
+    margin-top: 25vh;
+    display:flex;
+    justify-content: center;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 14px;
+}

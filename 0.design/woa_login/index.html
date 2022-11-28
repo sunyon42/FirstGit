@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOA 로그인페이지</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/1f890f0014.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
+            <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
+        </div>
+        <div class="nav">
+            <ul class="left-nav">
+                <li>
+                    <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active">
+                        <span class="on">이벤트</span></a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link">
+                        <span class="on">스토어</span></a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/design/woa_attendee.html" class="info1_link"><span class="on">수강신청</span ></a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/design/woa_gallery.html" class="info1_link"><span class="on">갤러리</span></a>
+                </li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on"></i></a></li>
+                <li><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on"></i></a></li>
+                <li onclick="night()"><input id="night_day" type="button" value="night" ></input></li>
+            </ul>
+        </div>
+    </header>
+    <div class="login_wrap">
+        <div class="login">
+            <p>LOGIN</p>
+            <div class="login_item">
+                <input type="text" placeholder="Username" maxlength="30">
+                <input type="password" placeholder="password" maxlength="30">
+                <div class="login_sub">
+                    <div class="sub1">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember</label>
+                    </div>
+                    <div class="sub2">
+                        <a href="#">Forgot?</a>
+                    </div>
+                </div>
+                <div class="login_btn">
+                    <button onclick="alert('환영합니다')">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            COPYRIGHT © 2022 sun young All Rights Reserved.
+        </p>
+    </footer>
+    <script>
+        function night(){
+            if(document.querySelector('#night_day').value === 'night'){
+                document.querySelector(`body`).style.background=`#20291C`;
+                document.querySelector(`body`).style.color=`#EAE7E5`;
+                document.querySelector(`.sub1 label`).style.color=`#EAE7E5`;
+                document.querySelector(`.sub2 a`).style.color=`#EAE7E5`;
+                document.querySelector(`.login_btn`).style.background=`#EAE7E5`;
+                document.querySelector(`.login_btn button`).style.color=`#20291C`;
+                let onClass=document.getElementsByClassName(`on`);
+                for(var i=0; i<6; i++){
+                    onClass[i].style.color=`#EAE7E5`;
+                }
+                document.querySelector(`.img`).style.display=`block`;
+                document.querySelector('#night_day').value = 'day'
+            } else {
+                document.querySelector(`body`).style.background=`#EAE7E5`;
+                document.querySelector(`body`).style.color=`#20291C`;
+                document.querySelector(`.sub1 label`).style.color=`#20291C`;
+                document.querySelector(`.sub2 a`).style.color=`#20291C`;
+                document.querySelector(`.login_btn`).style.background=`#20291C`;
+                document.querySelector(`.login_btn button`).style.color=`#EAE7E5`;
+                let onClass=document.getElementsByClassName(`on`);  
+                for(var i=0; i<6; i++){
+                    onClass[i].style.color=`#20291C`;
+                }
+                document.querySelector(`.img`).style.display=`none`;
+                document.querySelector('#night_day').value = 'night'
+            }
+        }
+    </script>
+</body>
+</html>

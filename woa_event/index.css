@@ -45,11 +45,6 @@ body {
 .header ul li:nth-child(1){
     margin-left: 0;
 }
-.header ul .bar,
-.header ul .man,
-.header ul .night{
-    display: none;
-}
 .event_box {
     width: 1000px;
     margin: 15vh auto 0;
