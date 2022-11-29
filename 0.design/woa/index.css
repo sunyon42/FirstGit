@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -20,6 +20,9 @@ header{
     vertical-align: middle;
     align-items: center;
 }
+.none {
+    display: none;
+}
 .logo {
     display: flex;
     justify-content: center;
@@ -40,6 +43,9 @@ header{
 .left-nav li {
     margin-left: 50px;
     font-size: 12px;
+}
+.nav .none {
+    display: none;
 }
 .right-nav {
     display: flex;
@@ -114,4 +120,31 @@ footer{
     height: 10vh;
     line-height: 10vh;
     font-size: 14px;
+}
+
+
+@media screen and (max-width:1000px) {
+    header {
+        height: 20vh;
+    }
+    .head {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav {
+        display: none;
+        margin-top: 1vh
+    }
+    .head .none {
+        display: inline-block;
+        font-size: 44px;
+        margin: auto 10%;
+    }
+    .picture img {
+        width: 517px;
+        height: 638px;
+    }
+    .title {
+        font-size: 800%;
+    }
 }
