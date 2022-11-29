@@ -35,11 +35,9 @@ header{
     align-items: center;
     margin-top: 3vh;
 }
-.nav .left {
-    margin-left: 5%;
-}
 .left-nav {
     display: flex;
+    margin-left: 5%;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .left-nav li {
@@ -49,11 +47,9 @@ header{
 .nav .none {
     display: none;
 }
-.nav .right {
-    margin-right: 5%;
-}
 .right-nav {
     display: flex;
+    margin-right: 5%;
 }
 .right-nav li {
     margin-right: 50px;
@@ -142,13 +138,14 @@ footer{
         z-index: 1000;
         cursor: pointer;
     }
-    .nav {
+    .none_nav, .nav {  
         display: none;
     }
-    .head .none :hover .nav{
+    .none:hover ~.none_nav{
+        font-size: 50px;
         display: block;
     }
-    .nav .left {
+    .none_nav {
         width: 300px;
         height: 100vh;
         background-color: #aaaaaa;
@@ -158,11 +155,8 @@ footer{
         top: 0;
         left: 0;
     }
-    .nav .left-nav {
-        margin-top: 15vh;
+    .none_nav span {
         display: block;
-    }
-    .nav .left-nav .info{
         padding: 20px;
         font-size: 18px;
     }
@@ -173,5 +167,4 @@ footer{
     .title {
         font-size: 800%;
     }
-
 }
