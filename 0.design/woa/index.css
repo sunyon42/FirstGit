@@ -35,9 +35,11 @@ header{
     align-items: center;
     margin-top: 3vh;
 }
+.nav .left {
+    margin-left: 5%;
+}
 .left-nav {
     display: flex;
-    margin-left: 5%;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .left-nav li {
@@ -47,9 +49,11 @@ header{
 .nav .none {
     display: none;
 }
+.nav .right {
+    margin-right: 5%;
+}
 .right-nav {
     display: flex;
-    margin-right: 5%;
 }
 .right-nav li {
     margin-right: 50px;
@@ -131,14 +135,36 @@ footer{
         display: flex;
         justify-content: space-between;
     }
-    .nav {
-        display: none;
-        margin-top: 1vh
-    }
-    .head .none {
+    .none {
         display: inline-block;
         font-size: 44px;
         margin: auto 10%;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    .nav {
+        display: none;
+    }
+    .head .none :hover .nav{
+        display: block;
+    }
+    .nav .left {
+        width: 300px;
+        height: 100vh;
+        background-color: #aaaaaa;
+        z-index: 100;
+        margin-left: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .nav .left-nav {
+        margin-top: 15vh;
+        display: block;
+    }
+    .nav .left-nav .info{
+        padding: 20px;
+        font-size: 18px;
     }
     .picture img {
         width: 517px;
@@ -147,4 +173,5 @@ footer{
     .title {
         font-size: 800%;
     }
+
 }
