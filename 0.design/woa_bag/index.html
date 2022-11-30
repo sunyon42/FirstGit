@@ -13,31 +13,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="logo">
-        <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
-        <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
-    </div>
     <header>
+        <div class="logo head">
+            <div class="none">
+                <div class="on"><i class="fa-solid fa-bars"></i></div>
+            </div>
+            <div class="none_nav">
+                <div class="none_box">
+                    <span>이벤트</span>
+                    <span>스토어</span>
+                    <span>수강신청</span>
+                    <span>갤러리</span>
+                </div>
+            </div>
+            <a href="https://woahom.netlify.app/"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
+            <a href="https://woahom.netlify.app/" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
+            <div class="none">
+                <div class="on"><i class="fa-solid fa-user"></i></div>
+            </div>
+        </div>
         <div class="nav">
             <ul class="left-nav">
                 <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active">
+                    <a href="https://woa-event.netlify.app/" class="info1_link active">
                         <span class="on">이벤트</span></a>
                 </li>
                 <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link">
+                    <a href="https://woa-store.netlify.app/" class="info1_link">
                         <span class="on">스토어</span></a>
                 </li>
                 <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_attendee.html" class="info1_link"><span class="on">수강신청</span ></a>
+                    <a href="https://woa-attendee.netlify.app/" class="info1_link"><span class="on">수강신청</span ></a>
                 </li>
                 <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_gallery.html" class="info1_link"><span class="on">갤러리</span></a>
+                    <a href="https://woa-gallery.netlify.app/" class="info1_link"><span class="on">갤러리</span></a>
                 </li>
             </ul>
             <ul class="right-nav">
-                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on"></i></a></li>
-                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on"></i></a></li>
+                <li class="iteam"><a href="https://woa-login.netlify.app/"><i class="fa-solid fa-user on"></i></a></li>
+                <li class="iteam"><a href="https://woa-bag.netlify.app/"><i class="fa-solid fa-cart-shopping on"></i></a></li>
                 <li class="iteam" onclick="night()"><input id="night_day" type="button" value="night" ></input></li>
             </ul>
         </div>
@@ -120,7 +134,7 @@
                     hrLine[i].style.background='#EAE7E5';
                 }
                 let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<6; i++){
+                for(var i=0; i<8; i++){
                     onClass[i].style.color=`#EAE7E5`;
                 }
                 document.querySelector(`.img`).style.display=`block`;
@@ -137,7 +151,7 @@
                 }
 
                 let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<6; i++){
+                for(var i=0; i<8; i++){
                     onClass[i].style.color=`#20291C`;
                 }
                 document.querySelector(`.img`).style.display=`none`;

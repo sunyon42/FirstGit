@@ -44,7 +44,7 @@ header{
     margin-left: 50px;
     font-size: 12px;
 }
-.nav .none {
+.nav .none, .none_nav{
     display: none;
 }
 .right-nav {
@@ -113,7 +113,7 @@ header{
 
 footer{
     background-color: #1e241d;
-    color: #EAE7E5   ;
+    color: #EAE7E5;
     margin-top: 25vh;
     display:flex;
     justify-content: center;
@@ -155,9 +155,12 @@ footer{
         top: 0;
         left: 0;
     }
+    .none_box {
+        margin-top: 15vh;
+    }
     .none_nav span {
         display: block;
-        padding: 20px;
+        padding: 25px;
         font-size: 18px;
     }
     .picture img {

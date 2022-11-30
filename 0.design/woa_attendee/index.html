@@ -16,30 +16,44 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="http://127.0.0.1:5500/design/woa.html"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
-            <a href="http://127.0.0.1:5500/design/woa.html" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
+        <div class="logo head">
+            <div class="none">
+                <div class="on1"><i class="fa-solid fa-bars"></i></div>
+            </div>
+            <div class="none_nav">
+                <div class="none_box">
+                    <span>이벤트</span>
+                    <span>스토어</span>
+                    <span>수강신청</span>
+                    <span>갤러리</span>
+                </div>
+            </div>
+            <a href="https://woahom.netlify.app/"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
+            <a href="https://woahom.netlify.app/" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
+            <div class="none">
+                <div class="on1"><i class="fa-solid fa-user"></i></div>
+            </div>
         </div>
         <div class="nav">
             <ul class="left-nav">
                 <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_event.html" class="info1_link active">
+                    <a href="https://woa-event.netlify.app/" class="info1_link active">
                         <span class="on1">이벤트</span></a>
                 </li>
                 <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_store.html" class="info1_link">
+                    <a href="https://woa-store.netlify.app/" class="info1_link">
                         <span class="on1">스토어</span></a>
                 </li>
                 <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_attendee.html" class="info1_link"><span class="on1">수강신청</span ></a>
+                    <a href="https://woa-attendee.netlify.app/" class="info1_link"><span class="on1">수강신청</span ></a>
                 </li>
                 <li class="info">
-                    <a href="http://127.0.0.1:5500/design/woa_gallery.html" class="info1_link"><span class="on1">갤러리</span></a>
+                    <a href="https://woa-gallery.netlify.app/" class="info1_link"><span class="on1">갤러리</span></a>
                 </li>
             </ul>
             <ul class="right-nav">
-                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_login.html"><i class="fa-solid fa-user on1"></i></a></li>
-                <li class="iteam"><a href="http://127.0.0.1:5500/design/woa_bag.html"><i class="fa-solid fa-cart-shopping on1"></i></a></li>
+                <li class="iteam"><a href="https://woa-login.netlify.app/"><i class="fa-solid fa-user on1"></i></a></li>
+                <li class="iteam"><a href="https://woa-bag.netlify.app/"><i class="fa-solid fa-cart-shopping on1"></i></a></li>
                 <li class="iteam" onclick="night()"><input id="night_day" type="button" value="night" ></input></li>
             </ul>
         </div>
@@ -56,23 +70,31 @@
                             <i class="fa-solid fa-caret-right"><p>홍길동 선생님</p></i>
                         </div>
                         <div class="info">
-                            <div>11월 09일 ~ 11월 13일</div>
-                            <div>트레이 & 도마 제작</div>
-                            <div class="btn" data-target="#modal1">
-                                <button class="on2">자세히</button>
+                            <div class="info_title">
+                                <div>11월 09일 ~ 11월 13일</div>
+                                <div>트레이 & 도마 제작</div>
                             </div>
-                            <div class="btn_app" onclick="alert('신청이 되었습니다.')">
-                                <button class="on2">신청</button>
+                            <div class="info_btn">
+                                <div class="btn" data-target="#modal1">
+                                    <button class="on2">자세히</button>
+                                </div>
+                                <div class="btn_app" onclick="alert('신청이 되었습니다.')">
+                                    <button class="on2">신청</button>
+                                </div>
                             </div>
                         </div>
                         <div class="info">
-                            <div>11월 20일 ~ 12월 13일</div>
-                            <div>컵& 냄비 받침 제작</div>
-                            <div class="btn" data-target="#modal2">
-                                <button  class="on2">자세히</button>
+                            <div class="info_title">
+                                <div>11월 20일 ~ 12월 13일</div>
+                                <div>컵& 냄비 받침 제작</div>
                             </div>
-                            <div class="btn_app" onclick="alert('신청이 되었습니다.')">
-                                <button  class="on2">신청</button>
+                            <div class="info_btn">
+                                <div class="btn" data-target="#modal2">
+                                    <button  class="on2">자세히</button>
+                                </div>
+                                <div class="btn_app" onclick="alert('신청이 되었습니다.')">
+                                    <button  class="on2">신청</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -81,13 +103,17 @@
                             <i class="fa-solid fa-caret-right"><p>아무개 선생님</p></i>
                         </div>
                         <div class="info">
-                            <div>12월 01일 ~ 12월 19일</div>
-                            <div>목각 인형 제작하기 </div>
-                            <div class="btn" data-target="#modal3">
-                                <button  class="on2">자세히</button>
+                            <div class="info_title">
+                                <div>12월 01일 ~ 12월 19일</div>
+                                <div>목각 인형 제작하기 </div>
                             </div>
-                            <div class="btn_app" onclick="alert('신청이 되었습니다.')">
-                                <button  class="on2">신청</button>
+                            <div class="info_btn">
+                                <div class="btn" data-target="#modal3">
+                                    <button  class="on2">자세히</button>
+                                </div>
+                                <div class="btn_app" onclick="alert('신청이 되었습니다.')">
+                                    <button  class="on2">신청</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,13 +122,17 @@
                             <i class="fa-solid fa-caret-right"><p>홍길동, 아무개 선생님</p></i>
                         </div>
                         <div class="info">
-                            <div>12월 20일 ~ 01월 22일</div>
-                            <div>미니 가구 프로젝트</div>
-                            <div class="btn" data-target="#modal4" >
-                                <button  class="on2">자세히</button>
+                            <div class="info_title">
+                                <div>12월 20일 ~ 01월 22일</div>
+                                <div>미니 가구 프로젝트</div>
                             </div>
-                            <div class="btn_app" onclick="alert('신청이 되었습니다.')">
-                                <button  class="on2">신청</button>
+                            <div class="info_btn">
+                                <div class="btn" data-target="#modal4" >
+                                    <button  class="on2">자세히</button>
+                                </div>
+                                <div class="btn_app" onclick="alert('신청이 되었습니다.')">
+                                    <button  class="on2">신청</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -205,7 +235,7 @@
                 document.querySelector('.place .title').style.background='#EAE7E5'; 
                 document.querySelector('.title p').style.color='#20291C'; 
                 let on1Class=document.getElementsByClassName(`on1`);
-                for(var i=0; i<6; i++){
+                for(var i=0; i<8; i++){
                     on1Class[i].style.color=`#EAE7E5`;
                 }
                 let on2Class=document.getElementsByClassName(`on2`)            
@@ -233,7 +263,7 @@
                 document.querySelector('.place .title').style.background='#20291C'; 
                 document.querySelector('.title p').style.color='#EAE7E5'; 
                 let on1Class=document.getElementsByClassName(`on1`);
-                for(var i=0; i<6; i++){
+                for(var i=0; i<8; i++){
                     on1Class[i].style.color=`#20291C`;
                 }
                 let on2Class=document.getElementsByClassName(`on2`)            

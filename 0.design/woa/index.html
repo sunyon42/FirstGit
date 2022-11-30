@@ -21,10 +21,12 @@
                 <div class="on"><i class="fa-solid fa-bars"></i></div>
             </div>
             <div class="none_nav">
-                <span>이벤트</span>
-                <span>스토어</span>
-                <span>수강신청</span>
-                <span>갤러리</span>
+                <div class="none_box">
+                    <span>이벤트</span>
+                    <span>스토어</span>
+                    <span>수강신청</span>
+                    <span>갤러리</span>
+                </div>
             </div>
             <a href="https://woahom.netlify.app/"><img src="./imge/woa logo.png" alt="워우어 로고"></a>
             <a href="https://woahom.netlify.app/" class="img" style="position: fixed; display: none;"><img src="imge/woa logo2.png" ></a>
@@ -81,7 +83,7 @@
                 document.querySelector(`body`).style.color=`#EAE7E5`;
                 document.querySelector('.aside').style.border='2px solid #EAE7E5';
                 let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<7; i++){
+                for(var i=0; i<9; i++){
                     onClass[i].style.color=`#EAE7E5`;
                 }
                 document.querySelector(`.img`).style.display=`block`;
@@ -91,7 +93,7 @@
                 document.querySelector(`body`).style.color=`#20291C`;
                 document.querySelector('.aside').style.border='2px solid #20291C';
                 let onClass=document.getElementsByClassName(`on`);
-                for(var i=0; i<7; i++){
+                for(var i=0; i<9; i++){
                     onClass[i].style.color=`#20291C`;
                 }
                 document.querySelector(`.img`).style.display=`none`;

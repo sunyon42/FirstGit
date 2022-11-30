@@ -15,16 +15,19 @@ body {
     color: #20291C;
     background-color: #EAE7E5;
 }
+header{
+    height: 20vh;
+    vertical-align: middle;
+    align-items: center;
+}
+.none {
+    display: none;
+}
 .logo {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 3vh;
-}
-header{
-    height: 20vh;
-    vertical-align: middle;
-    align-items: center;
 }
 .nav {
     display: flex;
@@ -40,6 +43,9 @@ header{
 .left-nav li {
     margin-left: 50px;
     font-size: 12px;
+}
+.nav .none, .none_nav{
+    display: none;
 }
 .right-nav {
     display: flex;
@@ -165,11 +171,65 @@ header{
 }
 footer{
     background-color: #1e241d;
-    color: #EAE7E5   ;
+    color: #EAE7E5;
     margin-top: 25vh;
     display:flex;
     justify-content: center;
     height: 10vh;
     line-height: 10vh;
     font-size: 14px;
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+    header {
+        height: 20vh;
+    }
+    .head {
+        display: flex;
+        justify-content: space-between;
+    }
+    .none {
+        display: inline-block;
+        font-size: 44px;
+        margin: auto 10%;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    .none_nav, .nav {  
+        display: none;
+    }
+    .none:hover ~.none_nav{
+        font-size: 50px;
+        display: block;
+    }
+    .none_nav {
+        width: 300px;
+        height: 100vh;
+        background-color: #aaaaaa;
+        z-index: 100;
+        margin-left: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .none_box {
+        margin-top: 15vh;
+    }
+    .none_nav span {
+        display: block;
+        padding: 25px;
+        font-size: 18px;
+    }
+    .bag_wrap {
+        width: 800px;
+        margin: 5vh auto 0;
+    }
+    .bag p {
+        display: flex;
+        justify-content: center;
+    }
+
 }
