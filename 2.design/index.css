@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #d5d5f9;
+    font-size: 20px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    border-bottom: 1px solid #767676;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav div a{
+    height: 10vh;
+    line-height: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+.start div, .last div {
+    width: 4vw;
+}
+.start div:nth-child(1) {
+    border-right: 1px solid #767676;
+}
+.last div {
+    border-left: 1px solid #767676;
+}
+
+article .tag {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+    position: relative;
+}
+.tag hr {
+    position: absolute;
+    border: solid 1px #233b4a;
+    width: 50px;
+}
+.grid {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid .info_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_text {
+    text-align: center;
+}
+.info_text .title {
+    font-size: 5rem; /*100px*/
+    color: #233b4a;
+}
+.info_text .sub_title {
+    font-size: 1rem; /*20px*/
+    color: #233b4a;
+}
+.info_text .price {
+    margin-top: 2.5rem;
+}
+.info_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 25rem;
+    height: 3.5rem;
+}
+.info_btn .white,
+.info_btn .white a {
+    height: 3.5rem;
+    background-color: white;
+    border: none;
+    color: #233b4a;
+}
+.info_btn .white a{
+    width: 25rem;
+    padding: 5%;
+}
+.info_btn .blue a {
+    padding: 5%;
+}
+.info_btn .blue,
+.info_btn .blue a {
+    height: 3.5rem;
+    background-color: #233b4a;
+    border: none;
+    color: white;
+}
+.info_btn button:hover {
+    transform: scale(1.2);
+}
