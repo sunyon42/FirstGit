@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #d5d5f9;
     font-size: 20px;
 }
+body {
+    background: linear-gradient(to left, #a5bfce 50%, #edf1f3 50%);
+}
 a {
-    color: inherit;
+    color: black;
     text-decoration: none;
 }
 header {
@@ -51,6 +53,7 @@ article .tag {
     height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 8vh;
 }
 .first_grid .info_wrap {
     display: flex;
@@ -107,18 +110,17 @@ article .tag {
 .second_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #aabfcd;
-    padding: 5%;
+    background-color: #edf1f3;
 }
-.second_grid .content{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 600px;
-    border: 1px solid #000;
+.grid_first {
+    border-right: 1px solid #767676;
 }
-
+.grid_second {
+    border-right: 1px solid #767676;
+}
 .second_grid img {
-    width: 600px;
-    background-color: #aabfcd;
+    width: 500px;
+    display: flex;
+    text-align: center;
+    background-color: #edf1f3;
 }
