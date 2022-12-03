@@ -61,56 +61,57 @@ article .tag {
     justify-content: center;
     align-items: center;
 }
-.info_text {
+.first_grid .info_text {
     text-align: center;
 }
-.info_text .title {
+.first_grid .info_text .title {
     font-size: 5rem; /*100px*/
     color: #233b4a;
 }
-.info_text .sub_title {
+.first_grid .info_text .sub_title {
     font-size: 1rem; /*20px*/
     color: #233b4a;
 }
-.info_text .price {
+.first_grid .info_text .price {
     margin-top: 2.5rem;
 }
-.info_btn{
+.first_grid .info_btn{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
     box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.3);
 }
-.info_btn .white,
-.info_btn .white a {
+.first_grid .info_btn .white,
+.first_grid .info_btn .white a {
     width: 10vw;
     height: 3.5rem;
     background-color: white;
     border: none;
     color: #233b4a;
 }
-.info_btn .white a{
+.first_grid .info_btn .white a{
     margin: 10%;
 }
-.info_btn .blue a {
+.first_grid .info_btn .blue a {
     margin: 10%;
 
 }
-.info_btn .blue,
-.info_btn .blue a {
+.first_grid .info_btn .blue,
+.first_grid .info_btn .blue a {
     width: 10vw;
     height: 3.5rem;
     background-color: #233b4a;
     border: none;
     color: white;
 }
-.info_btn button:hover {
+.first_grid .info_btn button:hover {
     transform: scale(1.2);
 }
 .second_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #edf1f3;
+    margin: 5% 0    ;
 }
 .grid_first {
     border-right: 1px solid #767676;
@@ -120,7 +121,12 @@ article .tag {
 }
 .second_grid img {
     width: 500px;
-    display: flex;
-    text-align: center;
+    margin: auto;
     background-color: #edf1f3;
+}
+.third_grid {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 8vh;
 }
