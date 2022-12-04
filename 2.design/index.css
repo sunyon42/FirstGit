@@ -40,6 +40,7 @@ nav div a{
 .first {
     padding: 8vh 0;
     height: 60vh;
+    margin: auto;
 }
 .first .tag {
     display: flex;
@@ -57,7 +58,7 @@ nav div a{
 .first_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 8vh;
+    margin: auto;
 }
 .first_grid .info_wrap {
     display: flex;
@@ -115,12 +116,14 @@ nav div a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #edf1f3;
+    width: 60%;
     margin: auto;
 }
-.second_grid .info_wrap {
+.second_grid .grid {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 .second_grid .box {
     border-right: 1px solid #767676;
@@ -230,8 +233,8 @@ nav div a{
 }
 .fifth {
     padding: 8vh 0;
-    height: 60vh;
-    background: #edf1f3;
+    height: 10vh;
+    background: #a5bfce;
 }
 .fifth_grid {
     display: grid;
@@ -239,9 +242,41 @@ nav div a{
     width: 60%;
     margin: auto;
 }
-.fifth_grid .grid {
+.fifth_grid .info_wrap {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.fifth_grid .info_text {
+    text-align: start;
+}
+.fifth_grid  .info_text .title {
+    font-size: 2rem; /*40px*/
+    color: #233b4a;
+}
+.fifth_grid .info_text .sub_title {
+    font-size: .8rem; /*16px*/
+    color: #233b4a;
+}
+.fifth_grid .info_email {
+    text-align: end;
+}
+.fifth_grid  .info_email input {
+    font-size: 2rem; /*40px*/
+    color: #233b4a;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #233b4a;
+}
+.fifth_grid .info_email button {
+    background-color: #233b4a;
+    border: none;
+    color: #fff;
+    padding: 5% 7%;
+    font-size: .6rem; /*12px*/
+}
+.fifth_grid .info_text input::placeholder {
+    color: #767676;
+    margin-left: 10px;
 }
