@@ -139,10 +139,8 @@ nav div a{
     background: linear-gradient(to right, #a5bfce 50%, #edf1f3 50%);
 }
 .third_grid {
-    height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 8vh;
 }
 .third_grid .info_wrap {
     display: flex;
@@ -192,4 +190,33 @@ nav div a{
 }
 .third_grid .info_btn:hover {
     transform: scale(1.2);
+}
+.fourth {
+    padding: 8vh 0;
+    height: 50vh;
+    background: #edf1f3;
+}
+.fourth .tag {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.fourth .tag hr {
+    position: absolute;
+    border: solid 1px #233b4a;
+    width: 50px;
+}
+.fourth .tag p {
+    margin-top: 10px;
+}
+.fourth_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.fourth_grid .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
