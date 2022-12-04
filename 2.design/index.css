@@ -39,7 +39,7 @@ nav div a{
 }
 .first {
     padding: 8vh 0;
-    height: 50vh;
+    height: 60vh;
 }
 .first .tag {
     display: flex;
@@ -135,7 +135,7 @@ nav div a{
 }
 .third {
     padding: 8vh 0;
-    height: 50vh;
+    height: 60vh;
     background: linear-gradient(to right, #a5bfce 50%, #edf1f3 50%);
 }
 .third_grid {
@@ -193,7 +193,7 @@ nav div a{
 }
 .fourth {
     padding: 8vh 0;
-    height: 50vh;
+    height: 60vh;
     background: #edf1f3;
 }
 .fourth .tag {
@@ -212,9 +212,32 @@ nav div a{
 .fourth_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 60%;
+    margin: auto;
+    gap: 20px;
 }
-
 .fourth_grid .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fourth_grid .grid .box {
+    margin-top: 8vh;
+    width: 100%;
+    height: 40vh;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+}
+.fifth {
+    padding: 8vh 0;
+    height: 60vh;
+    background: #edf1f3;
+}
+.fifth_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.fifth_grid .grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
