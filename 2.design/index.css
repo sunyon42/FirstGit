@@ -236,6 +236,8 @@ nav div a{
 .fifth_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin: auto;
 }
 .fifth_grid .grid {
     display: flex;
