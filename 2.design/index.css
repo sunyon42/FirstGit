@@ -40,7 +40,6 @@ nav div a{
 .first {
     padding: 8vh 0;
     height: 60vh;
-    margin: auto;
 }
 .first .tag {
     display: flex;
@@ -58,13 +57,13 @@ nav div a{
 .first_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: auto;
 }
 .first_grid .info_wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .first_grid .info_text {
     text-align: center;
@@ -276,6 +275,11 @@ nav div a{
     padding: 5% 7%;
     font-size: .6rem; /*12px*/
 }
+.fifth_grid .info_email button a {
+    color: #fff;
+
+}
+
 .fifth_grid .info_text input::placeholder {
     color: #767676;
     margin-left: 10px;
