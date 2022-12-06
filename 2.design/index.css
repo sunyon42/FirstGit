@@ -108,7 +108,6 @@ nav div a{
 }
 .second {
     padding: 8vh 0;
-    height: 50vh;
     background-color: #edf1f3;
 }
 .second_grid {
@@ -123,9 +122,6 @@ nav div a{
     justify-content: center;
     align-items: center;
     margin: auto;
-}
-.second_grid .box {
-    border-right: 1px solid #767676;
 }
 .second_grid .box:nth-last-child(1) {
     border-right: none;
@@ -290,4 +286,9 @@ nav div a{
 .fifth_grid .info_text input::placeholder {
     color: #767676;
     margin-left: 10px;
+}
+
+@media screen and (max-width:1500px) {
+    .fourth_grid .grid .box {
+    }
 }
