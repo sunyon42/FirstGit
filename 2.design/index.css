@@ -210,7 +210,7 @@ nav div a{
 .fourth_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 60%;
+    width: 80%;
     margin: auto;
     gap: 50px;
 }
@@ -289,6 +289,9 @@ nav div a{
 }
 
 @media screen and (max-width:1500px) {
-    .fourth_grid .grid .box {
+
+    .fourth_grid {
+        margin: auto;
     }
+    
 }
