@@ -222,17 +222,48 @@ nav div a{
 }
 .fourth_grid .grid .box {
     margin-top: 8vh;
+    min-width: 310px;
     width: 100%;
+    min-height: 400px;
     height: 40vh;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
 }
 .fourth_grid .grid .box:hover {
     transform: scale(1.2);
 }
+.fourth_grid .grid .box img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5vh;
+    width: 80%;
+}
 .fourth_grid .grid .box P {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
     font-size: 30px;
     text-align: center;
     font-weight: bold;
+    margin: auto;
+}
+.fourth_grid .grid .box button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 5vh;
+    border: 1px solid #233b4a;
+    border-bottom: none;
+    background-color: transparent;
+}
+.fourth_grid .grid .box:hover button{
+    display: block;
 }
 .fifth {
     padding: 8vh 0;
@@ -288,10 +319,88 @@ nav div a{
     margin-left: 10px;
 }
 
-@media screen and (max-width:1500px) {
-
+@media screen and (max-width:1000px) {
+    .fourth {
+        padding: 8vh 0;
+        height: 60vh;
+        background: #edf1f3;
+    }
     .fourth_grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fourth_grid .grid {
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+    .fourth_grid .grid .box {
+        margin-top: 8vh;
+        width: 70vw;
+        min-height: 100%;
+        height: 100%;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        position: relative;
+    }
+    .fourth_grid .grid .box img {
+        display: none;
+    }
+    .fourth_grid .grid .box P {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
         margin: auto;
     }
-    
+    .fourth_grid .grid .box button {
+        display: none;
+        position: absolute;
+        left: 0;
+        transform: translateX(0);
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .fourth_grid .grid .box:hover button{
+        display: block;
+        background-color: #a5bfce;
+    }
+    .fourth_grid .grid .box:hover p{
+        display: none;
+    }
+    .fifth {
+        padding: 8vh 0;
+        height: 20vh;
+        background: #a5bfce;
+    }
+    .fifth_grid {
+        position: relative;
+        display: block;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+    .fifth_grid .info_text {
+        text-align: start;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .fifth_grid .info_email {
+        text-align: start;
+        margin-top: 5vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .fifth_grid .info_email button {
+        position: absolute;
+        bottom: 0;
+    }
 }
