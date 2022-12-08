@@ -3,8 +3,12 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    background-color: #ccc;
     font-size: 20px;
+}
+body {
+    background-size: cover;
+    background-image: url(bg1.jpg);
+    color: white;
 }
 .header {
     width: 60%;
@@ -30,16 +34,16 @@
     cursor: pointer;
 }
 .header h1:hover {
-    text-shadow:  2px 4px 0 #000,
-    3px 6px 0 #000,
-    4px 8px 0 #000,
-    5px 10px 0 #000,
-    6px 12px 0 #000,
-    7px 14px 0 #000,
-    8px 16px 0 #000,
-    9px 18px 0 #000,
-    10px 20px 0 #000,
-    14px 24px 11px rgba(0, 0, 0, .8) ;
+    text-shadow:  2px 4px 0 rgb(0, 0, 0),
+    3px 6px 0 rgb(255, 255, 255),
+    4px 8px 0 rgb(255, 255, 255),
+    5px 10px 0 rgb(255, 255, 255),
+    6px 12px 0 rgb(255, 255, 255),
+    7px 14px 0 rgb(255, 255, 255),
+    8px 16px 0 rgb(255, 255, 255),
+    9px 18px 0 rgb(255, 255, 255),
+    10px 20px 0 rgb(255, 255, 255),
+    14px 24px 11px rgb(255, 255, 255) ;
 }
 
 
