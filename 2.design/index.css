@@ -28,7 +28,7 @@ nav div a{
     justify-content: center;
     padding: 0 20px;
 }
-.start div, .last div {
+.start div .last div {
     width: 4vw;
 }
 .start div:nth-child(1) {
@@ -318,7 +318,19 @@ nav div a{
     margin-left: 10px;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
+    .start div, .last div {
+        width: 10vw;
+    }
+    .last div:nth-child(n+2){
+        display: none;
+    }
+    header a {
+        font-size: 24px;
+    }
+    header i {
+        font-size: 28px;
+    }
     .first {
         padding: 8vh 0;
         height:auto;
@@ -332,13 +344,10 @@ nav div a{
     .first_grid .info_wrap:nth-child(2){
         display: none;
     }
+    .first_grid .info_btn .blue,
     .first_grid .info_btn .white {
         width: 30vw;
-        height: 5rem;
-    }
-    .first_grid .info_btn .blue {
-        width: 30vw;
-        height: 5rem;
+        height: 4rem;
     }
     .second {
         padding: 8vh 0;
@@ -364,7 +373,7 @@ nav div a{
         border-right: none;
     }
     .second_grid img {
-        width: 20vw;
+        width: 25vw;
         margin: auto;
         background-color: #edf1f3;
     }
@@ -384,7 +393,7 @@ nav div a{
     }
     .third_grid .info_btn{
         width: 30vw;
-        height: 5rem;
+        height: 4rem;
     }
     .fourth {
         padding: 8vh 0;
@@ -435,6 +444,8 @@ nav div a{
         width: 100%;
         height: 100%;
         border: none;
+        color: #edf1f3;
+        cursor: pointer;
     }
     .fourth_grid .grid .box:hover button{
         display: block;
