@@ -27,14 +27,79 @@ main .first {
 .first .info {
     display: flex;
     flex-direction: column;
+    text-align: center;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.info .title {
+.first .info .title {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    font-size: 44px;
+}
+.first .info .title p {
+    font-size: 40px;
+}
+.first .info .title strong  {
+    font-size: 60px;
+}
+.first .info .sub_title {
+    margin-top: 30px;
+}
+main .secound {
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.grid_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    text-align: center;
+}
+.grid .img1 {
+    width: 500px;
+    height: 200px;
+    background-image: url(img/img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid .img2 {
+    width: 500px;
+    height: 200px;
+    background-image: url(img/img6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid .img3 {
+    width: 500px;
+    height: 200px;
+    background-image: url(img/img7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid .img4 {
+    width: 500px;
+    height: 200px;
+    background-image: url(img/img8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid .info {
+    margin-top: 20px;
+}
+.grid .info strong {
+    font-size: 18px;
+}
+.grid .btn {
+    width: 300px;
+    height: 20px;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px #000;
 }
