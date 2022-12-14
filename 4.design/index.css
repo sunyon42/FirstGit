@@ -59,48 +59,48 @@ main .secound {
 .secound .info strong {
     font-size: 32px;
 }
-.grid_wrap {
+.secound .grid_wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 50px;
     margin-top: 5vh;
 }
-.grid .img1 {
+.secound .grid .img1 {
     width: 500px;
     height: 200px;
     background-image: url(img/img5.jpg);
     background-size: cover;
     background-position: center;
 }
-.grid .img2 {
+.secound .grid .img2 {
     width: 500px;
     height: 200px;
     background-image: url(img/img6.jpg);
     background-size: cover;
     background-position: center;
 }
-.grid .img3 {
+.secound .grid .img3 {
     width: 500px;
     height: 200px;
     background-image: url(img/img7.jpg);
     background-size: cover;
     background-position: center;
 }
-.grid .img4 {
+.secound .grid .img4 {
     width: 500px;
     height: 200px;
     background-image: url(img/img8.jpg);
     background-size: cover;
     background-position: center;
 }
-.grid .info {
+.secound .grid .info {
     margin-top: 20px;
 }
-.grid .info strong {
+.secound .grid .info strong {
     font-size: 18px;
 }
-.grid .btn {
+.secound .grid .btn {
     margin: 5vh auto 0;
     width: 300px;
     height: 50px;
@@ -110,7 +110,7 @@ main .secound {
     justify-content: center;
     cursor: pointer;
 }
-.btn button {
+.secound .btn button {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -119,18 +119,29 @@ main .third {
     height: 40vh;
     background-image: url(img/img8.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     margin-bottom: 5vh;
-}
-.third .info {
     display: flex;
     justify-content: start;
     align-items: center;
+}
+.third .info {
     color: white;
     margin-left: 5vw;
 }
-.first .info .title {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+.third .info .title {
+    font-size: 44px;
+}
+main .fourth{
+    height: 130vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.fourth .info strong {
+    font-size: 32px;
 }
