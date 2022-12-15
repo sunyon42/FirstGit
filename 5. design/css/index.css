@@ -152,16 +152,16 @@ header .logo a strong {
 .stripes .stipe.animate_down{
     height: 512px;
 }
-#s1 {background: #2c2f36;}
-#s2 {background: #444850;}
-#s3 {background: #36383c;}
-#s4 {background: #1e2026;}
-#s5 {background: #444850;}
-#s6 {background: #2b2d30;}
-#s7 {background: #212326;}
-#s8 {background: #36383c;}
-#s9 {background: #444850;}
-#s10 {background: #2c2f36;}
+#s1 {background: #2c2f36; transition-delay: 0.1s;}
+#s2 {background: #444850; transition-delay: 0.2s;}
+#s3 {background: #36383c; transition-delay: 0.3s;}
+#s4 {background: #1e2026; transition-delay: 0.4s;}
+#s5 {background: #444850; transition-delay: 0.5s;}
+#s6 {background: #2b2d30; transition-delay: 0.6s;}
+#s7 {background: #212326; transition-delay: 0.7s;}
+#s8 {background: #36383c; transition-delay: 0.8s;}
+#s9 {background: #444850; transition-delay: 0.9s;}
+#s10 {background: #2c2f36; transition-delay: 1s;}
 .contents {
     position: absolute;
     top: 0;
