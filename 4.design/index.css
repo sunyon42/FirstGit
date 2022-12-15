@@ -121,7 +121,6 @@ main .third {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 5vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -134,7 +133,7 @@ main .third {
     font-size: 44px;
 }
 main .fourth{
-    height: 130vh;
+    height: 80vh;
     background-color: white;
     text-align: center;
     display: flex;
@@ -144,4 +143,35 @@ main .fourth{
 }
 .fourth .info strong {
     font-size: 32px;
+}
+.fourth .grid_wrap {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 5vh;
+}
+.fourth .grid .img1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(img/img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.fourth .grid .img2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(img/img6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.fourth .grid .img3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(img/img7.jpg);
+    background-size: cover;
+    background-position: center;
 }
