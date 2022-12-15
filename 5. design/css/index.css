@@ -101,7 +101,7 @@ header .logo a em {
     left: 70px;
     opacity: 0;
 }
-.animate {
+.animate, .grow-img {
     animation: fadeIn 1s forwards;
     transition: 2s ease-in-out;
 }
@@ -119,5 +119,26 @@ header .logo a em {
     transform: translateX(3em);
 }
 /* FEATURES */
-
+.features {
+    background: #f0f0f0;
+    padding: 81px 0;
+}
+.features .item {
+    text-align: center;
+}
+.features .item img {
+    width: 0;
+    height: 0;
+}
+.features .item img.grow-img {
+    width: 169px;
+    height: 169px;
+}
+.features .item h4 {
+    color: #2c2f36;
+    font-size: 30px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    opacity: 0;
+}
 /* LOCATION */
