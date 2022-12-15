@@ -17,9 +17,6 @@ h1,h2,h3,h4,ul,li,p,a,blockquote {
 img {
     vertical-align: top;
 }
-em {
-    font-size: normal;
-}
 .hidden {
     display: none;
 }
@@ -40,7 +37,7 @@ header .logo a {
     font-size: 24px;
     color: #fff;
 }
-header .logo a em {
+header .logo a strong {
     font-weight: bold;
 }
 .slogan {
@@ -101,7 +98,7 @@ header .logo a em {
     left: 70px;
     opacity: 0;
 }
-.animate, .grow-img {
+.animate, .grow-img, .animate_down{
     animation: fadeIn 1s forwards;
     transition: 2s ease-in-out;
 }
@@ -142,3 +139,59 @@ header .logo a em {
     opacity: 0;
 }
 /* LOCATION */
+.location {
+    position: relative;
+}
+.stripes {
+    display: flex;
+}
+.stripes .stripe {
+    width: 10%;
+    height: 0;
+}
+.stripes .stipe.animate_down{
+    height: 512px;
+}
+#s1 {background: #2c2f36;}
+#s2 {background: #444850;}
+#s3 {background: #36383c;}
+#s4 {background: #1e2026;}
+#s5 {background: #444850;}
+#s6 {background: #2b2d30;}
+#s7 {background: #212326;}
+#s8 {background: #36383c;}
+#s9 {background: #444850;}
+#s10 {background: #2c2f36;}
+.contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 155px 0 120px;
+}
+.location .map {
+    position: relative;
+}
+#location_map {
+    margin-left: 90px;
+}
+#radar {
+    position: absolute;
+    left: 120px;
+    right: -40px;
+    animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.contents h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.contents p {
+    font-size: 28px;
+    color: #fff;
+    line-height: 37px;
+}
