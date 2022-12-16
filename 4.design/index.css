@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    line-height: 1;
 }
 a {
     color: black;
@@ -13,11 +14,27 @@ nav {
     align-items: center;
     padding: 0 5vw;
     background-color: white;
+    font-weight: bold;
+}
+nav .middle i {
+    display: none;
+}
+.color {
+    color: rgb(67, 67, 105);
+    font-size: 18px;
 }
 section {
     opacity: 0;
     transition: 0.5s;
 }
+/* .animate {
+    animation: fadeIn 1s forwards;
+    transition: 2s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+} */
 .middle a {
     margin-left: 3vw;
 }
@@ -102,7 +119,7 @@ main .secound {
     margin-top: 20px;
 }
 .secound .grid .info strong {
-    font-size: 18px;
+    font-size: 20px;
 }
 .secound .grid .btn {
     margin: 5vh auto 0;
@@ -131,7 +148,7 @@ main .third {
 }
 .third .info {
     color: white;
-    margin-left: 5vw;
+    margin-left: 10vw;
 }
 .third .info .title {
     font-size: 44px;
@@ -145,8 +162,14 @@ main .fourth{
     flex-direction: column;
     align-items: center;
 }
+.fourth .info {
+    margin-top: 5vh;
+}
 .fourth .info strong {
     font-size: 32px;
+}
+.fourth .grid strong {
+    font-size: 20px;
 }
 .fourth .grid_wrap {
     display: grid;
@@ -178,4 +201,152 @@ main .fourth{
     background-image: url(img/img7.jpg);
     background-size: cover;
     background-position: center;
+}
+main .fifth {
+    height: 40vh;
+    background-image: url(img/img8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.fifth .info {
+    color: white;
+    margin-right: 10vw;
+    text-align: end;
+}
+.fifth .info .title {
+    font-size: 44px;
+}
+main .sixth{
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sixth .info {
+    margin-top: 5vh;
+}
+.sixth .info strong {
+    font-size: 32px;
+}
+.sixth .grid strong {
+    font-size: 20px;
+}
+.sixth .grid_wrap {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 5vh;
+}
+.sixth .grid .img1 {
+    width: 300px;
+    height: 450px;
+    background-image: url(img/img9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sixth .grid .img2 {
+    width: 300px;
+    height: 450px;
+    background-image: url(img/img10.jpg);
+    background-position: center;
+}
+.sixth .grid .img3 {
+    width: 300px;
+    height: 450px;
+    background-image: url(img/img11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+main .seventh {
+    height: 40vh;
+    background-image: url(img/img12.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}   
+.seventh .info {
+    color: white;
+    margin: auto;
+}
+.seventh .info .title {
+    font-size: 44px;
+}
+main .eighth{
+    height: 80vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.eighth .info {
+    margin-top: 5vh;
+}
+.eighth .info strong {
+    font-size: 32px;
+}
+.eighth .btn {
+    margin: 5vh auto 0;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    box-shadow: 2px 2px 10px #000;
+    display: flex;  
+    justify-content: center;
+    cursor: pointer;
+}
+.eighth .btn button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.eighth .grid_wrap {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 5vh;
+}
+.eighth .grid .img1 {
+    width: 1000px;
+    height: 400px;
+    background-image: url(img/img13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width : 700px) {
+    nav div:nth-child(2) {
+        order: 1;
+    }
+    nav div:nth-child(1) {
+        order: 2;
+    }
+    nav div:nth-child(3) {
+        order: 3;
+    }
+    nav:nth-child(1) {
+        font-size: 24px;
+    }
+    nav div:nth-child(2) a {
+        display: none;
+    }
+    nav div:nth-child(2) i {
+        display: block;
+        font-size: 28px;
+    }
+    nav div:nth-child(3) {
+        font-size: 28px;
+    }
 }
