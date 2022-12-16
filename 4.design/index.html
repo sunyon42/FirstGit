@@ -45,47 +45,53 @@
                 <hr>
                 <p>COFFEE BEANS & ROASTING</p>
             </div>
-            <div class="grid_wrap">
-                <div class="grid">
-                    <div class="img1"></div>
-                    <div class="info">
-                        <strong>커피의 본연의 맛을 찾아</strong>
-                        <p>커피의 본연의 맛을 찾아</p>
+            <div class="slider">
+                <div class="grid_wrap slides">
+                    <div class="grid slide">
+                        <div class="img1"></div>
+                        <div class="info">
+                            <strong>커피의 본연의 맛을 찾아</strong>
+                            <p>커피의 본연의 맛을 찾아</p>
+                        </div>
+                        <div class="btn">
+                            <button>DETAILS</button>
                     </div>
-                    <div class="btn">
-                        <button>DETAILS</button>
+                    </div>
+                    <div class="grid slide">
+                        <div class="img2"></div>
+                        <div class="info">
+                            <strong>조화로운 열의 전달</strong>
+                            <p>커피의 본연의 맛을 찾아</p>
+                        </div>
+                        <div class="btn">
+                            <button>DETAILS</button>
+                        </div>
+                    </div>
+                    <div class="grid slide">
+                        <div class="img3"></div>
+                        <div class="info">
+                            <strong>블렌드? 상상만 했던 그 맛!</strong>
+                            <p>커피의 본연의 맛을 찾아</p>
+                        </div>
+                        <div class="btn">
+                            <button>DETAILS</button>
+                        </div>
+                    </div>
+                    <div class="grid slide">
+                        <div class="img4"></div>
+                        <div class="info">
+                            <strong>로스팅 : 달콤함의 발현</strong>
+                            <p>커피의 본연의 맛을 찾아</p>
+                        </div>
+                        <div class="btn">
+                            <button>DETAILS</button>
+                        </div>
                     </div>
                 </div>
-                <div class="grid">
-                    <div class="img2"></div>
-                    <div class="info">
-                        <strong>조화로운 열의 전달</strong>
-                        <p>커피의 본연의 맛을 찾아</p>
-                    </div>
-                    <div class="btn">
-                        <button>DETAILS</button>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="img3"></div>
-                    <div class="info">
-                        <strong>블렌드? 상상만 했던 그 맛!</strong>
-                        <p>커피의 본연의 맛을 찾아</p>
-                    </div>
-                    <div class="btn">
-                        <button>DETAILS</button>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="img4"></div>
-                    <div class="info">
-                        <strong>로스팅 : 달콤함의 발현</strong>
-                        <p>커피의 본연의 맛을 찾아</p>
-                    </div>
-                    <div class="btn">
-                        <button>DETAILS</button>
-                    </div>
-                </div>
+                <p class="controls">
+                    <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>  
+                    <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+                </p>
             </div>
         </section>
         <section class="third">
@@ -204,6 +210,42 @@
         observer.observe(section[5])
         observer.observe(section[6])
         observer.observe(section[7])
+    </script>
+    <script>
+        var slider = document.querySelector('.slider'),
+            slides = document.querySelector('.slides'),
+            slide = document.querySelectorAll('.slide'),
+            slideswidth = 560,
+            slidesmargin = 30,
+            currentIdex = 0,
+            slideCount = slide.length,
+            Prev = document.querySelector('.prev'),
+            Next = document.querySelector('.next');
+
+            slides.style.width = (slideswidth + slidesmargin) * slideCount - slidesmargin
+
+            function moveslides(num){
+                slides.style.left = -num * 560 +'px';
+                currentIdex = num;
+            }
+            Next.addEventListener('click', function(){
+                if(currentIdex < slideCount - 1){
+                    moveslides(currentIdex + 1);
+                    console.log(currentIdex);
+                }else{
+                    moveslides(0);
+                }
+            });
+
+            Prev.addEventListener('click', function(){
+                if(currentIdex > 0){
+                    moveslides(currentIdex - 1);
+                    console.log(currentIdex);
+                }else{
+                    moveslides(0);
+                }
+            });
+
     </script>
 </body>
 </html>

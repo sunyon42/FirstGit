@@ -44,7 +44,7 @@ main .first {
     background-image: url(img/img4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    position: relative;}
 .first .info {
     display: flex;
     flex-direction: column;
@@ -54,6 +54,7 @@ main .first {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 50%;
 }
 .first .info .title {
     border-top: 1px solid #fff;
@@ -348,5 +349,66 @@ main .eighth{
     }
     nav div:nth-child(3) {
         font-size: 28px;
+    }
+    main .first {
+        height: 50vh;
+    }
+    .first .info {
+        width: 80%;
+    }
+    main .secound {
+        height: 80vh;
+    }
+    .secound .info {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .secound .grid_wrap {
+        display: flex;
+        width: 2000px;
+    }
+    .slider{
+        position: relative;
+        width: 500px;
+        height: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .slides{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2000px;
+        transition: 0.5s ease-in-out;
+    }
+    .slides li:not(:last-child){
+        float: left;
+    }
+    .controls{
+        text-align: center;
+    }
+    .controls span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        cursor: pointer;
+        color: rgba(0,0,0,0.3);
+        z-index: 2;
+    }
+    span:hover{
+        color:rgba(0,0,0,1);
+    }
+    .prev{
+        margin-left: -200px;
+    }
+    .next{
+        margin-left: 200px;
     }
 }
