@@ -28,10 +28,13 @@ body {
 }
 /* HEADER SLOGAN */
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #2c2f36;
     height: 81px;
     line-height: 81px;
-    text-align: center;
 }
 header .logo a {
     font-size: 24px;
