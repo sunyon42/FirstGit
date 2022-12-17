@@ -142,22 +142,23 @@
                 <hr>
                 <p>COLLECTION</p>
             </div>
-            <div class="grid_wrap">
-                <div class="grid">
+            <div class="left_slider">
+                <div class="grid_wrap left_slides">
+                    <div class="grid left_slide">
                     <div class="img1"></div>
                     <div class="info">
                         <strong>더 선명하고 깨끗하게</strong>
                         <p>TIRAMISSO</p>
                     </div>
                 </div>
-                <div class="grid">
+                <div class="grid left_slide">
                     <div class="img2"></div>
                     <div class="info">
                         <strong>자체 개발 추출 방식</strong>
                         <p>CHEEWE CAKE TART</p>
                     </div>
                 </div>
-                <div class="grid">
+                <div class="grid left_slide">
                     <div class="img3"></div>
                     <div class="info">
                         <strong>콜드브루 커피 : 새로운 패러다임</strong>
@@ -165,6 +166,9 @@
                     </div>
                 </div>
             </div>
+            <p class="controls">
+                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+            </p>
         </section>
         <section class="seventh">
             <div class="info">
@@ -187,9 +191,15 @@
                 </div>
             </div>
         </section>
-
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="grid">
+            <a href="#" class="color">COFFE<br>HOME</a>
+            <p>
+                COPYRIGHT © 2022 sun young All Rights Reserved.
+            </p>
+        </div>
+    </footer>
     <script>
         let observer = new IntersectionObserver((e)=>{
             e.forEach(박스 => {
@@ -215,7 +225,7 @@
         var slider = document.querySelector('.slider'),
             slides = document.querySelector('.slides'),
             slide = document.querySelectorAll('.slide'),
-            slideswidth = 560,
+            slideswidth = 550,
             slidesmargin = 30,
             currentIdex = 0,
             slideCount = slide.length,
@@ -225,7 +235,7 @@
             slides.style.width = (slideswidth + slidesmargin) * slideCount - slidesmargin
 
             function moveslides(num){
-                slides.style.left = -num * 560 +'px';
+                slides.style.left = -num * 550 +'px';
                 currentIdex = num;
             }
             Next.addEventListener('click', function(){
@@ -240,6 +250,32 @@
             Prev.addEventListener('click', function(){
                 if(currentIdex > 0){
                     moveslides(currentIdex - 1);
+                    console.log(currentIdex);
+                }else{
+                    moveslides(0);
+                }
+            });
+
+    </script>
+    <script>
+        var slider = document.querySelector('.left_slider'),
+            slides = document.querySelector('.left_slides'),
+            slide = document.querySelectorAll('.left_slide'),
+            slideswidth = 350,
+            slidesmargin = 30,
+            currentIdex = 0,
+            slideCount = slide.length,
+            Next = document.querySelector('.sixth .next');
+
+            slides.style.width = (slideswidth + slidesmargin) * slideCount - slidesmargin
+
+            function moveslides(num){
+                slides.style.left = -num * 350 +'px';
+                currentIdex = num;
+            }
+            Next.addEventListener('click', function(){
+                if(currentIdex < slideCount - 1){
+                    moveslides(currentIdex + 1);
                     console.log(currentIdex);
                 }else{
                     moveslides(0);

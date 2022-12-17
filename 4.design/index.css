@@ -16,7 +16,7 @@ nav {
     background-color: white;
     font-weight: bold;
 }
-nav .middle i {
+nav .middle i, .controls {
     display: none;
 }
 .color {
@@ -327,6 +327,26 @@ main .eighth{
     background-size: cover;
     background-position: center;
 }
+.footer {
+    height: 15vh;
+    background-color: rgb(182, 166, 146);
+    text-align: center;
+}
+.footer .grid {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    gap: 10px;
+}
+.footer .grid a {
+    font-weight: bold;
+    font-size: 24px;
+}
+.footer .grid p {
+    font-size: 16px;
+}
+
 @media screen and (max-width : 700px) {
     nav div:nth-child(2) {
         order: 1;
@@ -368,6 +388,13 @@ main .eighth{
         align-items: center;
         text-align: center;
     }
+    .secound .grid .btn {
+        background-color: rgb(40, 11, 11);
+        box-shadow: none;
+    }
+    .secound .btn button {
+        color: #fff;
+    }
     .secound .grid_wrap {
         display: flex;
         width: 2000px;
@@ -389,10 +416,11 @@ main .eighth{
     .slides li:not(:last-child){
         float: left;
     }
-    .controls{
+    .secound .controls{
+        display: block;
         text-align: center;
     }
-    .controls span{
+    .secound .controls span{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -402,13 +430,107 @@ main .eighth{
         color: rgba(0,0,0,0.3);
         z-index: 2;
     }
-    span:hover{
+    .secound span:hover {
         color:rgba(0,0,0,1);
     }
-    .prev{
+    .secound .prev{
         margin-left: -200px;
     }
-    .next{
+    .secound .next{
         margin-left: 200px;
+    }
+    main .fourth{
+        height: 150vh;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fourth .info {
+        margin-top: 5vh;
+    }
+    .fourth .info strong {
+        font-size: 32px;
+    }
+    .fourth .grid strong {
+        font-size: 20px;
+    }
+    .fourth .grid_wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 50px;
+        margin-top: 5vh;
+    }
+    main .sixth{
+        height: 80vh;
+    }
+    .sixth .grid_wrap {
+        display: block;
+        float: left;
+        margin-top: 5vh;
+    }
+    .sixth .grid_wrap {
+        display: flex;
+        width: 2000px;
+    }
+    .left_slider{
+        position: relative;
+        width: 400px;
+        height: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .left_slides{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2000px;
+        transition: 0.5s ease-in-out;
+    }
+    .left_slides li:not(:last-child){
+        float: left;
+    }
+    .sixth .controls {
+        display: block;
+        text-align: center;
+    }
+    .sixth .controls span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        cursor: pointer;
+        color: rgba(0,0,0,0.3);
+        z-index: 2;
+    }
+    .sixth span:hover{
+        color:rgba(0,0,0,1);
+    }
+    .sixth .next{
+        margin-left: 180px;
+    }
+    .eighth .info {
+        margin-top: 5vh;
+    }
+    .eighth .info strong {
+        font-size: 32px;
+    }
+    .eighth .btn {
+        background-color: rgb(40, 11, 11);
+        box-shadow: none;
+    }
+    .eighth .btn button {
+        color: #fff;
+    }
+    .eighth .grid .img1 {
+        width: 80vw;
+        height: 30vh;
+        background-image: url(img/img13.jpg);
+        background-size: cover;
+        background-position: center;
     }
 }
