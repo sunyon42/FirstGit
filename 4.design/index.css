@@ -389,6 +389,7 @@ main .eighth{
         text-align: center;
     }
     .secound .grid .btn {
+        width: 40vw;
         background-color: rgb(40, 11, 11);
         box-shadow: none;
     }
@@ -520,6 +521,7 @@ main .eighth{
         font-size: 32px;
     }
     .eighth .btn {
+        width: 50vw;
         background-color: rgb(40, 11, 11);
         box-shadow: none;
     }

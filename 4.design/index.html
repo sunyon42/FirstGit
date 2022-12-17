@@ -142,22 +142,23 @@
                 <hr>
                 <p>COLLECTION</p>
             </div>
-            <div class="grid_wrap">
-                <div class="grid">
+            <div class="left_slider">
+                <div class="grid_wrap left_slides">
+                    <div class="grid left_slide">
                     <div class="img1"></div>
                     <div class="info">
                         <strong>더 선명하고 깨끗하게</strong>
                         <p>TIRAMISSO</p>
                     </div>
                 </div>
-                <div class="grid">
+                <div class="grid left_slide">
                     <div class="img2"></div>
                     <div class="info">
                         <strong>자체 개발 추출 방식</strong>
                         <p>CHEEWE CAKE TART</p>
                     </div>
                 </div>
-                <div class="grid">
+                <div class="grid left_slide">
                     <div class="img3"></div>
                     <div class="info">
                         <strong>콜드브루 커피 : 새로운 패러다임</strong>
@@ -165,6 +166,9 @@
                     </div>
                 </div>
             </div>
+            <p class="controls">
+                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+            </p>
         </section>
         <section class="seventh">
             <div class="info">
@@ -187,11 +191,17 @@
                 </div>
             </div>
         </section>
-
     </main>
-    <footer></footer>
-    <script>
-        let observer = new IntersectionObserver((e)=>{
+    <footer class="footer">
+        <div class="grid">
+            <a href="#" class="color">COFFE<br>HOME</a>
+            <p>
+                COPYRIGHT © 2022 sun young All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+        <script>
+                    let observer = new IntersectionObserver((e)=>{
             e.forEach(박스 => {
                 if (박스.isIntersecting){
                     박스.target.style.opacity = 1;
@@ -272,6 +282,7 @@
                 }
             });
         
+        </script>
         </script>
 </body>
 </html>
