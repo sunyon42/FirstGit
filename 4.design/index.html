@@ -15,9 +15,9 @@
                 <a href="#" class="color">COFFE<br>HOME</a>
             </div>
             <div class="middle">
-                <a href="#">HOME</a>
-                <a href="#">COFFEE</a>
-                <a href="#">BARREY</a>
+                <a href="#">ABOUT</a>
+                <a href="#">DESSERT</a>
+                <a href="#">COLD BREW</a>
                 <a href="#">SHOP</a>
                 <a href="#">LOGIN</a>
                 <i class="fa-solid fa-bars"></i>
@@ -39,7 +39,7 @@
                 </div>
             </div>
         </section>
-        <section class="secound">
+        <section class="secound content">
             <div class="info">
                 <strong>ABOUT</strong>
                 <hr>
@@ -100,7 +100,7 @@
                     <strong>HOMEMADE <br>BAKERY</strong>
                 </div>
         </section>
-        <section class="fourth">
+        <section class="fourth content">
             <div class="info">
                 <strong>DESSERT</strong>
                 <hr>
@@ -136,7 +136,7 @@
                     <strong>FRESH <br>ROASTED BEANS</strong>
                 </div>
         </section>
-        <section class="sixth">
+        <section class="sixth content">
             <div class="info">
                 <strong>COLD BREW</strong>
                 <hr>
@@ -176,7 +176,7 @@
                     <strong>COLD BREW COFFEE</strong>
                 </div>
         </section>
-        <section class="eighth">
+        <section class="eighth content">
             <div class="info">
                 <strong>SHOP</strong>
                 <hr>
@@ -200,89 +200,6 @@
             </p>
         </div>
     </footer>
-        <script>
-                    let observer = new IntersectionObserver((e)=>{
-            e.forEach(박스 => {
-                if (박스.isIntersecting){
-                    박스.target.style.opacity = 1;
-                } else {
-                    박스.target.style.opacity = 0;
-                }
-            })
-        })
-
-        let section = document.querySelectorAll('section')
-        observer.observe(section[0])
-        observer.observe(section[1])
-        observer.observe(section[2])
-        observer.observe(section[3])
-        observer.observe(section[4])
-        observer.observe(section[5])
-        observer.observe(section[6])
-        observer.observe(section[7])
-    </script>
-    <script>
-        var slider = document.querySelector('.slider'),
-            slides = document.querySelector('.slides'),
-            slide = document.querySelectorAll('.slide'),
-            slideswidth = 560,
-            slidesmargin = 30,
-            currentIdex = 0,
-            slideCount = slide.length,
-            Prev = document.querySelector('.prev'),
-            Next = document.querySelector('.next');
-
-            slides.style.width = (slideswidth + slidesmargin) * slideCount - slidesmargin
-
-            function moveslides(num){
-                slides.style.left = -num * 560 +'px';
-                currentIdex = num;
-            }
-            Next.addEventListener('click', function(){
-                if(currentIdex < slideCount - 1){
-                    moveslides(currentIdex + 1);
-                    console.log(currentIdex);
-                }else{
-                    moveslides(0);
-                }
-            });
-
-            Prev.addEventListener('click', function(){
-                if(currentIdex > 0){
-                    moveslides(currentIdex - 1);
-                    console.log(currentIdex);
-                }else{
-                    moveslides(0);
-                }
-            });
-
-    </script>
-    <script>
-        var slider = document.querySelector('.left_slider'),
-            slides = document.querySelector('.left_slides'),
-            slide = document.querySelectorAll('.left_slide'),
-            slideswidth = 350,
-            slidesmargin = 30,
-            currentIdex = 0,
-            slideCount = slide.length,
-            Next = document.querySelector('.sixth .next');
-        
-            slides.style.width = (slideswidth + slidesmargin) * slideCount - slidesmargin
-        
-            function moveslides(num){
-                slides.style.left = -num * 350 +'px';
-                currentIdex = num;
-            }
-            Next.addEventListener('click', function(){
-                if(currentIdex < slideCount - 1){
-                    moveslides(currentIdex + 1);
-                    console.log(currentIdex);
-                }else{
-                    moveslides(0);
-                }
-            });
-        
-        </script>
-        </script>
+        <script src="js/index.js"></script>
 </body>
 </html>

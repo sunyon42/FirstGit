@@ -1,25 +1,43 @@
-// let observer = new IntersectionObserver((e)=>{
-//     e.forEach(박스 => {
-//         if (박스.isIntersecting){
-//             박스.target.style.opacity = 1;
-//         } else {
-//             박스.target.style.opacity = 0;
-//         }
-//     })
-// })
+let observer = new IntersectionObserver((e)=>{
+    e.forEach(박스 => {
+        if (박스.isIntersecting){
+            박스.target.style.opacity = 1;
+        } else {
+            박스.target.style.opacity = 0;
+        }
+    })
+})
 
-//     let section = document.querySelectorAll('section')
-//     observer.observe(section[0])
-//     observer.observe(section[1])
-//     observer.observe(section[2])
-//     observer.observe(section[3])
-//     observer.observe(section[4])
-//     observer.observe(section[5])
-//     observer.observe(section[6])
-//     observer.observe(section[7])
+    let section = document.querySelectorAll('section')
+    observer.observe(section[0])
+    observer.observe(section[1])
+    observer.observe(section[2])
+    observer.observe(section[3])
+    observer.observe(section[4])
+    observer.observe(section[5])
+    observer.observe(section[6])
+    observer.observe(section[7])
 
 
+const nav = document.querySelectorAll('.middle a')
+const content = document.querySelectorAll('.content')
+const firstTop = content[0].offsetTOP
+const secondTop = content[1].offsetTOP
+const thirdTop = content[2].offsetTOP
+const fourthTop = content[3].offsetTOP
 
+nav[0].onclick = function(){
+    window.scroll({top:firstTop, behavior: 'smooth'})
+}
+nav[1].onclick = function(){
+    window.scroll({top:secondTop, behavior: 'smooth'})
+}
+nav[2].onclick = function(){
+    window.scroll({top:thirdTop, behavior: 'smooth'})
+}
+nav[3].onclick = function(){
+    window.scroll({top:fourthTop, behavior: 'smooth'})
+}
 
 var slider = document.querySelector('.slider'),
     slides = document.querySelector('.slides'),
