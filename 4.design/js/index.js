@@ -20,7 +20,7 @@ let observer = new IntersectionObserver((e)=>{
 
 
 const nav = document.querySelectorAll('.middle a')
-const content = document.querySelectorAll('.content')
+const content = document.querySelectorAll('section .content')
 const firstTop = content[0].offsetTOP
 const secondTop = content[1].offsetTOP
 const thirdTop = content[2].offsetTOP
@@ -37,7 +37,7 @@ nav[2].onclick = function(){
 }
 nav[3].onclick = function(){
     window.scroll({top:fourthTop, behavior: 'smooth'})
-}
+};
 
 var slider = document.querySelector('.slider'),
     slides = document.querySelector('.slides'),
