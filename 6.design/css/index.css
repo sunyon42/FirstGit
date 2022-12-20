@@ -23,7 +23,7 @@ img {
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 18px;
 }
 header {
@@ -40,7 +40,7 @@ header nav {
 }
 header .logo {
     font-size: 34px;
-    font-weight: bold;
+    font-weight: 700;
     margin-left: 5%;
 }
 header nav ul {
@@ -50,7 +50,7 @@ header nav ul {
 }
 header nav ul li a {
     margin-right: 30px;
-    font-size: 24px;
+    font-size: 1.3vw;
 }
 header nav.sticky {
     position: fixed;
@@ -67,7 +67,7 @@ header main {
     margin-right: 15vw;
 }
 header .main_info h1 {
-    font-size: 8vw;
+    font-size: 10vw;
     font-weight: bold;
     margin-bottom: 2vh;
 }
@@ -280,7 +280,7 @@ header .main_info h3 {
     color: #fff;
 }
 button {
-    width: 65%; 
+    width: 68%; 
     margin-top: 5vh;
     background: #fff;
     border: none;
