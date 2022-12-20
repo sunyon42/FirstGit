@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 
     var $device = $('.device');
-    var $features = $('.featrues');
+    var $features = $('.features');
     var $location = $('.location');
 
     var waypoints1 = $device.waypoint(function() {
@@ -28,12 +28,12 @@ $(document).ready(function(){
         $features.find('img').addClass('grow-img');
         $features.find('h4').addClass('animate');
     },{
-        offset:'50%'
+        offset:'70%'
     });
     var waypoints3 = $location.waypoint(function() {
         $location.find('.stripe').addClass('animate_down');
     },{
-        offset:'50%'
+        offset:'70%'
     });
 
 
