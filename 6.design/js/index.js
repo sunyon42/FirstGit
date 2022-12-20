@@ -1,4 +1,19 @@
+
+
+
+
 $(function(){
+
+    var $header = $('header nav');
+    $(window).scroll(function(){
+        if($(this).scrollTop()>0){
+            $header.addClass('.sticky');
+        }else{
+            $header.removeClass('.sticky');
+        }
+    });
+
+
 
     var $device = $('.device');
     var $features = $('.featrues');
@@ -10,7 +25,7 @@ $(function(){
         offset:'50%'
     });
     var waypoints2 = $features.waypoint(function() {
-        $features.find('img').addClass('grow-img');
+        $features.find('.item img').addClass('grow-img');
         $features.find('h4').addClass('animate');
     },{
         offset:'50%'
@@ -23,3 +38,6 @@ $(function(){
 
 
 });
+
+
+
