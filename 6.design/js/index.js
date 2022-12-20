@@ -2,14 +2,14 @@
 
 
 
-$(function(){
+$(document).ready(function(){
 
-    var $header = $('header nav');
+    var $nav = $('nav');
     $(window).scroll(function(){
-        if($(this).scrollTop()>0){
-            $header.addClass('.sticky');
+        if($(this).scrollTop() > 0){
+            $nav.addClass('sticky');
         }else{
-            $header.removeClass('.sticky');
+            $nav.removeClass('sticky');
         }
     });
 
@@ -25,7 +25,7 @@ $(function(){
         offset:'50%'
     });
     var waypoints2 = $features.waypoint(function() {
-        $features.find('.item img').addClass('grow-img');
+        $features.find('img').addClass('grow-img');
         $features.find('h4').addClass('animate');
     },{
         offset:'50%'
