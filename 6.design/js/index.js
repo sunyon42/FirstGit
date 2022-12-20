@@ -32,11 +32,17 @@ $(document).ready(function(){
     });
     var waypoints3 = $location.waypoint(function() {
         $location.find('.stripe').addClass('animate_down');
+        $location.find('.location').addClass('animate');
     },{
         offset:'70%'
     });
 
-
+    var $contents = $('.contents');
+    $(window).scroll(function(){
+        if($(this).scrollTop() === 0){
+            $contents.addClass('opacity');
+        }
+    });
 });
 
 

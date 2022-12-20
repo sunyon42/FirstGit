@@ -224,13 +224,72 @@ header .main_info h3 {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
-.contents h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+.contents {
+    opacity: 0;
+}
+.contents.opacity {
+    opacity: 1;
+}
+.contents .call,
+.contents .email,
+.contents .adress {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #fff;
+    text-align: end;
+    width: 30vw;
+}
+.contents .info {
+    border-right: 2px solid #f7eded;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #fff;    
+    line-height: 37px;
+}
+.contents .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contents .input input {
+    height: 5vh;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline: none;
     color: #fff;
 }
-.contents p {
-    font-size: 28px;
+.contents .inquiry {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.contents .inquiry_info {
+    padding: none;
+    margin-left: 5%;
+}
+.contents .inquiry_info p {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 13px;
     color: #fff;
-    line-height: 37px;
+}
+button {
+    width: 65%; 
+    margin-top: 5vh;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+button a {
+    color: #11262e;
+    font-size: 28px;
+    height: 71px;
+    line-height: 71px;
 }
