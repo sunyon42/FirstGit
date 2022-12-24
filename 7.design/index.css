@@ -12,6 +12,7 @@ header {
     width: 100%;
     line-height: 10vh;
     border-bottom: 2px solid #ccc;
+    z-index: 1000;
 }
 header nav {
     display: flex;
@@ -22,6 +23,116 @@ nav ul {
     display: flex;
 }
 nav ul li {
-    display: flex;
     margin-left: 5em;
+}
+header.scroll { height: 6vh; line-height: 6vh; border-bottom: none; background: rgba(0,0,0,.8); position: fixed; }
+header.scroll nav ul li a { color: #fff; }
+
+.main {
+    height: 100vh;
+}
+main {
+    background: #f0f0f0;
+}
+.review {
+    background: rgb(244, 242, 242);
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review .info .img{
+    margin: auto;
+    width: 300px;
+    height: 300px; 
+    border-radius: 70%;
+    overflow: hidden;
+}
+.review .info .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.review .info p {
+    width: 1000px;
+    margin-left: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ability {
+    height: 40vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ability .item {
+    margin-left: 5em;
+    text-align: center;
+    opacity: 0;
+    transition: 4s ease-in-out;
+}
+.ability .item img {
+    width: 150px;
+    border-radius: 10%;
+}
+.ability .item p {
+    margin-top: 1em;
+}
+
+.ability .item.active { opacity: 1;}
+.ability .item.active:nth-child(1) {transition: .2s;}
+.ability .item.active:nth-child(2) {transition: .8s;}
+.ability .item.active:nth-child(3) {transition: 1.5s;}
+.ability .item.active:nth-child(4) {transition: 2s;}
+.ability .item.active:nth-child(5) {transition: 2.5s;}
+.animate, .grow-img {
+    animation: fadeIn 1s forwards;
+    transition: 2s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.strength {
+    background: #f0f0f0;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 1000px;
+    margin: auto;
+    gap: 5em;
+}
+.strength .item {
+    text-align: center;
+}
+.strength .item img {
+    width: 0;
+    height: 0;
+}
+.strength .item img.grow-img {
+    width: 169px;
+    height: 169px;
+}
+.strength .item h4 {
+    color: #2c2f36;
+    font-size: 30px;
+    margin-top: 1em;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+
+
+.contact {
+    display: flex;
 }
