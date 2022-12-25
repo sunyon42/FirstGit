@@ -11,8 +11,9 @@ header {
     height: 10vh;
     width: 100%;
     line-height: 10vh;
-    border-bottom: 2px solid #ccc;
+    background: rgba(0, 0, 0,.2);
     z-index: 1000;
+    transition: .5s;
 }
 header nav {
     display: flex;
@@ -25,17 +26,63 @@ nav ul {
 nav ul li {
     margin-left: 5em;
 }
-header.scroll { height: 6vh; line-height: 6vh; border-bottom: none; background: rgba(0,0,0,.8); position: fixed; }
+header.scroll { height: 6vh; line-height: 6vh; border-bottom: none; background: #3A2D28; position: fixed; }
 header.scroll nav ul li a { color: #fff; }
 
 .main {
     height: 100vh;
 }
+.scroll-down {
+    z-index: 11;
+    position: fixed;
+    width: 42px;
+    height: 64px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 82px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.scroll-down::after {
+    top: 30%;
+    animation-delay: .3s;
+}
+.scroll-down::before, .scroll-down::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid black;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll 1s ease-in-out infinite;
+}
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+}
+.scroll-down.scroll-op {
+    opacity: 0;
+}
 main {
-    background: #f0f0f0;
+    background: #EBE3DB;
 }
 .review {
-    background: rgb(244, 242, 242);
+    background: #F1EDE6;
     height: 80vh;
     margin: auto;
     display: flex;
@@ -68,7 +115,7 @@ main {
 
 .ability {
     height: 40vh;
-    background: #ccc;
+    background: #EBE3DB;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +151,7 @@ main {
 }
 
 .strength {
-    background: #f0f0f0;
+    background: #EBE3DB;
     padding: 80px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -131,26 +178,6 @@ main {
     text-transform: uppercase;
     opacity: 0;
 }
-.stripes {
-    display: flex;
-}
-.stripes .stripe {
-    width: 10%;
-    height: 0;
-}
-.stripes .stripe.animate_down{
-    height: 300px;
-}
-#s1 {background: #2c2f36; transition-delay: 0.1s;}
-#s2 {background: #444850; transition-delay: 0.2s;}
-#s3 {background: #36383c; transition-delay: 0.3s;}
-#s4 {background: #1e2026; transition-delay: 0.4s;}
-#s5 {background: #444850; transition-delay: 0.5s;}
-#s6 {background: #2b2d30; transition-delay: 0.6s;}
-#s7 {background: #212326; transition-delay: 0.7s;}
-#s8 {background: #36383c; transition-delay: 0.8s;}
-#s9 {background: #444850; transition-delay: 0.9s;}
-#s10 {background:#2c2f36; transition-delay: 1s;}
 
 
 .contact {

@@ -3,11 +3,10 @@ $(function(){
     var $header = $('header');
     var $item = $('.ability .item')
     var $strength =$(`.strength`);
-    var $length =$(`.length`);
+    var $scroll =$(`.scroll-down`);
     var $offset = 600;
     var $strengthOST = $strength.offset().top - $offset;
     var $itemThreshold = $item.offset().top -$offset;
-    var $lengthOST = $length.offset().top - $offset;
 
     $(window).scroll(function(){
         if($(this).scrollTop() > 0){
@@ -22,8 +21,8 @@ $(function(){
         if($(this).scrollTop() > $itemThreshold){
             $item.addClass('active');
         }
-        if($(this).scrollTop()>$lengthOST){
-            $length.find(`.stripe`).addClass(`animate_down`);
+        if($(this).scrollTop() > 0){
+            $scroll.addClass('scroll-op');
         }
     });
 
