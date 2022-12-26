@@ -11,7 +11,8 @@ header {
     height: 10vh;
     width: 100%;
     line-height: 10vh;
-    background: rgba(0, 0, 0,.2);
+    background: rgba(108, 164, 160, 0.2);
+    border-bottom: 1px solid rgb(255, 255, 255);
     z-index: 1000;
     transition: .5s;
 }
@@ -26,11 +27,15 @@ nav ul {
 nav ul li {
     margin-left: 5em;
 }
-header.scroll { height: 6vh; line-height: 6vh; border-bottom: none; background: #3A2D28; position: fixed; }
+header.scroll { height: 6vh; line-height: 6vh; border-bottom: none; background: #3A2D28; position: fixed; border-bottom: none;}
 header.scroll nav ul li a { color: #fff; }
 
 .main {
     height: 100vh;
+    background-image: url(img/icon-g9430ec321_1920.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .scroll-down {
     z-index: 11;
@@ -123,7 +128,7 @@ main {
 .ability .item {
     margin-left: 5em;
     text-align: center;
-    opacity: 0;
+    /* opacity: 0; */
     transition: 4s ease-in-out;
 }
 .ability .item strong {
@@ -186,7 +191,7 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: #767676;
+    background: #3A2D28;
 }
 .contact .info {
     width: 1000px;
@@ -206,7 +211,7 @@ hr {
 footer {
     color: #fff;
     height: 10vh;
-    background: #767676;
+    background: #3A2D28;
     text-align: center;
     margin: auto;
 }
