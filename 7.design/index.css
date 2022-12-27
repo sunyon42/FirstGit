@@ -11,7 +11,7 @@ header {
     height: 10vh;
     width: 100%;
     line-height: 10vh;
-    background: rgba(108, 164, 160, 0.2);
+    background: #3A2D28;
     border-bottom: 1px solid rgb(255, 255, 255);
     z-index: 1000;
     transition: .5s;
@@ -27,8 +27,20 @@ nav ul {
 nav ul li {
     margin-left: 5em;
 }
+nav ul li:nth-child(1) {
+    margin-left: 0;
+}
+nav ul li {
+    margin-left: 5em;
+}
+nav ul li a,
+nav h1 {
+    color: #fff;
+}
 header.scroll { height: 6vh; line-height: 6vh; border-bottom: none; background: #3A2D28; position: fixed; border-bottom: none;}
-header.scroll nav ul li a { color: #fff; }
+header.scroll nav { width: 50%; margin: auto; }
+header.scroll nav ul li a { font-size: 2vw; text-align: center; color: #fff; }
+header.scroll nav h1 { display: none; }
 
 .main {
     height: 100vh;
@@ -44,7 +56,7 @@ header.scroll nav ul li a { color: #fff; }
     height: 64px;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 82px;
+    bottom: 40px;
     border: 2px solid black;
     border-radius: 50px;
 }
@@ -96,8 +108,10 @@ main {
 }
 .review .info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .review .info .img{
     margin: auto;
@@ -112,12 +126,24 @@ main {
     object-fit: cover;
 }
 .review .info p {
+    opacity: 0;
     width: 1000px;
+    margin-top: 2em;
     margin-left: 2em;
     font-size: 1.2em;
     font-weight: bold;
 }
-
+.review .info p.animate {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+main>h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30vh;
+    margin-bottom: 20vh;
+}
 .ability {
     height: auto;
     background: #EBE3DB;
@@ -125,8 +151,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50vh;
     overflow-x: hidden;
-    padding: 30vh 0;
 }
 .ability .box {
     background-color: white;
@@ -138,10 +164,15 @@ main {
     width: 400px;
     height: 200px;
     margin: 10px;
+    font-size: 2vw;
+    font-weight: bold;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,0.2) 0px 60px 40px -7px;
     transform: translateX(400%);
     transition: transform 0.4s ease;
+}
+.ability .box:nth-child(1) {
+    transform: translateX(0);
 }
 .ability .box:nth-of-type(even) {
     transform: translateX(-400%);

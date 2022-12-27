@@ -3,9 +3,11 @@ $(function(){
     var $header = $('header');
     // var $item = $('.ability .item')
     var $strength =$(`.strength`);
+    var $review =$(`.review`);
     var $scroll =$(`.scroll-down`);
     var boxes = document.querySelectorAll('.box')
     var $offset = 600;
+    var $reviewOST = $review.offset().top - $offset;
     var $strengthOST = $strength.offset().top - $offset;
     // var $itemThreshold = $item.offset().top -$offset;
     $(window).scroll(function(){
@@ -17,6 +19,9 @@ $(function(){
         if($(this).scrollTop()>$strengthOST){
             $strength.find(`img`).addClass(`grow-img`);
             $strength.find(`h4`).addClass(`animate`);
+        }
+        if($(this).scrollTop()>$reviewOST){
+            $review.find(`p`).addClass(`animate`);
         }
         
         // if($(this).scrollTop() > $itemThreshold){
@@ -44,7 +49,6 @@ $(function(){
             })
         }
     
-
     
-
-});
+    });
+    
