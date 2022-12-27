@@ -4,10 +4,10 @@ $(function(){
     // var $item = $('.ability .item')
     var $strength =$(`.strength`);
     var $scroll =$(`.scroll-down`);
+    var boxes = document.querySelectorAll('.box')
     var $offset = 600;
     var $strengthOST = $strength.offset().top - $offset;
     // var $itemThreshold = $item.offset().top -$offset;
-
     $(window).scroll(function(){
         if($(this).scrollTop() > 0){
             $header.addClass('scroll');
@@ -18,8 +18,9 @@ $(function(){
             $strength.find(`img`).addClass(`grow-img`);
             $strength.find(`h4`).addClass(`animate`);
         }
+        
         // if($(this).scrollTop() > $itemThreshold){
-        //     $item.addClass('active');
+            //     $item.addClass('active');
         // }
         if($(this).scrollTop() > 0){
             $scroll.addClass('scroll-op');
@@ -27,24 +28,23 @@ $(function(){
             $scroll.removeClass('scroll-op');
         }
     });
+    
+    window.addEventListener('scroll',checkBoxes)
+        checkboxes()
 
+        function checkBoxes(){
+            var triggerBottom = window.innerHeight / 5 * 4
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top
+                if(boxTop < triggerBottom){
+                    box.classList.add('show')
+                } else{
+                    box.classList.remove('show')
+                }
+            })
+        }
+    
 
+    
 
-    var numAnimation = document.querySelectorAll('num_animation');
-    var targetNum = numAnimation.getAttribute('data-rate')
-
-
-    function changNum(idx){
-        var num = 0;
-        var targetNum = numAnimation[idx].getAttribute('date-rate');
-        var timer1 = seInterval(function(){
-            ++num;
-            numAnimation[idx].innerText = num;
-            if(num == targetNum){
-                clearInterval(timer1);
-            }
-        },10);
-    }
-    for(var i =0; i<numAnimation.length;i++);
-    changNum(i);
 });

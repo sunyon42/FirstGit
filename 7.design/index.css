@@ -119,33 +119,36 @@ main {
 }
 
 .ability {
-    height: 40vh;
+    height: auto;
     background: #EBE3DB;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    padding: 30vh 0;
 }
-.ability .item {
-    margin-left: 5em;
-    text-align: center;
-    /* opacity: 0; */
-    transition: 4s ease-in-out;
+.ability .box {
+    background-color: white;
+    border: 2px solid #3b3b3b;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.2) 0px 60px 40px -7px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
 }
-.ability .item strong {
-    font-size: 5em;
-    border-radius: 10%;
+.ability .box:nth-of-type(even) {
+    transform: translateX(-400%);
 }
-.ability .item p {
-    margin-top: 1em;
-    font-weight: bold;
+.ability .box.show {
+    transform: translateX(0);
 }
-
-.ability .item.active { opacity: 1;}
-.ability .item.active:nth-child(1) {transition: .2s;}
-.ability .item.active:nth-child(2) {transition: .8s;}
-.ability .item.active:nth-child(3) {transition: 1.5s;}
-.ability .item.active:nth-child(4) {transition: 2s;}
-.ability .item.active:nth-child(5) {transition: 2.5s;}
 .animate, .grow-img, .animate_down{
     animation: fadeIn 1s forwards;
     transition: 2s ease-in-out;
