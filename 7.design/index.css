@@ -36,6 +36,7 @@ nav ul li {
 nav ul li a,
 nav h1 {
     color: #fff;
+    font-weight: bold;
 }
 header.scroll { height: 6vh; line-height: 6vh; border-bottom: none; background: #3A2D28; position: fixed; border-bottom: none;}
 header.scroll nav { width: 50%; margin: auto; }
@@ -99,7 +100,7 @@ main {
     background: #EBE3DB;
 }
 .review {
-    background: #F1EDE6;
+    background: #eee1dc;
     height: 80vh;
     margin: auto;
     display: flex;
@@ -132,10 +133,10 @@ main {
     margin-left: 2em;
     font-size: 1.2em;
     font-weight: bold;
+    transition: 3s ease-in-out;
 }
 .review .info p.animate {
     opacity: 1;
-    transition: .5s ease-in-out;
 }
 main>h2 {
     display: flex;
@@ -143,6 +144,7 @@ main>h2 {
     text-align: center;
     padding-top: 30vh;
     margin-bottom: 20vh;
+    align-items: center;
 }
 .ability {
     height: auto;
@@ -202,13 +204,16 @@ main>h2 {
 .strength .item {
     text-align: center;
 }
-.strength .item img {
+.strength .item i {
     width: 0;
     height: 0;
+    opacity: 0;
+    color: #3A2D28;
 }
-.strength .item img.grow-img {
+.strength .item i.grow-img {
     width: 169px;
     height: 169px;
+    opacity: 1;
 }
 .strength .item h4 {
     color: #2c2f36;

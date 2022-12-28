@@ -17,7 +17,7 @@ $(function(){
             $header.removeClass('scroll');
         }
         if($(this).scrollTop()>$strengthOST){
-            $strength.find(`img`).addClass(`grow-img`);
+            $strength.find(`i`).addClass(`grow-img`);
             $strength.find(`h4`).addClass(`animate`);
         }
         if($(this).scrollTop()>$reviewOST){
