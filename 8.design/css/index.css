@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+h1,h2,h3,h4,h5,h6,ul{font-size: 100%; line-height: 1; margin: 0; padding: 0; font-weight: normal;}
+li{list-style: none;}
+img{vertical-align: top;}
+a{color: #495662; text-decoration: none;}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #495662;
+    line-height: 1;
+}
+.sprites {
+    background: url(../img/sprites.png) no-repeat;
+    display: block;
+    text-indent: -999em;
+}
+header {
+    border-bottom: 1px solid #e6e8eb;
+}
+header .top_navigation {
+    border-bottom: 1px solid #e6e8eb;
+    padding: 22px 0;
+}
+.contact_list, .social_list {
+    display: flex;
+}
+.contact_list li {
+    margin-right: 20px;
+    display: flex;
+    font-size: 12px;
+    line-height: 16px;
+}
+.social_list li {
+    margin-left: 20px;
+}
+.contact_list li span {
+    margin-right: 10px;
+}
+.envelope {
+    width: 18px;
+    height: 16px;
+    background-position: 0 2px;
+}
+.phone {
+    width: 12px;
+    height: 16px;
+    background-position: -30px 2px;
+}
+.social_list li a {
+    font-size: 12px;
+    line-height: 16px;
+    color: #563540;
+}
