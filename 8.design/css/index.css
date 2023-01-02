@@ -53,3 +53,55 @@ header .top_navigation {
     line-height: 16px;
     color: #563540;
 }
+.main_navigation {
+    padding: 41px;
+}
+.gnb, .gnb ul {
+    display: flex;
+}
+.logo {
+    margin-right: 81px;
+}
+.logo a {
+    width: 118px;
+    height: 39px;
+    background: url(../img/shopy_log.png) no-repeat;
+    text-indent: -999em;
+    display: block;
+}
+.gnb ul li {
+    margin-right: 41px;
+}
+.gnb ul li a {
+    line-height: 39px;
+    color: #34404b;
+}
+.gnb ul li a:hover {
+    color: #ff5912;
+}
+.search_btn {
+    width: 18px;
+    height: 18px;
+    background-position: -60px 0;
+}
+.mypage {
+    width: 21px;
+    height: 21px;
+    background-position: -90px 0;
+}
+.cart {
+    width: 24px;
+    height: 17px;
+    background-position: -120px 0;
+}
+.shopping_nav .sprites:hover {
+    background-position-y: -30px;
+}
+.shopping_nav {
+    display: flex;
+}
+.shopping_nav li {
+    margin-left: 34px;
+    display: flex;
+    align-items: center;
+}
