@@ -18,10 +18,13 @@ body{
 }
 header {
     border-bottom: 1px solid #e6e8eb;
+    position: relative;
+    z-index: 1;
 }
 header .top_navigation {
     border-bottom: 1px solid #e6e8eb;
     padding: 22px 0;
+    background: #fff;
 }
 .contact_list, .social_list {
     display: flex;
@@ -55,6 +58,7 @@ header .top_navigation {
 }
 .main_navigation {
     padding: 41px;
+    background: #fff;
 }
 .gnb, .gnb ul {
     display: flex;
@@ -121,4 +125,35 @@ header .top_navigation {
     text-indent: 0;
     text-align: center;
     line-height: 18px;
+}
+header form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    background: #fff;
+    top: 0;
+    z-index: -1;
+}
+header form.active {
+    top: calc(100% + 1px);
+}
+header form input[type="text"] {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid#34404b;
+    width: 540px;
+    display: inline-block;
+    margin-right: 10px;
+    outline: none;
+}
+header form input[type="text"]:focus {
+    border-bottom-color: #3498db;
+}
+header form input[type="submit"] {
+    display: inline-block;
+    border: none;
+    vertical-align: bottom;
 }
