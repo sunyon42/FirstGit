@@ -93,6 +93,7 @@ header .top_navigation {
     width: 24px;
     height: 17px;
     background-position: -120px 0;
+    position: relative;
 }
 .shopping_nav .sprites:hover {
     background-position-y: -30px;
@@ -104,4 +105,20 @@ header .top_navigation {
     margin-left: 34px;
     display: flex;
     align-items: center;
+}
+.cart::before {
+    content: attr(data-cart);
+    background: #34404b;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    bottom: calc(100% + 2px);
+    font-size: 10px;
+    color: #fff;
+    text-indent: 0;
+    text-align: center;
+    line-height: 18px;
 }
