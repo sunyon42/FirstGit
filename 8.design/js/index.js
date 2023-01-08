@@ -6,5 +6,9 @@ $(function(){
             $searchForm.toggleClass('active')
         });
 
-        $('.slider ul').bxSlider();
+        $('..main_slides ul').bxSlider({
+            controls:false,
+            mode:'vertical'
+        });
+        
 });
