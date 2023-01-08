@@ -5,6 +5,7 @@ h1,h2,h3,h4,h5,h6,ul{font-size: 100%; line-height: 1; margin: 0; padding: 0; fon
 li{list-style: none;}
 img{vertical-align: top;}
 a{color: #495662; text-decoration: none;}
+.hidden{display: none;}
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -112,7 +113,7 @@ header .top_navigation {
     display: flex;
     align-items: center;
 }
-.cart::before {
+.shopping_nav .cart::before {
     content: attr(data-cart);
     background: #34404b;
     position: absolute;
@@ -159,4 +160,49 @@ header form input[type="submit"] {
     display: inline-block;
     border: none;
     vertical-align: bottom;
+}
+.main_slides li {
+    height: 650px;
+    background: no-repeat center top/cover;
+}
+.main_slides li.slide1 {
+    background: url(../img/feature_slide_01.jpg);
+}
+.main_slides li .slide_contents {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.main_slides li .slide_contents .contents{
+    margin-left: 115px;
+}
+.main_slides li .slide_contents .contents h2{
+    font-size: 52px;
+    color: #ff5912;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+.main_slides li .slide_contents .contents h3 {
+    color: #3c4751;
+    font-size: 18px;
+    margin-bottom: 13px;
+    font-weight: 600;
+}
+.main_slides li .slide_contents .contents p {
+    margin-bottom: 60px;
+}
+.price_order .price {
+    color: #34404b;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.price_order .cart {
+    display: inline-block;
+    margin-right: 6px;
+    background-position-y: -30px;
+}
+.price_order .order_now {
+    color: #ff5912;
+    font-size: 18px;
 }

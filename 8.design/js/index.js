@@ -4,5 +4,7 @@ $(function(){
 
         $searchBtn.click(function(){
             $searchForm.toggleClass('active')
-        })
+        });
+
+        $('.slider ul').bxSlider();
 });
